@@ -33,4 +33,3 @@ jobs:
           IGNORE_GENERATED_FILES: true
           IGNORE_GITIGNORED_FILES: true
           YAML_ERROR_ON_WARNING: true
-          FILTER_REGEX_EXCLUDE: (.*gradlew.*|.*day-.+-input-.+\.txt)

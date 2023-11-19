@@ -15,9 +15,6 @@ env:
   # renovate: datasource=npm depName=conventional-changelog-conventionalcommits
   CONVENTIONAL_CHANGELOG_CONVENTIONALCOMMITS_VERSION: 6.1.0
 
-  # renovate: datasource=npm depName=gradle-semantic-release-plugin
-  GRADLE_SEMANTIC_RELEASE_PLUGIN_VERSION: 1.7.7
-
 jobs:
   lint:
     name: Lint
@@ -47,18 +44,6 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Setup Java
-        # yamllint disable-line rule:line-length
-        uses: actions/setup-java@0ab4596768b603586c0de567f2430c30f5b0d2b0 # v3.13.0
-        with:
-          distribution: temurin
-          # renovate: datasource=java-version depName=java
-          java-version: 17.0.9+9
-
-      - name: Setup Gradle
-        # yamllint disable-line rule:line-length
-        uses: gradle/gradle-build-action@842c587ad8aa4c68eeba24c396e15af4c2e9f30a # v2.9.0
-
       - name: Release
         id: release
         # yamllint disable-line rule:line-length
@@ -78,6 +63,4 @@ jobs:
             @semantic-release/git@\
             ${{ env.SEMANTIC_RELEASE_GIT_VERSION }} \
             conventional-changelog-conventionalcommits@\
-            ${{ env.CONVENTIONAL_CHANGELOG_CONVENTIONALCOMMITS_VERSION }} \
-            gradle-semantic-release-plugin@\
-            ${{ env.GRADLE_SEMANTIC_RELEASE_PLUGIN_VERSION }}"
+            ${{ env.CONVENTIONAL_CHANGELOG_CONVENTIONALCOMMITS_VERSION }}
