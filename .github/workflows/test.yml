@@ -1,0 +1,42 @@
+---
+name: Test
+
+"on":
+  workflow_call:
+    inputs:
+      continue-on-error:
+        type: boolean
+        description: Allow a workflow run to pass when this workflow fails
+        required: false
+        default: false
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    continue-on-error: ${{ inputs.continue-on-error }}
+
+    steps:
+      - name: Checkout
+        # yamllint disable-line rule:line-length
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+
+      - name: Setup Java
+        # yamllint disable-line rule:line-length
+        uses: actions/setup-java@0ab4596768b603586c0de567f2430c30f5b0d2b0 # v3.13.0
+        with:
+          distribution: temurin
+          # renovate: datasource=java-version depName=java
+          java-version: 17.0.9+9
+
+      - name: Test
+        # yamllint disable-line rule:line-length
+        uses: gradle/gradle-build-action@842c587ad8aa4c68eeba24c396e15af4c2e9f30a # v2.9.0
+        with:
+          arguments: test jacocoTestReport
+
+      - name: Upload test coverage to Codecov
+        # yamllint disable-line rule:line-length
+        uses: codecov/codecov-action@eaaf4bedf32dbdc6b720b63067d99c4d77d6047d # v3.1.4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}

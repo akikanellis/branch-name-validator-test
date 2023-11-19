@@ -1,0 +1,83 @@
+---
+name: Build Main
+
+"on":
+  push:
+    branches: [main]
+
+env:
+  # renovate: datasource=npm depName=@semantic-release/changelog
+  SEMANTIC_RELEASE_CHANGELOG_VERSION: 6.0.3
+
+  # renovate: datasource=npm depName=@semantic-release/git
+  SEMANTIC_RELEASE_GIT_VERSION: 10.0.1
+
+  # renovate: datasource=npm depName=conventional-changelog-conventionalcommits
+  CONVENTIONAL_CHANGELOG_CONVENTIONALCOMMITS_VERSION: 6.1.0
+
+  # renovate: datasource=npm depName=gradle-semantic-release-plugin
+  GRADLE_SEMANTIC_RELEASE_PLUGIN_VERSION: 1.7.7
+
+jobs:
+  lint:
+    name: Lint
+    uses: ./.github/workflows/lint.yml
+    with:
+      continue-on-error: true
+
+  test:
+    name: Test
+    uses: ./.github/workflows/test.yml
+    with:
+      continue-on-error: true
+
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    concurrency: ${{ github.workflow }}-release
+
+    outputs:
+      release-published: ${{ steps.release.outputs.new_release_published }}
+      release-version: ${{ steps.release.outputs.new_release_version }}
+
+    steps:
+      - name: Checkout
+        # yamllint disable-line rule:line-length
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        with:
+          persist-credentials: false
+
+      - name: Setup Java
+        # yamllint disable-line rule:line-length
+        uses: actions/setup-java@0ab4596768b603586c0de567f2430c30f5b0d2b0 # v3.13.0
+        with:
+          distribution: temurin
+          # renovate: datasource=java-version depName=java
+          java-version: 17.0.9+9
+
+      - name: Setup Gradle
+        # yamllint disable-line rule:line-length
+        uses: gradle/gradle-build-action@842c587ad8aa4c68eeba24c396e15af4c2e9f30a # v2.9.0
+
+      - name: Release
+        id: release
+        # yamllint disable-line rule:line-length
+        uses: cycjimmy/semantic-release-action@61680d0e9b02ff86f5648ade99e01be17f0260a4 # v4.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_GITHUB_TOKEN }}
+          GIT_AUTHOR_NAME: aki-bot[bot]
+          GIT_AUTHOR_EMAIL: 103840025+aki-bot[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: aki-bot[bot]
+          GIT_COMMITTER_EMAIL: 103840025+aki-bot[bot]@users.noreply.github.com
+        with:
+          # renovate: datasource=npm depName=semantic-release
+          semantic_version: 21.1.2
+          extra_plugins:
+            "@semantic-release/changelog@\
+            ${{ env.SEMANTIC_RELEASE_CHANGELOG_VERSION }} \
+            @semantic-release/git@\
+            ${{ env.SEMANTIC_RELEASE_GIT_VERSION }} \
+            conventional-changelog-conventionalcommits@\
+            ${{ env.CONVENTIONAL_CHANGELOG_CONVENTIONALCOMMITS_VERSION }} \
+            gradle-semantic-release-plugin@\
+            ${{ env.GRADLE_SEMANTIC_RELEASE_PLUGIN_VERSION }}"

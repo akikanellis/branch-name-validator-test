@@ -1,0 +1,36 @@
+---
+name: Lint
+
+"on":
+  workflow_call:
+    inputs:
+      continue-on-error:
+        type: boolean
+        description: Allow a workflow run to pass when this workflow fails
+        required: false
+        default: false
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    continue-on-error: ${{ inputs.continue-on-error }}
+
+    steps:
+      - name: Checkout
+        # yamllint disable-line rule:line-length
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        with:
+          fetch-depth: 0
+
+      - name: Lint
+        # yamllint disable-line rule:line-length
+        uses: super-linter/super-linter/slim@40b5a7da512c6686fd1bf3130dc972cbf32008d7 # v5.5.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEFAULT_BRANCH: main
+          VALIDATE_ALL_CODEBASE: false
+          IGNORE_GENERATED_FILES: true
+          IGNORE_GITIGNORED_FILES: true
+          YAML_ERROR_ON_WARNING: true
+          FILTER_REGEX_EXCLUDE: (.*gradlew.*|.*day-.+-input-.+\.txt)
