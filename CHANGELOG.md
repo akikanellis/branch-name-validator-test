@@ -1,3 +1,11 @@
+## [1.2.1](https://github.com/akikanellis/branch-name-validator-test/compare/v1.2.0...v1.2.1) (2023-11-20)
+
+
+### Bug Fixes
+
+* fix syntac ([6025bf3](https://github.com/akikanellis/branch-name-validator-test/commit/6025bf3f60d866d60e277699c0c7073c529b2cb1))
+* install missing dependencies ([c56d6c4](https://github.com/akikanellis/branch-name-validator-test/commit/c56d6c4613c0ad87109600766190b006328e82c4))
+
 ## [1.2.0](https://github.com/akikanellis/branch-name-validator-test/compare/v1.1.0...v1.2.0) (2023-11-20)
 
 
