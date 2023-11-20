@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/akikanellis/branch-name-validator-test/compare/v1.0.0...v1.1.0) (2023-11-20)
+
+
+### Features
+
+* add dist ([62b37af](https://github.com/akikanellis/branch-name-validator-test/commit/62b37affa718a7e86df7dda36fc44b047864d6fb))
+
 ## 1.0.0 (2023-11-19)
 
 
