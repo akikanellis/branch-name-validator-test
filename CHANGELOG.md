@@ -1,3 +1,10 @@
+## [1.2.0](https://github.com/akikanellis/branch-name-validator-test/compare/v1.1.0...v1.2.0) (2023-11-20)
+
+
+### Features
+
+* commit via semantic release ([418de3b](https://github.com/akikanellis/branch-name-validator-test/commit/418de3bc835475b5633067329933febc2dcad5fe))
+
 ## [1.1.0](https://github.com/akikanellis/branch-name-validator-test/compare/v1.0.0...v1.1.0) (2023-11-20)
 
 
