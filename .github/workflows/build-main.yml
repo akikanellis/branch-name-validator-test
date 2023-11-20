@@ -47,6 +47,25 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Setup just
+        # yamllint disable-line rule:line-length
+        uses: extractions/setup-just@69d82fb0233557aec017ef13706851d0694e0f1d # v1.6.0
+        with:
+          # renovate: datasource=crate depName=just
+          just-version: 1.16.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        # yamllint disable-line rule:line-length
+        uses: actions/setup-node@v4.0.0
+        with:
+          node-version-file: .tool-versions
+          cache: npm
+
+      - name: Install dependencies
+        run: just install-dependencies
+
       - name: Release
         id: release
         # yamllint disable-line rule:line-length
