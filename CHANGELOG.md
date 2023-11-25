@@ -1,3 +1,10 @@
+## [1.5.3](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.2...v1.5.3) (2023-11-25)
+
+
+### Build System
+
+* add static test ([b215146](https://github.com/akikanellis/branch-name-validator-test/commit/b215146ec0783571bdf4c9e1bd8e4190d4ee41bb))
+
 ## [1.5.2](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.1...v1.5.2) (2023-11-25)
 
 
