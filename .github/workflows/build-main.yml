@@ -25,6 +25,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout
+        # yamllint disable-line rule:line-length
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+
       - name: Validate branch name
         id: validate-branch-name
         uses: ./
