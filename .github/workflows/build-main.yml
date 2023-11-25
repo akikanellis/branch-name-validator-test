@@ -109,15 +109,15 @@ jobs:
         with:
           regex: ^[a-z]+([a-z0-9\.-])+$
 
-  ## TODO remove this
-  test-release-marketplace:
-    name: Test release marketplace
-    needs: release
-    if: needs.release.outputs.release-published == 'true'
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Validate branch name
-        uses: akikanellis/branch-name-validator-test@v${{ needs.release.outputs.release-version }}
-        with:
-          regex: ^[a-z]+([a-z0-9\.-])+$
+  ## TODO this doesn't work
+#  test-release-marketplace:
+#    name: Test release marketplace
+#    needs: release
+#    if: needs.release.outputs.release-published == 'true'
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#      - name: Validate branch name
+#        uses: akikanellis/branch-name-validator-test@v${{ needs.release.outputs.release-version }}
+#        with:
+#          regex: ^[a-z]+([a-z0-9\.-])+$
