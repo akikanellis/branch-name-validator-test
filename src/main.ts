@@ -25,7 +25,7 @@ export async function run(): Promise<void> {
     }
 
     const payload = github.context.payload
-    core.info(`Validating branch name for event '${eventName}' with payload '${payload}'`)
+    core.info(`Validating branch name for event '${eventName}' with payload '${JSON.stringify(payload)}'`)
 
     const regex = RegExp(core.getInput('regex'))
     const branchName = retrieveBranchName()
