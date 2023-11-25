@@ -23,8 +23,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # TODO remove this
       - name: Validate branch name
-        # yamllint disable-line rule:line-length
-        uses: deepakputhraya/action-branch-name@e0f8db53a8e289f1ae6f6c3e8dc70a3d366fd876 # tag=v1.0.0
+        id: validate-branch-name
+        uses: ./
         with:
           regex: ^[a-z]+([a-z0-9\.-])+$

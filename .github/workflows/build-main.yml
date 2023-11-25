@@ -19,6 +19,18 @@ env:
   CONVENTIONAL_CHANGELOG_CONVENTIONALCOMMITS_VERSION: 6.1.0
 
 jobs:
+  ## TODO remove this
+  validate-branch-name:
+    name: Validate branch name
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Validate branch name
+        id: validate-branch-name
+        uses: ./
+        with:
+          regex: ^[a-z]+([a-z0-9\.-])+$
+
   lint:
     name: Lint
     uses: ./.github/workflows/lint.yml
