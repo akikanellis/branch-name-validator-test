@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.0...v1.5.1) (2023-11-25)
+
+
+### Build System
+
+* stringify JSON ([b082dce](https://github.com/akikanellis/branch-name-validator-test/commit/b082dcedf660f778591a25c0fe5ef6e73864ba23))
+
 ## [1.5.0](https://github.com/akikanellis/branch-name-validator-test/compare/v1.4.0...v1.5.0) (2023-11-25)
 
 
