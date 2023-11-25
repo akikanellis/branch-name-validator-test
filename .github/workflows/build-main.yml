@@ -19,22 +19,6 @@ env:
   CONVENTIONAL_CHANGELOG_CONVENTIONALCOMMITS_VERSION: 6.1.0
 
 jobs:
-  ## TODO remove this
-  validate-branch-name:
-    name: Validate branch name
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        # yamllint disable-line rule:line-length
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
-
-      - name: Validate branch name
-        id: validate-branch-name
-        uses: ./
-        with:
-          regex: ^[a-z]+([a-z0-9\.-])+$
-
   lint:
     name: Lint
     uses: ./.github/workflows/lint.yml
@@ -104,3 +88,36 @@ jobs:
             ${{ env.SEMANTIC_RELEASE_GIT_VERSION }} \
             conventional-changelog-conventionalcommits@\
             ${{ env.CONVENTIONAL_CHANGELOG_CONVENTIONALCOMMITS_VERSION }}"
+
+  ## TODO remove this
+  test-release-locally:
+    name: Test release
+    needs: release
+    if: needs.release.outputs.release-published == 'true'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        # yamllint disable-line rule:line-length
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        with:
+          ref: v${{ needs.release.outputs.release-version }}
+
+      - name: Validate branch name
+        id: validate-branch-name
+        uses: ./
+        with:
+          regex: ^[a-z]+([a-z0-9\.-])+$
+
+  ## TODO remove this
+  test-release-marketplace:
+    name: Test release marketplace
+    needs: release
+    if: needs.release.outputs.release-published == 'true'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Validate branch name
+        uses: akikanellis/branch-name-validator-test@v${{ needs.release.outputs.release-version }}
+        with:
+          regex: ^[a-z]+([a-z0-9\.-])+$
