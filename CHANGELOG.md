@@ -1,3 +1,10 @@
+## [1.5.0](https://github.com/akikanellis/branch-name-validator-test/compare/v1.4.0...v1.5.0) (2023-11-25)
+
+
+### Features
+
+* validate branch name ([c7128d7](https://github.com/akikanellis/branch-name-validator-test/commit/c7128d7a9286b6ef850c23ed2058154da6dc976a))
+
 ## [1.4.0](https://github.com/akikanellis/branch-name-validator-test/compare/v1.3.0...v1.4.0) (2023-11-25)
 
 
