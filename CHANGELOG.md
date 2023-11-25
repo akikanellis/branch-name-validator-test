@@ -1,3 +1,11 @@
+## [1.5.2](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.1...v1.5.2) (2023-11-25)
+
+
+### Build System
+
+* remove marketplace test ([b399803](https://github.com/akikanellis/branch-name-validator-test/commit/b399803589a1ea326b7c9fe9afc4c985a08738fa))
+* test release ([0835cbf](https://github.com/akikanellis/branch-name-validator-test/commit/0835cbf6da8e214e50525750e158f4845f09dc92))
+
 ## [1.5.1](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.0...v1.5.1) (2023-11-25)
 
 
