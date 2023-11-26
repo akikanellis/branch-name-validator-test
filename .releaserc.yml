@@ -48,4 +48,5 @@ plugins:
     - assets:
         - CHANGELOG.md
         - dist
+        - package.json
   - "@semantic-release/github"
