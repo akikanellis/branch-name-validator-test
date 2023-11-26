@@ -1,14 +1,14 @@
-import * as core from '@actions/core'
-import * as github from '@actions/github'
+import * as core from "@actions/core";
+import * as github from "@actions/github";
 
 function retrieveBranchName(): string {
-  const ref = github.context.ref
-  const branchRefPrefix = 'refs/heads/'
+  const ref = github.context.ref;
+  const branchRefPrefix = "refs/heads/";
 
   if (ref.startsWith(branchRefPrefix)) {
-    return ref.substring(branchRefPrefix.length)
+    return ref.substring(branchRefPrefix.length);
   } else {
-    throw new Error('Could not determine the branch name')
+    throw new Error("Could not determine the branch name");
   }
 }
 
@@ -18,27 +18,31 @@ function retrieveBranchName(): string {
  */
 export async function run(): Promise<void> {
   try {
-    const eventName = github.context.eventName
+    const eventName = github.context.eventName;
 
-    if (eventName != 'push') {
-      throw Error(`Event '${eventName}' is not supported`)
+    if (eventName != "push") {
+      throw Error(`Event '${eventName}' is not supported`);
     }
 
-    const payload = github.context.payload
-    core.info(`Validating branch name for event '${eventName}' with payload '${JSON.stringify(payload)}'`)
+    const payload = github.context.payload;
+    core.info(
+      `Validating branch name for event '${eventName}' with payload '${JSON.stringify(
+        payload,
+      )}'`,
+    );
 
-    const regex = RegExp(core.getInput('regex'))
-    const branchName = retrieveBranchName()
+    const regex = RegExp(core.getInput("regex"));
+    const branchName = retrieveBranchName();
 
-    const testResult = regex.test(branchName)
+    const testResult = regex.test(branchName);
 
     if (!testResult) {
-      core.setFailed(`Branch ${branchName} failed regex validation '${regex}'`)
+      core.setFailed(`Branch ${branchName} failed regex validation '${regex}'`);
     } else {
-      core.info("Branch validation succeeded!")
+      core.info("Branch validation succeeded!");
     }
   } catch (error) {
     // Fail the workflow run if an error occurs
-    if (error instanceof Error) core.setFailed(error.message)
+    if (error instanceof Error) core.setFailed(error.message);
   }
 }

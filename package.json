@@ -14,10 +14,8 @@
   "author": "Aki Kanellis <hello@akikanellis.com> (https://akikanellis.com)",
   "repository": "github:akikanellis/branch-name-validator-test",
   "scripts": {
-    "bundle": "npm run format:write && npm run package",
-    "format:write": "prettier --write **/*.ts",
-    "format:check": "prettier --check **/*.ts",
-    "lint": "npx eslint . -c ./.github/linters/.eslintrc.yml",
+    "lint": "eslint . -c ./.github/linters/.eslintrc.yml && prettier --check .",
+    "reformat": "prettier --write .",
     "package": "ncc build src/index.ts --license licenses.txt",
     "package:watch": "npm run package -- --watch",
     "test": "jest"
