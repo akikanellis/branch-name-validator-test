@@ -1,3 +1,11 @@
+## [1.5.7](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.6...v1.5.7) (2023-11-26)
+
+
+### Build System
+
+* remove watch ([0fa00d2](https://github.com/akikanellis/branch-name-validator-test/commit/0fa00d223aa9ad6cbda1d7a350b6fd4f4ca17f8e))
+* use default prettier config ([074dfbd](https://github.com/akikanellis/branch-name-validator-test/commit/074dfbddcd1a04458f8e96c08075adf5f798649c))
+
 ## [1.5.6](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.5...v1.5.6) (2023-11-26)
 
 

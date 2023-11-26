@@ -28483,12 +28483,12 @@ const core = __importStar(__nccwpck_require__(2186));
 const github = __importStar(__nccwpck_require__(5438));
 function retrieveBranchName() {
     const ref = github.context.ref;
-    const branchRefPrefix = 'refs/heads/';
+    const branchRefPrefix = "refs/heads/";
     if (ref.startsWith(branchRefPrefix)) {
         return ref.substring(branchRefPrefix.length);
     }
     else {
-        throw new Error('Could not determine the branch name');
+        throw new Error("Could not determine the branch name");
     }
 }
 /**
@@ -28498,12 +28498,12 @@ function retrieveBranchName() {
 async function run() {
     try {
         const eventName = github.context.eventName;
-        if (eventName != 'push') {
+        if (eventName != "push") {
             throw Error(`Event '${eventName}' is not supported`);
         }
         const payload = github.context.payload;
         core.info(`Validating branch name for event '${eventName}' with payload '${JSON.stringify(payload)}'`);
-        const regex = RegExp(core.getInput('regex'));
+        const regex = RegExp(core.getInput("regex"));
         const branchName = retrieveBranchName();
         const testResult = regex.test(branchName);
         if (!testResult) {
