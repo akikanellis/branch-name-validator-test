@@ -15,6 +15,9 @@ env:
   # renovate: datasource=npm depName=@semantic-release/git
   SEMANTIC_RELEASE_GIT_VERSION: 10.0.1
 
+  # renovate: datasource=npm depName=@semantic-release/npm
+  SEMANTIC_RELEASE_NPM_VERSION: 11.0.1
+
   # renovate: datasource=npm depName=conventional-changelog-conventionalcommits
   CONVENTIONAL_CHANGELOG_CONVENTIONALCOMMITS_VERSION: 6.1.0
 
@@ -86,6 +89,8 @@ jobs:
             ${{ env.SEMANTIC_RELEASE_EXEC_VERSION }} \
             @semantic-release/git@\
             ${{ env.SEMANTIC_RELEASE_GIT_VERSION }} \
+            @semantic-release/npm@\
+            ${{ env.SEMANTIC_RELEASE_NPM_VERSION }} \
             conventional-changelog-conventionalcommits@\
             ${{ env.CONVENTIONAL_CHANGELOG_CONVENTIONALCOMMITS_VERSION }}"
 

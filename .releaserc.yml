@@ -42,6 +42,7 @@ plugins:
           - type: ci
             section: Continuous Integration
   - "@semantic-release/changelog"
+  - "@semantic-release/npm"
   - - "@semantic-release/exec"
     - prepareCmd: npm run package
   - - "@semantic-release/git"
