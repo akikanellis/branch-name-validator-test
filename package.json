@@ -1,31 +1,20 @@
 {
   "name": "branch-name-validator-test",
-  "description": "Branch Name Validator Test",
   "version": "1.5.5",
-  "author": "",
-  "private": true,
-  "homepage": "https://github.com/akikanellis/branch-name-validator-test",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/akikanellis/branch-name-validator-test.git"
-  },
-  "bugs": {
-    "url": "https://github.com/akikanellis/branch-name-validator-test/issues"
-  },
+  "description": "Branch Name Validator Test",
   "keywords": [
+    "github",
     "actions",
-    "node",
-    "setup"
+    "branch",
+    "validation"
   ],
-  "exports": {
-    ".": "./dist/index.js"
-  },
-  "engines": {
-    "node": ">=20"
-  },
+  "homepage": "https://github.com/akikanellis/branch-name-validator-test",
+  "bugs": "https://github.com/akikanellis/branch-name-validator-test/issues",
+  "license": "MIT",
+  "author": "Aki Kanellis <hello@akikanellis.com> (https://akikanellis.com)",
+  "repository": "github:akikanellis/branch-name-validator-test",
   "scripts": {
     "bundle": "npm run format:write && npm run package",
-    "ci-test": "jest",
     "format:write": "prettier --write **/*.ts",
     "format:check": "prettier --check **/*.ts",
     "lint": "npx eslint . -c ./.github/linters/.eslintrc.yml",
@@ -33,36 +22,6 @@
     "package:watch": "npm run package -- --watch",
     "test": "jest",
     "all": "npm run format:write && npm run lint && npm run test && npm run package"
-  },
-  "license": "MIT",
-  "jest": {
-    "preset": "ts-jest",
-    "verbose": true,
-    "clearMocks": true,
-    "testEnvironment": "node",
-    "moduleFileExtensions": [
-      "js",
-      "ts"
-    ],
-    "testMatch": [
-      "**/*.test.ts"
-    ],
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/dist/"
-    ],
-    "transform": {
-      "^.+\\.ts$": "ts-jest"
-    },
-    "coverageReporters": [
-      "json-summary",
-      "text",
-      "lcov"
-    ],
-    "collectCoverage": true,
-    "collectCoverageFrom": [
-      "./src/**"
-    ]
   },
   "dependencies": {
     "@actions/core": "^1.10.1",
@@ -86,5 +45,9 @@
     "prettier-eslint": "^16.1.2",
     "ts-jest": "^29.1.1",
     "typescript": "^5.2.2"
-  }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "private": true
 }
