@@ -1,3 +1,10 @@
+## [1.5.5](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.4...v1.5.5) (2023-11-26)
+
+
+### Build System
+
+* commit package.json ([773b0ed](https://github.com/akikanellis/branch-name-validator-test/commit/773b0ed6924f686906dcaf6e8db64b9524c95b16))
+
 ## [1.5.4](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.3...v1.5.4) (2023-11-26)
 
 
