@@ -1,3 +1,11 @@
+## [1.5.6](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.5...v1.5.6) (2023-11-26)
+
+
+### Build System
+
+* remove unnecessary packages ([5f11e4f](https://github.com/akikanellis/branch-name-validator-test/commit/5f11e4fc5da8c2c8144f39913d1e4e56cb3a8df0))
+* set standard package.json ([cde6de4](https://github.com/akikanellis/branch-name-validator-test/commit/cde6de480fb6bbbb5e1019270e75f623d911b047))
+
 ## [1.5.5](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.4...v1.5.5) (2023-11-26)
 
 
