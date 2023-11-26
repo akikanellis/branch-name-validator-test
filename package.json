@@ -17,7 +17,6 @@
     "lint": "eslint . -c ./.github/linters/.eslintrc.yml && prettier --check .",
     "reformat": "prettier --write .",
     "package": "ncc build src/index.ts --license licenses.txt",
-    "package:watch": "npm run package -- --watch",
     "test": "jest"
   },
   "dependencies": {
