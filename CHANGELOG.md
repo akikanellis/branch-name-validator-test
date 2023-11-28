@@ -8,7 +8,6 @@
 
 ## [1.5.6](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.5...v1.5.6) (2023-11-26)
 
-
 ### Build System
 
 * remove unnecessary packages ([5f11e4f](https://github.com/akikanellis/branch-name-validator-test/commit/5f11e4fc5da8c2c8144f39913d1e4e56cb3a8df0))
@@ -16,13 +15,11 @@
 
 ## [1.5.5](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.4...v1.5.5) (2023-11-26)
 
-
 ### Build System
 
 * commit package.json ([773b0ed](https://github.com/akikanellis/branch-name-validator-test/commit/773b0ed6924f686906dcaf6e8db64b9524c95b16))
 
 ## [1.5.4](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.3...v1.5.4) (2023-11-26)
-
 
 ### Build System
 
@@ -30,13 +27,11 @@
 
 ## [1.5.3](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.2...v1.5.3) (2023-11-25)
 
-
 ### Build System
 
 * add static test ([b215146](https://github.com/akikanellis/branch-name-validator-test/commit/b215146ec0783571bdf4c9e1bd8e4190d4ee41bb))
 
 ## [1.5.2](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.1...v1.5.2) (2023-11-25)
-
 
 ### Build System
 
@@ -45,13 +40,11 @@
 
 ## [1.5.1](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.0...v1.5.1) (2023-11-25)
 
-
 ### Build System
 
 * stringify JSON ([b082dce](https://github.com/akikanellis/branch-name-validator-test/commit/b082dcedf660f778591a25c0fe5ef6e73864ba23))
 
 ## [1.5.0](https://github.com/akikanellis/branch-name-validator-test/compare/v1.4.0...v1.5.0) (2023-11-25)
-
 
 ### Features
 
@@ -59,20 +52,17 @@
 
 ## [1.4.0](https://github.com/akikanellis/branch-name-validator-test/compare/v1.3.0...v1.4.0) (2023-11-25)
 
-
 ### Features
 
 * validate branch name ([c73838e](https://github.com/akikanellis/branch-name-validator-test/commit/c73838e16b27e2ce6791b2e53b33005fbd188711))
 
 ## [1.3.0](https://github.com/akikanellis/branch-name-validator-test/compare/v1.2.1...v1.3.0) (2023-11-25)
 
-
 ### Features
 
 * validate branch name ([7e25fe3](https://github.com/akikanellis/branch-name-validator-test/commit/7e25fe3a06246fefebaf6d3f08ce00de93cb65da))
 
 ## [1.2.1](https://github.com/akikanellis/branch-name-validator-test/compare/v1.2.0...v1.2.1) (2023-11-20)
-
 
 ### Bug Fixes
 
@@ -81,20 +71,17 @@
 
 ## [1.2.0](https://github.com/akikanellis/branch-name-validator-test/compare/v1.1.0...v1.2.0) (2023-11-20)
 
-
 ### Features
 
 * commit via semantic release ([418de3b](https://github.com/akikanellis/branch-name-validator-test/commit/418de3bc835475b5633067329933febc2dcad5fe))
 
 ## [1.1.0](https://github.com/akikanellis/branch-name-validator-test/compare/v1.0.0...v1.1.0) (2023-11-20)
 
-
 ### Features
 
 * add dist ([62b37af](https://github.com/akikanellis/branch-name-validator-test/commit/62b37affa718a7e86df7dda36fc44b047864d6fb))
 
 ## 1.0.0 (2023-11-19)
-
 
 ### ⚠ BREAKING CHANGES
 
@@ -105,7 +92,8 @@
 * add initial files ([b08069e](https://github.com/akikanellis/branch-name-validator-test/commit/b08069e47e291b4ee24c24e095edbc337bac5af2))
 * add more files ([4803197](https://github.com/akikanellis/branch-name-validator-test/commit/4803197a19c95b2d58fb0cd9aeb967a9b4f2968f))
 
-
 ### Build System
 
 * add missing quote ([f68956a](https://github.com/akikanellis/branch-name-validator-test/commit/f68956a2dbaa20133f8b5fad737d45353b26eea6))
+
+<!-- @generated -->
