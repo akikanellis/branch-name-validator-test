@@ -1,3 +1,11 @@
+## [1.5.8](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.7...v1.5.8) (2023-11-28)
+
+
+### Build System
+
+* add eslint and prettier config ([91be0a8](https://github.com/akikanellis/branch-name-validator-test/commit/91be0a8a8a74889cc792bd1c4bfcd07c940ee1e5))
+* use recommended from eslint ([8da4d36](https://github.com/akikanellis/branch-name-validator-test/commit/8da4d360fc253f67e01433aa2186b05d6a5370b7))
+
 ## [1.5.7](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.6...v1.5.7) (2023-11-26)
 
 
