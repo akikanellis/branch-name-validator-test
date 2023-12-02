@@ -1,22 +1,22 @@
-name: 'The name of your action here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: The name of your action here
+description: Provide a description here
+author: Your name or organization here
 
 # Add your action's branding here. This will appear on the GitHub Marketplace.
 branding:
-  icon: 'heart'
-  color: 'red'
+  icon: heart
+  color: red
 
 # Define your inputs here.
 inputs:
   regex:
-    description: 'Your input description here'
+    description: Your input description here
     required: true
 
 # Define your outputs here.
 outputs:
   time:
-    description: 'Your output description here'
+    description: Your output description here
 
 runs:
   using: node20
