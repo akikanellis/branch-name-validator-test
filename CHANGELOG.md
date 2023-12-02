@@ -1,3 +1,10 @@
+## [1.5.10](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.9...v1.5.10) (2023-12-02)
+
+
+### Build System
+
+* remove linter tsconfig.json ([3981d0d](https://github.com/akikanellis/branch-name-validator-test/commit/3981d0d72b8527df3c191a13b8dd434716a147bb))
+
 ## [1.5.9](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.8...v1.5.9) (2023-12-02)
 
 
