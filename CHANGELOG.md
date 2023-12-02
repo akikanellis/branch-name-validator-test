@@ -1,3 +1,10 @@
+## [1.5.9](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.8...v1.5.9) (2023-12-02)
+
+
+### Build System
+
+* set tsconfig.json ([01cb608](https://github.com/akikanellis/branch-name-validator-test/commit/01cb608184955b52565ea9cb9429e1f3ffa697a6))
+
 ## [1.5.8](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.7...v1.5.8) (2023-11-28)
 
 
