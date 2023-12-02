@@ -14,6 +14,7 @@
   "author": "Aki Kanellis <hello@akikanellis.com> (https://akikanellis.com)",
   "repository": "github:akikanellis/branch-name-validator-test",
   "scripts": {
+    "build": "tsc",
     "package": "ncc build src/index.ts --license licenses.txt",
     "test": "jest"
   },
@@ -22,6 +23,7 @@
     "@actions/github": "^6.0.0"
   },
   "devDependencies": {
+    "@tsconfig/strictest": "^2.0.2",
     "@types/jest": "^29.5.8",
     "@types/node": "^20.9.0",
     "@vercel/ncc": "^0.38.1",
