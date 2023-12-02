@@ -48,23 +48,23 @@ development environment.
 
 1. Fork the project
     1. [Sign in](https://github.com/login) to your GitHub account or
-        [create a new one](https://github.com/join)
+       [create a new one](https://github.com/join)
     2. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
-        the [main repository](../../..)
+       the [main repository](../../..)
     3. [Sync your fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo#configuring-git-to-sync-your-fork-with-the-upstream-repository)
-        with the original repository
+       with the original repository
 2. Create your branch (`git checkout -b my-amazing-feature`). We use
-    `kebab-case` for branch names, and only lowercase alphabetical
-    characters, numbers, dots and dashes are allowed.
+   `kebab-case` for branch names, and only lowercase alphabetical
+   characters, numbers, dots and dashes are allowed.
 3. Implement your changes
     1. Make sure your changes follow the style of the project
     2. Add or modify tests where necessary
     3. Update documentation where necessary
 4. [Lint your changes and run the tests](DEVELOPERS_GUIDE.md#useful-commands).
 5. Commit your changes (`git commit -m 'feat: add an amazing feature'`). We use
-    the [Conventional Commits](https://www.conventionalcommits.org)
-    specification for the commit messages.
+   the [Conventional Commits](https://www.conventionalcommits.org)
+   specification for the commit messages.
 6. Push to your branch (`git push origin my-amazing-feature`)
 7. [Open a PR](../../../pulls). We use the
-    [Conventional Commits](https://www.conventionalcommits.org) specification
-    for the PR title.
+   [Conventional Commits](https://www.conventionalcommits.org) specification
+   for the PR title.

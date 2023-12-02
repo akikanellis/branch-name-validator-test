@@ -22,9 +22,9 @@ help.
 If you need help with the project, please do the following:
 
 1. Search the project's [discussions](../../../discussions),
-    [issues](../../../issues) and [pull requests](../../../pulls) to see if your
-    question has already been answered
+   [issues](../../../issues) and [pull requests](../../../pulls) to see if your
+   question has already been answered
 2. Read the project's documentation to see if it answers your question
 3. If you still need help, please feel free to reach out to
-    [discussions](../../../discussions) after you have read through the
-    [Contributing Guidelines](CONTRIBUTING.md)
+   [discussions](../../../discussions) after you have read through the
+   [Contributing Guidelines](CONTRIBUTING.md)

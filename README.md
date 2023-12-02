@@ -25,6 +25,7 @@ Branch Name Validator Test
 [Authors & Contributors](#authors--contributors)
 •
 [License](#license)
+
 </div>
 
 ---
