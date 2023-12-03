@@ -1,3 +1,10 @@
+## [1.5.13](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.12...v1.5.13) (2023-12-03)
+
+
+### Build System
+
+* format markdown with prettier without .editorconfig options ([dd660d6](https://github.com/akikanellis/branch-name-validator-test/commit/dd660d6e0540e8daa87a3a837e47b10cda272036))
+
 ## [1.5.12](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.11...v1.5.12) (2023-12-02)
 
 
