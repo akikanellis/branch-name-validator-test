@@ -1,3 +1,10 @@
+## [1.5.16](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.15...v1.5.16) (2023-12-03)
+
+
+### Build System
+
+* fix yamllint file name ([5d4f280](https://github.com/akikanellis/branch-name-validator-test/commit/5d4f280694651fb5f160e57a0a73fc8b80313534))
+
 ## [1.5.15](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.14...v1.5.15) (2023-12-03)
 
 
