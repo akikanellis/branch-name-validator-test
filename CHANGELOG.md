@@ -1,3 +1,10 @@
+## [1.5.17](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.16...v1.5.17) (2023-12-03)
+
+
+### Build System
+
+* add final eslint config ([b4ed137](https://github.com/akikanellis/branch-name-validator-test/commit/b4ed137609f2bcbb7146c6742d34acda1a99095d))
+
 ## [1.5.16](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.15...v1.5.16) (2023-12-03)
 
 

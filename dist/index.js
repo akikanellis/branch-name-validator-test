@@ -28518,6 +28518,7 @@ async function run() {
         if (error instanceof Error)
             core.setFailed(error.message);
     }
+    return Promise.resolve();
 }
 exports.run = run;
 
@@ -30415,7 +30416,6 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 const main_1 = __nccwpck_require__(399);
 // eslint-disable-next-line @typescript-eslint/no-floating-promises
 (0, main_1.run)();
-Array(0, 1, 2);
 
 })();
 
