@@ -1,0 +1,27 @@
+APPLY_FIXES: all
+
+ENABLE:
+  - MARKDOWN
+
+SHOW_ELAPSED_TIME: true
+
+FILEIO_REPORTER: false
+
+IGNORE_GENERATED_FILES: true
+IGNORE_GITIGNORED_FILES: true
+
+ADDITIONAL_EXCLUDED_DIRECTORIES: [dist]
+FILTER_REGEX_EXCLUDE: "dist/"
+
+VALIDATE_ALL_CODEBASE: false
+
+JAVASCRIPT_DEFAULT_STYLE: prettier
+TYPESCRIPT_DEFAULT_STYLE: prettier
+
+# MegaLinter has a bug that does not respect `threshold` option in JSCPD
+# See: https://github.com/oxsecurity/megalinter/issues/2450
+COPYPASTE_JSCPD_DISABLE_ERRORS_IF_LESS_THAN: 2
+
+# make yaml fail on warning
+
+LOG_LEVEL: DEBUG

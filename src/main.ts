@@ -26,9 +26,8 @@ export async function run(): Promise<void> {
 
     const payload = github.context.payload;
     core.info(
-      `Validating branch name for event '${eventName}' with payload '${JSON.stringify(
-        payload,
-      )}'`,
+      `Validating branch name for event '${eventName}' with payload
+      '${JSON.stringify(payload)}'`,
     );
 
     const regex = RegExp(core.getInput("regex"));
@@ -46,5 +45,5 @@ export async function run(): Promise<void> {
     if (error instanceof Error) core.setFailed(error.message);
   }
 
-  return Promise.resolve();
+  return await Promise.resolve();
 }

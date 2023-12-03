@@ -328,3 +328,5 @@ $RECYCLE.BIN/
 
 !dist/
 lib/
+
+megalinter-reports/
