@@ -1,3 +1,10 @@
+## [1.5.15](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.14...v1.5.15) (2023-12-03)
+
+
+### Build System
+
+* remove git ignored files from eslintignore ([0ff8eef](https://github.com/akikanellis/branch-name-validator-test/commit/0ff8eef31b5c926a8916fe705dce8cf6ce5c5cbc))
+
 ## [1.5.14](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.13...v1.5.14) (2023-12-03)
 
 
