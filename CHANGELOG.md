@@ -1,3 +1,5 @@
+<!-- @generated -->
+
 ## [1.5.19](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.18...v1.5.19) (2023-12-03)
 
 
