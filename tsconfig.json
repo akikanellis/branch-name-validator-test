@@ -5,10 +5,10 @@
     "module": "NodeNext",
     "target": "ESNext",
 
-    "rootDir": "src",
+    "rootDir": ".",
     "outDir": "lib",
 
     "sourceMap": true
   },
-  "include": ["src"]
+  "include": ["src", "test"]
 }

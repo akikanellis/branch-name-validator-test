@@ -12,7 +12,7 @@ describe("action", () => {
     jest.clearAllMocks();
   });
 
-  it("sets the time output", async () => {
-    expect(true);
+  it("sets the time output", () => {
+    expect(true).toBe(true);
   });
 });
