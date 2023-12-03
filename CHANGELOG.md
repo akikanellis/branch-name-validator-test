@@ -1,3 +1,12 @@
+## [1.5.18](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.17...v1.5.18) (2023-12-03)
+
+
+### Build System
+
+* apply initial MegaLinter ([af6abba](https://github.com/akikanellis/branch-name-validator-test/commit/af6abbae579d0cc46e6f783c28d0ca4fb49182c0))
+* remove custom options ([6b11808](https://github.com/akikanellis/branch-name-validator-test/commit/6b11808233ad1c412cf23d1e7c4f4cbdcbe95fc9))
+* remove fixes for now ([785e034](https://github.com/akikanellis/branch-name-validator-test/commit/785e03461aedfd9f2ba6f64e110e99b3e3df6ad5))
+
 ## [1.5.17](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.16...v1.5.17) (2023-12-03)
 
 
