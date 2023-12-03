@@ -1,3 +1,10 @@
+## [1.5.14](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.13...v1.5.14) (2023-12-03)
+
+
+### Build System
+
+* fix .editorconfig for prettier ([e7c8c54](https://github.com/akikanellis/branch-name-validator-test/commit/e7c8c54059718dd4dd7a2607bdcaad678f91c209))
+
 ## [1.5.13](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.12...v1.5.13) (2023-12-03)
 
 
