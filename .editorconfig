@@ -27,7 +27,7 @@ ij_kotlin_name_count_to_use_star_import_for_members = 999
 [*.{markdown,md}]
 max_line_length = off
 
-# Helps with compatibility between Intellij and Prettier
+# Helps with compatibility between IntelliJ and Prettier
 ij_markdown_indent_size = 3
 
 [*.{yaml,yml}]

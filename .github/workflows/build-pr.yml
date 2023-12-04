@@ -5,6 +5,8 @@ name: Build PR
   pull_request:
     branches: [main]
 
+permissions: {}
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
   cancel-in-progress: true
@@ -22,14 +24,19 @@ jobs:
     name: Validate branch name
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+
     steps:
-      # TODO the real one won't need checkout because we will pull it from GitHub instead of locally
+      # TODO the real one won't need checkout because we will pull it
+      # from GitHub instead of locally
       - name: Checkout
         # yamllint disable-line rule:line-length
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
-      # TODO remove this
+
       - name: Validate branch name
         id: validate-branch-name
+        # kics-scan ignore-line
         uses: ./
         with:
           regex: ^[a-z]+([a-z0-9\.-])+$

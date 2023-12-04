@@ -10,6 +10,8 @@ name: Build PR Target
       - reopened
       - synchronize
 
+permissions: {}
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
   cancel-in-progress: true
@@ -18,6 +20,9 @@ jobs:
   validate-pr-title:
     name: Validate PR title
     runs-on: ubuntu-latest
+
+    permissions:
+      pull-requests: read
 
     steps:
       - name: Validate PR title
@@ -38,10 +43,13 @@ jobs:
     name: Label PR
     runs-on: ubuntu-latest
 
+    permissions:
+      pull-requests: write
+
     steps:
       - name: Label PR
         # yamllint disable-line rule:line-length
-        uses: bcoe/conventional-release-labels@886f696738527c7be444262c327c89436dfb95a8 # tag=v1.3.1
+        uses: bcoe/conventional-release-labels@886f696738527c7be444262c327c89436dfb95a8 # v1.3.1
         with:
           ignored_types: "[]"
           type_labels: >
@@ -63,6 +71,9 @@ jobs:
     name: Approve PR
     runs-on: ubuntu-latest
     if: github.actor == 'akikanellis' || github.actor == 'aki-bot[bot]'
+
+    permissions:
+      pull-requests: write
 
     steps:
       - name: Get token

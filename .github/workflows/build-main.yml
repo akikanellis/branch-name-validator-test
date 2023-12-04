@@ -5,6 +5,8 @@ name: Build Main
   push:
     branches: [main]
 
+permissions: {}
+
 env:
   # renovate: datasource=npm depName=@semantic-release/changelog
   SEMANTIC_RELEASE_CHANGELOG_VERSION: 6.0.3
@@ -38,6 +40,9 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     concurrency: ${{ github.workflow }}-release
+
+    permissions:
+      contents: read
 
     outputs:
       release-published: ${{ steps.release.outputs.new_release_published }}
@@ -100,6 +105,9 @@ jobs:
     if: needs.release.outputs.release-published == 'true'
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+
     steps:
       - name: Checkout
         # yamllint disable-line rule:line-length
@@ -109,6 +117,7 @@ jobs:
 
       - name: Validate branch name
         id: validate-branch-name
+        # kics-scan ignore-line
         uses: ./
         with:
           regex: ^[a-z]+([a-z0-9\.-])+$
@@ -119,13 +128,17 @@ jobs:
     if: needs.release.outputs.release-published == 'true'
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+
     steps:
       - name: Validate branch name
+        # kics-scan ignore-line
         uses: akikanellis/branch-name-validator-test@v1.5.2
         with:
           regex: ^[a-z]+([a-z0-9\.-])+$
 
-  ## TODO this doesn't work because GitHub doesn't support dynamic `uses:`
+## TODO this doesn't work because GitHub doesn't support dynamic `uses:`
 #  test-release-marketplace:
 #    name: Test release marketplace
 #    needs: release
@@ -134,6 +147,7 @@ jobs:
 #
 #    steps:
 #      - name: Validate branch name
+# yamllint disable-line rule:line-length
 #        uses: akikanellis/branch-name-validator-test@v${{ needs.release.outputs.release-version }}
 #        with:
 #          regex: ^[a-z]+([a-z0-9\.-])+$

@@ -10,11 +10,17 @@ name: Lint
         required: false
         default: false
 
+permissions: {}
+
 jobs:
   lint:
     name: Lint
     runs-on: ubuntu-latest
     continue-on-error: ${{ inputs.continue-on-error }}
+
+    # TODO fix for megalinter
+    permissions:
+      contents: read
 
     steps:
       - name: Checkout
