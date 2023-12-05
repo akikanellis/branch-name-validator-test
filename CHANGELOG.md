@@ -1,3 +1,12 @@
+## [1.5.21](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.20...v1.5.21) (2023-12-05)
+
+
+### Build System
+
+* add missing permissions ([00ca3c0](https://github.com/akikanellis/branch-name-validator-test/commit/00ca3c039fa37e9cc1f0518b58c8959dc3367ee7))
+* add missing permissions ([b56cf34](https://github.com/akikanellis/branch-name-validator-test/commit/b56cf34dbe82815c5beecba9174a431f8556e568))
+* fix lint issues ([02087c3](https://github.com/akikanellis/branch-name-validator-test/commit/02087c3a613b4dd8f870aab8d176186d0996a44b))
+
 ## [1.5.20](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.19...v1.5.20) (2023-12-03)
 
 
