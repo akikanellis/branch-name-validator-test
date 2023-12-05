@@ -142,7 +142,7 @@ jobs:
     steps:
       - name: Validate branch name
         # kics-scan ignore-line
-        uses: akikanellis/branch-name-validator-test@v1.5.2
+        uses: akikanellis/branch-name-validator-test@v1.5.20
         with:
           regex: ^[a-z]+([a-z0-9\.-])+$
 
