@@ -37,6 +37,10 @@ jobs:
   test:
     name: Test
     uses: ./.github/workflows/test.yml
+
+    permissions:
+      contents: read
+
     with:
       continue-on-error: true
 
