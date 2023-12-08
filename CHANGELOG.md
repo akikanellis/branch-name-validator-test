@@ -1,3 +1,10 @@
+## [1.5.28](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.27...v1.5.28) (2023-12-08)
+
+
+### Build System
+
+* clean up ([0ef5c56](https://github.com/akikanellis/branch-name-validator-test/commit/0ef5c56f5f1bc4f958077861857adefb82cbee47))
+
 ## [1.5.27](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.26...v1.5.27) (2023-12-08)
 
 
