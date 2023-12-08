@@ -1,3 +1,10 @@
+## [1.5.27](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.26...v1.5.27) (2023-12-08)
+
+
+### Build System
+
+* fix jscpd issues ([041bf2f](https://github.com/akikanellis/branch-name-validator-test/commit/041bf2fea478a73cf1d77cf139509e73ce6a582c))
+
 ## [1.5.26](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.25...v1.5.26) (2023-12-08)
 
 
