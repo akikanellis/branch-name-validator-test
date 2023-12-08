@@ -145,7 +145,6 @@ jobs:
         uses: akikanellis/branch-name-validator-test@v1.5.20
         with:
           regex: ^[a-z]+([a-z0-9\.-])+$
-
 ## TODO this doesn't work because GitHub doesn't support dynamic `uses:`
 #  test-release-marketplace:
 #    name: Test release marketplace

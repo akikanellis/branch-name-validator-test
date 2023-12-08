@@ -1,5 +1,5 @@
 ---
-APPLY_FIXES: none
+APPLY_FIXES: all
 
 DISABLE_LINTERS:
   # See: https://github.com/oxsecurity/megalinter/issues/2849
