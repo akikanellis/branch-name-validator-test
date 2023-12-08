@@ -1,3 +1,10 @@
+## [1.5.23](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.22...v1.5.23) (2023-12-08)
+
+
+### Build System
+
+* fix markdown issues ([ca633d1](https://github.com/akikanellis/branch-name-validator-test/commit/ca633d14e1669dffc9f3b85dfe26dd06288c2562))
+
 ## [1.5.22](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.21...v1.5.22) (2023-12-05)
 
 
