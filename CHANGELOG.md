@@ -35,7 +35,6 @@
 
 * add generated on top ([3c5022f](https://github.com/akikanellis/branch-name-validator-test/commit/3c5022fdc1d91e7222cce3518ffb2eecd7dcb03c))
 
-<!-- @generated -->
 
 ## [1.5.19](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.18...v1.5.19) (2023-12-03)
 
@@ -221,5 +220,3 @@
 ### Build System
 
 * add missing quote ([f68956a](https://github.com/akikanellis/branch-name-validator-test/commit/f68956a2dbaa20133f8b5fad737d45353b26eea6))
-
-<!-- @generated -->
