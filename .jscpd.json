@@ -1,3 +1,5 @@
 {
-  "gitignore": true
+  "threshold": 5,
+  "gitignore": true,
+  "ignore": [".idea/**"]
 }

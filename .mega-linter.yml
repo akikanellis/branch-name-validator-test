@@ -14,7 +14,7 @@ FILEIO_REPORTER: false
 
 IGNORE_GENERATED_FILES: true
 
-ADDITIONAL_EXCLUDED_DIRECTORIES: [dist]
+ADDITIONAL_EXCLUDED_DIRECTORIES: [dist, .idea]
 FILTER_REGEX_EXCLUDE: "CHANGELOG.md"
 # VALIDATE_ALL_CODEBASE: false
 
@@ -23,7 +23,9 @@ TYPESCRIPT_DEFAULT_STYLE: prettier
 
 # MegaLinter has a bug that does not respect `threshold` option in JSCPD
 # See: https://github.com/oxsecurity/megalinter/issues/2450
-COPYPASTE_JSCPD_DISABLE_ERRORS_IF_LESS_THAN: 2
+COPYPASTE_JSCPD_COMMAND_REMOVE_ARGUMENTS:
+  - --exitCode
+  - "1"
 
 # ????
 TYPESCRIPT_ES_PRE_COMMANDS:
