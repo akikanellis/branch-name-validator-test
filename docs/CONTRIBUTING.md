@@ -52,9 +52,9 @@ development environment.
     1. [Sign in](https://github.com/login) to your GitHub account or
         [create a new one](https://github.com/join)
     2. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
-       the [main repository](https://github.com/akikanellis/branch-name-validator-test)
+        the [main repository](https://github.com/akikanellis/branch-name-validator-test)
     3. [Sync your fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo#configuring-git-to-sync-your-fork-with-the-upstream-repository)
-       with the original repository
+        with the original repository
 2. Create your branch (`git checkout -b my-amazing-feature`). We use
     `kebab-case` for branch names, and only lowercase alphabetical
     characters, numbers, dots and dashes are allowed.
