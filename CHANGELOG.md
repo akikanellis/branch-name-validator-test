@@ -1,3 +1,10 @@
+## [1.5.26](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.25...v1.5.26) (2023-12-08)
+
+
+### Build System
+
+* fix YAML issues ([5c29d74](https://github.com/akikanellis/branch-name-validator-test/commit/5c29d74b98dc3a9f8b511bd6e6dbefdc567c9e1d))
+
 ## [1.5.25](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.24...v1.5.25) (2023-12-08)
 
 
