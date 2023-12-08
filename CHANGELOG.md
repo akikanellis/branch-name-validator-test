@@ -1,3 +1,10 @@
+## [1.5.25](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.24...v1.5.25) (2023-12-08)
+
+
+### Build System
+
+* exclude changelog ([1a0bf5d](https://github.com/akikanellis/branch-name-validator-test/commit/1a0bf5de20c1ff93407da1fc52ba7e9240f6b7ee))
+
 ## [1.5.24](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.23...v1.5.24) (2023-12-08)
 
 
