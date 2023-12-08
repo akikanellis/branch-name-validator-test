@@ -21,10 +21,14 @@ help.
 
 If you need help with the project, please do the following:
 
+<!-- @formatter:off -->
+
 1. Search the project's [discussions](https://github.com/akikanellis/branch-name-validator-test/discussions),
-   [issues](https://github.com/akikanellis/branch-name-validator-test/issues) and [pull requests](https://github.com/akikanellis/branch-name-validator-test/pulls) to see if your
-   question has already been answered
+    [issues](https://github.com/akikanellis/branch-name-validator-test/issues) and [pull requests](https://github.com/akikanellis/branch-name-validator-test/pulls) to see if your
+    question has already been answered
 2. Read the project's documentation to see if it answers your question
 3. If you still need help, please feel free to reach out to
-   [discussions](https://github.com/akikanellis/branch-name-validator-test/discussions) after you have read through the
-   [Contributing Guidelines](CONTRIBUTING.md)
+    [discussions](https://github.com/akikanellis/branch-name-validator-test/discussions) after you have read through the
+    [Contributing Guidelines](CONTRIBUTING.md)
+
+<!-- @formatter:on -->

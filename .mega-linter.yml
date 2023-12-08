@@ -4,6 +4,7 @@ APPLY_FIXES: none
 DISABLE_LINTERS:
   # See: https://github.com/oxsecurity/megalinter/issues/2849
   - REPOSITORY_DEVSKIM
+  # We are using Prettier instead
   - JAVASCRIPT_STANDARD
   - TYPESCRIPT_STANDARD
 
@@ -12,10 +13,8 @@ SHOW_ELAPSED_TIME: true
 FILEIO_REPORTER: false
 
 IGNORE_GENERATED_FILES: true
-# IGNORE_GITIGNORED_FILES: true
 
 ADDITIONAL_EXCLUDED_DIRECTORIES: [dist]
-# FILTER_REGEX_EXCLUDE: "dist/"
 # VALIDATE_ALL_CODEBASE: false
 
 JAVASCRIPT_DEFAULT_STYLE: prettier
@@ -28,4 +27,3 @@ COPYPASTE_JSCPD_DISABLE_ERRORS_IF_LESS_THAN: 2
 # ????
 TYPESCRIPT_ES_PRE_COMMANDS:
   - command: npm install jest
-# TODO make yaml_prettier fail on warning
