@@ -1,3 +1,10 @@
+## [1.5.29](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.28...v1.5.29) (2023-12-09)
+
+
+### Build System
+
+* properly use jest in linting ([cc7c2d4](https://github.com/akikanellis/branch-name-validator-test/commit/cc7c2d49ae40d42ecd2981392a47bb6a1754218c))
+
 ## [1.5.28](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.27...v1.5.28) (2023-12-08)
 
 
