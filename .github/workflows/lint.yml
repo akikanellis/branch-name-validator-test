@@ -38,7 +38,7 @@ jobs:
         # yamllint disable-line rule:line-length
         uses: oxsecurity/megalinter@v7.7.0
         env:
-          APPLY_FIXES: "${{ inputs.apply-fixes ? 'all' : 'none' }}"
+          APPLY_FIXES: ${{ inputs.apply-fixes == 'true' && 'all' || 'none' }}
 
       - name: Get token
         id: get-token
