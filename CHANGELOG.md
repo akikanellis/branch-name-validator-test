@@ -1,3 +1,10 @@
+## [1.5.40](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.39...v1.5.40) (2023-12-10)
+
+
+### Build System
+
+* temporarily disable editorconfig ([f3a0754](https://github.com/akikanellis/branch-name-validator-test/commit/f3a07543afde76399f61fd54f4898453647a06b4))
+
 ## [1.5.39](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.38...v1.5.39) (2023-12-10)
 
 
