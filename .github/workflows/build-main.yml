@@ -74,7 +74,7 @@ jobs:
 
       - name: Setup Node
         # yamllint disable-line rule:line-length
-        uses: actions/setup-node@v4.0.0
+        uses: actions/setup-node@8f152de45cc393bb48ce5d89d36b731f54556e65 # v4.0.0
         with:
           node-version-file: .tool-versions
           cache: npm
