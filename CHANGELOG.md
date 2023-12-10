@@ -1,3 +1,10 @@
+## [1.5.37](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.36...v1.5.37) (2023-12-10)
+
+
+### Build System
+
+* remove tag= ([c1f75f1](https://github.com/akikanellis/branch-name-validator-test/commit/c1f75f1119ca998dd512947b6f7e6e4dca72de57))
+
 ## [1.5.36](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.35...v1.5.36) (2023-12-10)
 
 
