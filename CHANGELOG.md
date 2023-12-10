@@ -1,3 +1,10 @@
+## [1.5.36](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.35...v1.5.36) (2023-12-10)
+
+
+### Build System
+
+* **deps:** pin dependencies ([#3](https://github.com/akikanellis/branch-name-validator-test/issues/3)) ([13ba0ad](https://github.com/akikanellis/branch-name-validator-test/commit/13ba0ad767644152e47adb5548828e1991a63bc0))
+
 ## [1.5.35](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.34...v1.5.35) (2023-12-10)
 
 
