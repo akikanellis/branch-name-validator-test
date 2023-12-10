@@ -9,6 +9,11 @@ name: Lint
         description: Allow a workflow run to pass when this workflow fails
         required: false
         default: false
+      apply-fixes:
+        type: boolean
+        description: Apply linter fixes
+        required: false
+        default: true
 
 permissions: {}
 
@@ -31,11 +36,31 @@ jobs:
 
       - name: Lint
         # yamllint disable-line rule:line-length
-        uses: super-linter/super-linter/slim@a8150b40c89574adb5f68bf9502b890a236a06b3 # v5.7.2
+        uses: oxsecurity/megalinter@v7.7.0
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DEFAULT_BRANCH: main
-          VALIDATE_ALL_CODEBASE: false
-          IGNORE_GENERATED_FILES: true
-          IGNORE_GITIGNORED_FILES: true
-          YAML_ERROR_ON_WARNING: true
+          APPLY_FIXES: "${{ inputs.apply-fixes ? 'all' : 'none' }}"
+
+      - name: Get token
+        id: get-token
+        # yamllint disable-line rule:line-length
+        uses: peter-murray/workflow-application-token-action@8e1ba3bf1619726336414f1014e37f17fbadf1db # tag=v2.1.0
+        if: ${{ inputs.apply-fixes }}
+        with:
+          application_id: ${{ secrets.AKI_BOT_APP_ID }}
+          application_private_key: ${{ secrets.AKI_BOT_APP_PRIVATE_KEY }}
+          # TODO permissions might need to be relaxed (do we need issues and pull_requests)
+          permissions: >
+            contents:write,
+            issues:write,
+            pull_requests:write
+
+      - name: Commit and push linter fixes
+        uses: stefanzweifel/git-auto-commit-action@v5.0.0
+        if: ${{ inputs.apply-fixes }}
+        with:
+          token: ${{ steps.get-token.outputs.token }}
+
+          commit_user_name: aki-bot[bot]
+          commit_user_email: 103840025+aki-bot[bot]@users.noreply.github.com
+          commit_author: aki-bot <103840025+aki-bot[bot]@users.noreply.github.com>
+          commit_message: "build: apply linter fixes"

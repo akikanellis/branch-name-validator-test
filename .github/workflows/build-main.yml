@@ -33,6 +33,7 @@ jobs:
 
     with:
       continue-on-error: true
+      apply-fixes: false
 
   test:
     name: Test
