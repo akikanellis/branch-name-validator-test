@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@tsconfig/strictest/tsconfig.json",
+  "compilerOptions": {
+    "module": "NodeNext",
+    "target": "ESNext",
+
+    "rootDir": "src",
+    "outDir": "lib",
+
+    "sourceMap": true
+  },
+  "include": ["src"]
+}

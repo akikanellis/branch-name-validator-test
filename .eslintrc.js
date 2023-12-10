@@ -8,7 +8,11 @@ module.exports = {
 
   settings: {
     jest: {
-      // This is needed because MegaLinter does not have Jest installed
+      // Specifying the Jest version with `require` is needed because MegaLinter
+      // does not have Jest installed. Also, linting for next line is disabled
+      // because this is the recommended way to do it according to
+      // eslint-plugin-jest.
+      // eslint-disable-next-line
       version: require("jest/package.json").version,
     },
   },
