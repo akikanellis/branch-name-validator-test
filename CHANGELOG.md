@@ -1,3 +1,10 @@
+## [1.5.30](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.29...v1.5.30) (2023-12-10)
+
+
+### Build System
+
+* add all files to main tsconfig.json ([4423762](https://github.com/akikanellis/branch-name-validator-test/commit/44237624c91afdfc0efb3893a9a1d12f8f9f7223))
+
 ## [1.5.29](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.28...v1.5.29) (2023-12-09)
 
 
