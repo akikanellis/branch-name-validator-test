@@ -1,3 +1,10 @@
+## [1.5.31](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.30...v1.5.31) (2023-12-10)
+
+
+### Build System
+
+* fix lint issues ([85231b6](https://github.com/akikanellis/branch-name-validator-test/commit/85231b6c3a15f8c310d46977df313daf2f0dd0ce))
+
 ## [1.5.30](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.29...v1.5.30) (2023-12-10)
 
 
