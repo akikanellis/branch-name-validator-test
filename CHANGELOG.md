@@ -1,3 +1,10 @@
+## [1.5.33](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.32...v1.5.33) (2023-12-10)
+
+
+### Build System
+
+* trigger dependency update on demand ([740929e](https://github.com/akikanellis/branch-name-validator-test/commit/740929e4e4ba4e730741c95eb480ef1e48c2a944))
+
 ## [1.5.32](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.31...v1.5.32) (2023-12-10)
 
 
