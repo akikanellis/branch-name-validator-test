@@ -1,3 +1,11 @@
+## [1.5.32](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.31...v1.5.32) (2023-12-10)
+
+
+### Build System
+
+* fix ternary ([290fbdf](https://github.com/akikanellis/branch-name-validator-test/commit/290fbdfabbacfcf15ffa74b190ffeb45f34c24dd))
+* integrate with GA ([7a368ce](https://github.com/akikanellis/branch-name-validator-test/commit/7a368ce4ae9fa95f4e7c1d2e9aeee47c811d9fdd))
+
 ## [1.5.31](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.30...v1.5.31) (2023-12-10)
 
 
