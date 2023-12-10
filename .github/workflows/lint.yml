@@ -14,6 +14,13 @@ name: Lint
         description: Apply linter fixes
         required: false
         default: true
+    secrets:
+      AKI_BOT_APP_ID:
+        description: The aki-bot app ID
+        required: false
+      AKI_BOT_APP_PRIVATE_KEY:
+        description: The aki-bot private key
+        required: false
 
 permissions: {}
 
@@ -53,6 +60,7 @@ jobs:
         run: just install-dependencies
 
       - name: Lint
+        id: lint
         # yamllint disable-line rule:line-length
         uses: oxsecurity/megalinter@7e042c726c68415475b05a65a686c612120a1232 # v7.7.0
         env:
@@ -62,7 +70,7 @@ jobs:
         id: get-token
         # yamllint disable-line rule:line-length
         uses: peter-murray/workflow-application-token-action@8e1ba3bf1619726336414f1014e37f17fbadf1db # v2.1.0
-        if: ${{ inputs.apply-fixes }}
+        if: ${{ inputs.apply-fixes && steps.lint.outputs.has_updated_sources == 1 }}
         with:
           application_id: ${{ secrets.AKI_BOT_APP_ID }}
           application_private_key: ${{ secrets.AKI_BOT_APP_PRIVATE_KEY }}
@@ -75,7 +83,7 @@ jobs:
       - name: Commit and push linter fixes
         # yamllint disable-line rule:line-length
         uses: stefanzweifel/git-auto-commit-action@8756aa072ef5b4a080af5dc8fef36c5d586e521d # v5.0.0
-        if: ${{ inputs.apply-fixes }}
+        if: ${{ inputs.apply-fixes && steps.lint.outputs.has_updated_sources == 1 }}
         with:
           token: ${{ steps.get-token.outputs.token }}
 
