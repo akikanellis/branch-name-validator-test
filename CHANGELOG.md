@@ -1,3 +1,10 @@
+## [1.5.35](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.34...v1.5.35) (2023-12-10)
+
+
+### Build System
+
+* update deps ([e884ef3](https://github.com/akikanellis/branch-name-validator-test/commit/e884ef3e1ee1d0162ea1914a35a89cf0b3eb2460))
+
 ## [1.5.34](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.33...v1.5.34) (2023-12-10)
 
 
