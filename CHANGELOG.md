@@ -1,3 +1,10 @@
+## [1.5.34](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.33...v1.5.34) (2023-12-10)
+
+
+### Build System
+
+* fix renovate ([3f9ac64](https://github.com/akikanellis/branch-name-validator-test/commit/3f9ac647c8f889cb6bca56899e9425dd3d679194))
+
 ## [1.5.33](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.32...v1.5.33) (2023-12-10)
 
 
