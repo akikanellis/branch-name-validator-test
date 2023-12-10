@@ -1,3 +1,10 @@
+## [1.5.42](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.41...v1.5.42) (2023-12-10)
+
+
+### Build System
+
+* pass secret properly ([2533641](https://github.com/akikanellis/branch-name-validator-test/commit/253364129758d61d7e5ae6ae4fa92fa3a78cd171))
+
 ## [1.5.41](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.40...v1.5.41) (2023-12-10)
 
 
