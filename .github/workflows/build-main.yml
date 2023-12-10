@@ -74,7 +74,7 @@ jobs:
 
       - name: Setup Node
         # yamllint disable-line rule:line-length
-        uses: actions/setup-node@v4.0.0
+        uses: actions/setup-node@8f152de45cc393bb48ce5d89d36b731f54556e65 # v4.0.0
         with:
           node-version-file: .tool-versions
           cache: npm
@@ -141,7 +141,7 @@ jobs:
     steps:
       - name: Validate branch name
         # kics-scan ignore-line
-        uses: akikanellis/branch-name-validator-test@v1.5.20
+        uses: akikanellis/branch-name-validator-test@92bdf92a9c58b7b34eb0ab69b8ed5758941a1b10 # v1.5.20
         with:
           regex: ^[a-z]+([a-z0-9\.-])+$
 ## TODO this doesn't work because GitHub doesn't support dynamic `uses:`

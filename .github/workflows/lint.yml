@@ -36,7 +36,7 @@ jobs:
 
       - name: Lint
         # yamllint disable-line rule:line-length
-        uses: oxsecurity/megalinter@v7.7.0
+        uses: oxsecurity/megalinter@7e042c726c68415475b05a65a686c612120a1232 # v7.7.0
         env:
           APPLY_FIXES: ${{ inputs.apply-fixes == 'true' && 'all' || 'none' }}
 
@@ -55,7 +55,7 @@ jobs:
             pull_requests:write
 
       - name: Commit and push linter fixes
-        uses: stefanzweifel/git-auto-commit-action@v5.0.0
+        uses: stefanzweifel/git-auto-commit-action@8756aa072ef5b4a080af5dc8fef36c5d586e521d # v5.0.0
         if: ${{ inputs.apply-fixes }}
         with:
           token: ${{ steps.get-token.outputs.token }}
