@@ -1,3 +1,10 @@
+## [1.5.41](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.40...v1.5.41) (2023-12-10)
+
+
+### Build System
+
+* remove formatting errors to enable fixes ([2795e3d](https://github.com/akikanellis/branch-name-validator-test/commit/2795e3da125e77263aefc28c5542dc69afd5d83b))
+
 ## [1.5.40](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.39...v1.5.40) (2023-12-10)
 
 
