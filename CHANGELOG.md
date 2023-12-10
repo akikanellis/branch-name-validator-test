@@ -1,3 +1,10 @@
+## [1.5.39](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.38...v1.5.39) (2023-12-10)
+
+
+### Build System
+
+* install dependencies during lint ([da342ca](https://github.com/akikanellis/branch-name-validator-test/commit/da342ca8092a51aff2c59449161c8fe2b06946e2))
+
 ## [1.5.38](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.37...v1.5.38) (2023-12-10)
 
 
