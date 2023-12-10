@@ -25,9 +25,11 @@ ij_kotlin_name_count_to_use_star_import = 999
 ij_kotlin_name_count_to_use_star_import_for_members = 999
 
 [*.{markdown,md}]
+# Handled by markdownlint
 max_line_length = off
 
 [*.{yaml,yml}]
+# Handled by yamllint
 max_line_length = off
 
 ij_yaml_spaces_within_braces = false

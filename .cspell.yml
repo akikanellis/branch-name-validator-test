@@ -33,6 +33,7 @@ words:
   - kics
   - kotlin
   - lcov
+  - markdownlint
   - megalinter
   - noreply
   - releaserc
