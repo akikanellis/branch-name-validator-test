@@ -23,30 +23,26 @@
   schedule: ["after 3:00 and before 6:00 on Saturday"],
   customManagers: [
     {
-      description: "Update Java in .tool-versions.\
-      The asdf manager for renovate does not currently support the temurin\
-      distribution.\
-      See:\
-        * https://github.com/renovatebot/renovate/issues/19183\
-        * https://github.com/renovatebot/renovate/issues/19184",
+      description: "Update Renovate in GitHub Action workflows",
       customType: "regex",
-      // eslint-disable-next-line jsonc/no-useless-escape
-      fileMatch: ["(^|/).tool-versions$"],
-      matchStrings: ["java\\s+temurin-(?<currentValue>.+)(\\s+|\\s+.*)"],
-      datasourceTemplate: "java-version",
-      depNameTemplate: "java",
+      fileMatch: ["^\\.github\\/(actions|workflows)\\/.+\\.ya?ml$"],
+      matchStrings: [
+        "\
+renovate-version\\s*:\\s*(\"|')?(?<currentValue>.+)(\"|')?\
+(\\s+|\\s+.*)"
+      ],
+      datasourceTemplate: "docker",
+      depNameTemplate: "ghcr.io/renovatebot/renovate"
     },
     {
       description: "Any other file with dependencies",
       customType: "regex",
       fileMatch: [
-        /* eslint-disable jsonc/no-useless-escape */
         "(^|/)justfile$",
-        "(^|/).+.gradle(.kts)?$",
-        "(^workflow-templates|.github/workflows)/[^/]+.ya?ml$",
-        "(^|/)action.ya?ml$",
-        "^ansible/.*vars/[^/]+.ya?ml$",
-        /* eslint-enable jsonc/no-useless-escape */
+        "(^|/).+\\.gradle(\\.kts)?$",
+        "(^workflow-templates|\\.github/workflows)/[^/]+\\.ya?ml$",
+        "(^|/)action\\.ya?ml$",
+        "^ansible/.*vars/[^/]+\\.ya?ml$"
       ],
       matchStrings: [
         '\
@@ -71,6 +67,26 @@ semver-coerced\
       description: "Block automerge for major updates",
       matchUpdateTypes: ["major"],
       automerge: false,
+    },
+    {
+      description: "Disable Renovate digest pinning in GitHub Action\
+      workflows",
+      matchManagers: ["regex"],
+      matchDatasources: ["docker"],
+      matchPackageNames: ["ghcr.io/renovatebot/renovate"],
+      matchFileNames: [
+        ".github/actions/**/*.y*ml",
+        ".github/workflows/*.y*ml"
+      ],
+      matchUpdateTypes: ["pinDigest"],
+      enabled: false,
+    },
+    {
+      description: "Group Docker digest updates",
+      groupName: "all Docker digest dependencies",
+      groupSlug: "all-docker-digest",
+      matchDatasources: ["docker"],
+      matchUpdateTypes: ["digest"],
     },
     {
       description: "Limit semantic-release versions to 21.x.x.\
@@ -103,7 +119,6 @@ v?\
     },
   ],
   "docker-compose": {
-    // eslint-disable-next-line jsonc/no-useless-escape
-    fileMatch: ["(^|/)(?:docker-)?compose[^/]*.ya?ml.j2$"],
+    fileMatch: ["(^|/)(?:docker-)?compose[^/]*\\.ya?ml\\.j2$"],
   },
 }
