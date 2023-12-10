@@ -1,3 +1,10 @@
+## [1.5.38](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.37...v1.5.38) (2023-12-10)
+
+
+### Build System
+
+* add new word ([35805ff](https://github.com/akikanellis/branch-name-validator-test/commit/35805ff896c5087aeade488f171b68e38355ea49))
+
 ## [1.5.37](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.36...v1.5.37) (2023-12-10)
 
 
