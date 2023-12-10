@@ -36,7 +36,6 @@ jobs:
         # yamllint disable-line rule:line-length
         uses: renovatebot/github-action@af0eb69ad0365d53c161661d5c8a5ba5f12545d0 # v39.2.0
         with:
-          # renovate: datasource=docker depName=ghcr.io/renovatebot/renovate
           renovate-version: 37.87
           configurationFile: renovate.json5
           # kics-scan ignore-line

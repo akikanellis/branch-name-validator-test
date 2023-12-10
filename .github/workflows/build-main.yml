@@ -68,7 +68,6 @@ jobs:
         # yamllint disable-line rule:line-length
         uses: extractions/setup-just@69d82fb0233557aec017ef13706851d0694e0f1d # v1.6.0
         with:
-          # renovate: datasource=crate depName=just
           just-version: 1.16.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -94,7 +93,6 @@ jobs:
           GIT_COMMITTER_NAME: aki-bot[bot]
           GIT_COMMITTER_EMAIL: 103840025+aki-bot[bot]@users.noreply.github.com
         with:
-          # renovate: datasource=npm depName=semantic-release
           semantic_version: 21.1.2
           extra_plugins: "@semantic-release/changelog@\
             ${{ env.SEMANTIC_RELEASE_CHANGELOG_VERSION }} \

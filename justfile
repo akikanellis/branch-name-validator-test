@@ -1,6 +1,5 @@
 #!/usr/bin/env just --justfile
 
-# renovate: datasource=docker depName=ghcr.io/super-linter/super-linter
 super_linter_version := "slim-v5.7.2" # editorconfig-checker-disable-line
 
 @_default:
