@@ -65,8 +65,9 @@ jobs:
       # TODO remove
       - name: Debug
         run: |
-          "echo 'inputs.apply-fixes: ${{ inputs.apply-fixes }}'"
-          "echo 'steps.lint.outputs.has_updated_sources: ${{ steps.lint.outputs.has_updated_sources }}'"
+          echo 'APPLY_FIXES: ${{ inputs.apply-fixes == 'true' && 'all' || 'none' }}'
+          echo 'inputs.apply-fixes: ${{ inputs.apply-fixes }}'
+          echo 'steps.lint.outputs.has_updated_sources: ${{ steps.lint.outputs.has_updated_sources }}'
 
       - name: Get token
         id: get-token
