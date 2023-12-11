@@ -42,7 +42,7 @@ jobs:
         with:
           application_id: ${{ secrets.AKI_BOT_APP_ID }}
           application_private_key: ${{ secrets.AKI_BOT_APP_PRIVATE_KEY }}
-          # TODO permissions might need to be relaxed
+          # TODO permissions might need to be more tight
           # (do we need issues and pull_requests)
           permissions: >
             contents:write,
