@@ -35,9 +35,26 @@ jobs:
       contents: read
 
     steps:
+      - name: Get token
+        id: get-token
+        uses: peter-murray/workflow-application-token-action@8e1ba3bf1619726336414f1014e37f17fbadf1db # v2.1.0
+        if: ${{ inputs.apply-fixes }}
+        with:
+          application_id: ${{ secrets.AKI_BOT_APP_ID }}
+          application_private_key: ${{ secrets.AKI_BOT_APP_PRIVATE_KEY }}
+          # TODO permissions might need to be relaxed
+          # (do we need issues and pull_requests)
+          permissions: >
+            contents:write,
+            issues:write,
+            pull_requests:write
+
       - name: Checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
+          # TODO might be easier with ternary used at work
+          token: ${{ inputs.apply-fixes && steps.get-token.outputs.token || github.token }}
+
           fetch-depth: 0
 
       - name: Setup just
@@ -62,26 +79,10 @@ jobs:
         env:
           APPLY_FIXES: ${{ inputs.apply-fixes && 'all' || 'none' }}
 
-      - name: Get token
-        id: get-token
-        uses: peter-murray/workflow-application-token-action@8e1ba3bf1619726336414f1014e37f17fbadf1db # v2.1.0
-        if: ${{ inputs.apply-fixes && steps.lint.outputs.has_updated_sources == 1 }}
-        with:
-          application_id: ${{ secrets.AKI_BOT_APP_ID }}
-          application_private_key: ${{ secrets.AKI_BOT_APP_PRIVATE_KEY }}
-          # TODO permissions might need to be relaxed
-          # (do we need issues and pull_requests)
-          permissions: >
-            contents:write,
-            issues:write,
-            pull_requests:write
-
       - name: Commit and push linter fixes
         uses: stefanzweifel/git-auto-commit-action@8756aa072ef5b4a080af5dc8fef36c5d586e521d # v5.0.0
         if: ${{ inputs.apply-fixes && steps.lint.outputs.has_updated_sources == 1 }}
         with:
-          token: ${{ steps.get-token.outputs.token }}
-
           commit_user_name: aki-bot[bot]
           commit_user_email: 103840025+aki-bot[bot]@users.noreply.github.com
           commit_author: aki-bot <103840025+aki-bot[bot]@users.noreply.github.com>
