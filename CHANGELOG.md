@@ -1,3 +1,10 @@
+## [1.5.43](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.42...v1.5.43) (2023-12-11)
+
+
+### Build System
+
+* finalise linters ([114b9a5](https://github.com/akikanellis/branch-name-validator-test/commit/114b9a511bf2ca71708c9d45fb70ee3e897a4f1c))
+
 ## [1.5.42](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.41...v1.5.42) (2023-12-10)
 
 
