@@ -1,6 +1,6 @@
 #!/usr/bin/env just --justfile
 
-super_linter_version := "slim-v5.7.2" # editorconfig-checker-disable-line
+super_linter_version := "slim-v5.7.2"
 
 @_default:
   just --list

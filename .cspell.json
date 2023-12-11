@@ -1,0 +1,32 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "language": "en-GB,en",
+  "version": "0.2",
+  "words": [
+    "akikanellis",
+    "amannn",
+    "automerge",
+    "bcoe",
+    "bfdadc",
+    "codeowners",
+    "conventionalcommits",
+    "cycjimmy",
+    "datasource",
+    "datasources",
+    "devskim",
+    "direnv",
+    "ecrc",
+    "envrc",
+    "fbca",
+    "hmarr",
+    "justfile",
+    "kanellis",
+    "kanellos",
+    "kics",
+    "markdownlint",
+    "releaserc",
+    "renovatebot",
+    "stefanzweifel",
+    "wontfix"
+  ]
+}

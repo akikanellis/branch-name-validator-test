@@ -10,27 +10,18 @@ indent_size = 2
 indent_style = space
 
 insert_final_newline = true
+
+# editorconfig-checker does not enforce `max_line_length`. The enforcement is
+# left to filetype specific linters but we are still setting `max_line_length`
+# because many linters use it as part of their config.
 max_line_length = 80
+
 trim_trailing_whitespace = true
-
-ij_visual_guides = 80
-
-[*.{kt,kts}]
-indent_size = 4
-max_line_length = 100
-
-ij_visual_guides = 100
-
-ij_kotlin_name_count_to_use_star_import = 999
-ij_kotlin_name_count_to_use_star_import_for_members = 999
 
 [*.{markdown,md}]
 # Handled by markdownlint
-max_line_length = off
+indent_size = unset
 
 [*.{yaml,yml}]
-# Handled by yamllint
-max_line_length = off
-
 ij_yaml_spaces_within_braces = false
 ij_yaml_spaces_within_brackets = false

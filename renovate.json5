@@ -27,21 +27,17 @@
       customType: "regex",
       fileMatch: ["^\\.github\\/(actions|workflows)\\/.+\\.ya?ml$"],
       matchStrings: [
-        "\
-renovate-version\\s*:\\s*(\"|')?(?<currentValue>.+)(\"|')?\
-(\\s+|\\s+.*)"
+        "renovate-version\\s*:\\s*(\"|')?(?<currentValue>.+)(\"|')?(\\s+|\\s+.*)",
       ],
       datasourceTemplate: "docker",
-      depNameTemplate: "ghcr.io/renovatebot/renovate"
+      depNameTemplate: "ghcr.io/renovatebot/renovate",
     },
     {
       description: "Update Just in GitHub Action workflows",
       customType: "regex",
       fileMatch: ["^\\.github\\/(actions|workflows)\\/.+\\.ya?ml$"],
       matchStrings: [
-        "\
-just-version\\s*:\\s*(\"|')?(?<currentValue>.+)(\"|')?\
-(\\s+|\\s+.*)"
+        "just-version\\s*:\\s*(\"|')?(?<currentValue>.+)(\"|')?(\\s+|\\s+.*)",
       ],
       datasourceTemplate: "crate",
       depNameTemplate: "just",
@@ -52,9 +48,7 @@ just-version\\s*:\\s*(\"|')?(?<currentValue>.+)(\"|')?\
       customType: "regex",
       fileMatch: ["^\\.github\\/(actions|workflows)\\/.+\\.ya?ml$"],
       matchStrings: [
-        "\
-semantic_version\\s*:\\s*(\"|')?(?<currentValue>.+)(\"|')?\
-(\\s+|\\s+.*)"
+        "semantic_version\\s*:\\s*(\"|')?(?<currentValue>.+)(\"|')?(\\s+|\\s+.*)",
       ],
       datasourceTemplate: "npm",
       depNameTemplate: "semantic-release",
@@ -67,7 +61,7 @@ semantic_version\\s*:\\s*(\"|')?(?<currentValue>.+)(\"|')?\
         "(^|/).+\\.gradle(\\.kts)?$",
         "(^workflow-templates|\\.github/workflows)/[^/]+\\.ya?ml$",
         "(^|/)action\\.ya?ml$",
-        "^ansible/.*vars/[^/]+\\.ya?ml$"
+        "^ansible/.*vars/[^/]+\\.ya?ml$",
       ],
       matchStrings: [
         '\
@@ -99,10 +93,7 @@ semver-coerced\
       matchManagers: ["regex"],
       matchDatasources: ["docker"],
       matchPackageNames: ["ghcr.io/renovatebot/renovate"],
-      matchFileNames: [
-        ".github/actions/**/*.y*ml",
-        ".github/workflows/*.y*ml"
-      ],
+      matchFileNames: [".github/actions/**/*.y*ml", ".github/workflows/*.y*ml"],
       matchUpdateTypes: ["pinDigest"],
       enabled: false,
     },
@@ -128,19 +119,6 @@ semver-coerced\
       matchDatasources: ["npm"],
       matchPackageNames: ["conventional-changelog-conventionalcommits"],
       allowedVersions: "<= 6",
-    },
-    {
-      description: "Use correct compatibility for\
-      ghcr.io/super-linter/super-linter",
-      matchDatasources: ["docker"],
-      matchPackageNames: ["ghcr.io/super-linter/super-linter"],
-      versioning: "\
-regex:\
-^((?<compatibility>.+)-)?\
-v?\
-(?<major>\\d+)\
-(\\.(?<minor>\\d+))?\
-(\\.(?<patch>\\d+))?$",
     },
   ],
   "docker-compose": {

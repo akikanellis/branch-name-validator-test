@@ -57,8 +57,8 @@ vulnerabilities and other security-related matters.
 
 This project was created by [Aki Kanellis](https://github.com/akikanellis).
 
-See the
-[Contributors Page](https://github.com/akikanellis/branch-name-validator-test/contributors)
+See
+the [Contributors Page](https://github.com/akikanellis/branch-name-validator-test/contributors)
 for a complete list of all authors and contributors.
 
 ## License

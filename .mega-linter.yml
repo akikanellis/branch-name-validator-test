@@ -7,8 +7,10 @@ SHOW_ELAPSED_TIME: true
 VALIDATE_ALL_CODEBASE: false
 
 IGNORE_GENERATED_FILES: true
-ADDITIONAL_EXCLUDED_DIRECTORIES: [dist]
-FILTER_REGEX_EXCLUDE: "CHANGELOG.md"
+FILTER_REGEX_EXCLUDE: "^(\
+  CHANGELOG\\.md|\
+  dist/.+\
+  )$"
 
 DISABLE_LINTERS:
   # We are using Prettier instead
@@ -17,15 +19,15 @@ DISABLE_LINTERS:
   - REPOSITORY_DEVSKIM
   # We are using Prettier instead
   - TYPESCRIPT_STANDARD
-  # TODO re-enable
-  - EDITORCONFIG_EDITORCONFIG_CHECKER
 
 JAVASCRIPT_DEFAULT_STYLE: prettier
 
-# MegaLinter has a bug that does not respect `threshold` option in JSCPD
-# See: https://github.com/oxsecurity/megalinter/issues/2450
-COPYPASTE_JSCPD_COMMAND_REMOVE_ARGUMENTS:
-  - --exitCode
-  - "1"
+# editorconfig-checker does not automatically detect .ecrc.json
+EDITORCONFIG_EDITORCONFIG_CHECKER_CONFIG_FILE: .ecrc.json
+
+# MegaLinter only passes in .json files by default
+JSON_PRETTIER_FILE_EXTENSIONS:
+  - .json
+  - .json5
 
 TYPESCRIPT_DEFAULT_STYLE: prettier

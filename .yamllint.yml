@@ -3,4 +3,11 @@ extends: default
 
 rules:
   comments:
+    # Needed to follow Prettier standard
+    # See: https://github.com/prettier/prettier/pull/10926
     min-spaces-from-content: 1
+  line-length:
+    # Length of 80 is set by editorconfig as the preferred length, but it is not
+    # enough when dealing with GitHub Action workflows
+    max: 120
+    allow-non-breakable-inline-mappings: true

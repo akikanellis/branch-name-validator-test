@@ -26,7 +26,6 @@ jobs:
 
     steps:
       - name: Validate PR title
-        # yamllint disable-line rule:line-length
         uses: amannn/action-semantic-pull-request@e9fabac35e210fea40ca5b14c0da95a099eff26f # v5.4.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -48,7 +47,6 @@ jobs:
 
     steps:
       - name: Label PR
-        # yamllint disable-line rule:line-length
         uses: bcoe/conventional-release-labels@886f696738527c7be444262c327c89436dfb95a8 # v1.3.1
         with:
           ignored_types: "[]"
@@ -88,7 +86,6 @@ jobs:
           echo "token=$token" >> "$GITHUB_OUTPUT"
 
       - name: Approve PR
-        # yamllint disable-line rule:line-length
         uses: hmarr/auto-approve-action@44888193675f29a83e04faf4002fa8c0b537b1e4 # v3.2.1
         with:
           github-token: ${{ steps.get-token.outputs.token }}

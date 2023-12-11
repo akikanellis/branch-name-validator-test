@@ -59,13 +59,11 @@ jobs:
 
     steps:
       - name: Checkout
-        # yamllint disable-line rule:line-length
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           persist-credentials: false
 
       - name: Setup just
-        # yamllint disable-line rule:line-length
         uses: extractions/setup-just@69d82fb0233557aec017ef13706851d0694e0f1d # v1.6.0
         with:
           just-version: 1.16.0
@@ -73,7 +71,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node
-        # yamllint disable-line rule:line-length
         uses: actions/setup-node@8f152de45cc393bb48ce5d89d36b731f54556e65 # v4.0.0
         with:
           node-version-file: .tool-versions
@@ -84,7 +81,6 @@ jobs:
 
       - name: Release
         id: release
-        # yamllint disable-line rule:line-length
         uses: cycjimmy/semantic-release-action@61680d0e9b02ff86f5648ade99e01be17f0260a4 # v4.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_GITHUB_TOKEN }}
@@ -94,16 +90,12 @@ jobs:
           GIT_COMMITTER_EMAIL: 103840025+aki-bot[bot]@users.noreply.github.com
         with:
           semantic_version: 21.1.2
-          extra_plugins: "@semantic-release/changelog@\
-            ${{ env.SEMANTIC_RELEASE_CHANGELOG_VERSION }} \
-            @semantic-release/exec@\
-            ${{ env.SEMANTIC_RELEASE_EXEC_VERSION }} \
-            @semantic-release/git@\
-            ${{ env.SEMANTIC_RELEASE_GIT_VERSION }} \
-            @semantic-release/npm@\
-            ${{ env.SEMANTIC_RELEASE_NPM_VERSION }} \
-            conventional-changelog-conventionalcommits@\
-            ${{ env.CONVENTIONAL_CHANGELOG_CONVENTIONALCOMMITS_VERSION }}"
+          extra_plugins: >
+            @semantic-release/changelog@${{ env.SEMANTIC_RELEASE_CHANGELOG_VERSION }}
+            @semantic-release/exec@${{ env.SEMANTIC_RELEASE_EXEC_VERSION }}
+            @semantic-release/git@${{ env.SEMANTIC_RELEASE_GIT_VERSION }}
+            @semantic-release/npm@${{ env.SEMANTIC_RELEASE_NPM_VERSION }}
+            conventional-changelog-conventionalcommits@${{ env.CONVENTIONAL_CHANGELOG_CONVENTIONALCOMMITS_VERSION }}
 
   ## TODO remove this
   test-release-locally:
@@ -117,7 +109,6 @@ jobs:
 
     steps:
       - name: Checkout
-        # yamllint disable-line rule:line-length
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           ref: v${{ needs.release.outputs.release-version }}
@@ -153,7 +144,6 @@ jobs:
 #
 #    steps:
 #      - name: Validate branch name
-# yamllint disable-line rule:line-length
 #        uses: akikanellis/branch-name-validator-test@v${{ needs.release.outputs.release-version }}
 #        with:
 #          regex: ^[a-z]+([a-z0-9\.-])+$

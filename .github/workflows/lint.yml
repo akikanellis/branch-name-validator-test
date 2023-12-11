@@ -36,13 +36,11 @@ jobs:
 
     steps:
       - name: Checkout
-        # yamllint disable-line rule:line-length
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           fetch-depth: 0
 
       - name: Setup just
-        # yamllint disable-line rule:line-length
         uses: extractions/setup-just@69d82fb0233557aec017ef13706851d0694e0f1d # v1.6.0
         with:
           just-version: 1.16.0
@@ -50,7 +48,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node
-        # yamllint disable-line rule:line-length
         uses: actions/setup-node@8f152de45cc393bb48ce5d89d36b731f54556e65 # v4.0.0
         with:
           node-version-file: .tool-versions
@@ -61,27 +58,25 @@ jobs:
 
       - name: Lint
         id: lint
-        # yamllint disable-line rule:line-length
         uses: oxsecurity/megalinter@7e042c726c68415475b05a65a686c612120a1232 # v7.7.0
         env:
           APPLY_FIXES: ${{ inputs.apply-fixes == 'true' && 'all' || 'none' }}
 
       - name: Get token
         id: get-token
-        # yamllint disable-line rule:line-length
         uses: peter-murray/workflow-application-token-action@8e1ba3bf1619726336414f1014e37f17fbadf1db # v2.1.0
         if: ${{ inputs.apply-fixes && steps.lint.outputs.has_updated_sources == 1 }}
         with:
           application_id: ${{ secrets.AKI_BOT_APP_ID }}
           application_private_key: ${{ secrets.AKI_BOT_APP_PRIVATE_KEY }}
-          # TODO permissions might need to be relaxed (do we need issues and pull_requests)
+          # TODO permissions might need to be relaxed
+          # (do we need issues and pull_requests)
           permissions: >
             contents:write,
             issues:write,
             pull_requests:write
 
       - name: Commit and push linter fixes
-        # yamllint disable-line rule:line-length
         uses: stefanzweifel/git-auto-commit-action@8756aa072ef5b4a080af5dc8fef36c5d586e521d # v5.0.0
         if: ${{ inputs.apply-fixes && steps.lint.outputs.has_updated_sources == 1 }}
         with:

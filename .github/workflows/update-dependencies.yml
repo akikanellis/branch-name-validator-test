@@ -16,13 +16,11 @@ jobs:
 
     steps:
       - name: Checkout
-        # yamllint disable-line rule:line-length
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
 
       - name: Get token
         id: get-token
-        # yamllint disable-line rule:line-length
-        uses: peter-murray/workflow-application-token-action@8e1ba3bf1619726336414f1014e37f17fbadf1db # tag=v2.1.0
+        uses: peter-murray/workflow-application-token-action@8e1ba3bf1619726336414f1014e37f17fbadf1db # v2.1.0
         with:
           application_id: ${{ secrets.AKI_BOT_APP_ID }}
           application_private_key: ${{ secrets.AKI_BOT_APP_PRIVATE_KEY }}
@@ -33,7 +31,6 @@ jobs:
             workflows:write
 
       - name: Update dependencies
-        # yamllint disable-line rule:line-length
         uses: renovatebot/github-action@af0eb69ad0365d53c161661d5c8a5ba5f12545d0 # v39.2.0
         with:
           renovate-version: 37.87
