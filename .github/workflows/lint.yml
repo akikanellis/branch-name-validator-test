@@ -62,6 +62,12 @@ jobs:
         env:
           APPLY_FIXES: ${{ inputs.apply-fixes == 'true' && 'all' || 'none' }}
 
+      # TODO remove
+      - name: Debug
+        run: |
+          "echo 'inputs.apply-fixes: ${{ inputs.apply-fixes }}'"
+          "echo 'steps.lint.outputs.has_updated_sources: ${{ steps.lint.outputs.has_updated_sources }}'"
+
       - name: Get token
         id: get-token
         uses: peter-murray/workflow-application-token-action@8e1ba3bf1619726336414f1014e37f17fbadf1db # v2.1.0
