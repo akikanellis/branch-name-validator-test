@@ -1,3 +1,10 @@
+## [1.5.44](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.43...v1.5.44) (2023-12-11)
+
+
+### Build System
+
+* add debug info ([2a6e38b](https://github.com/akikanellis/branch-name-validator-test/commit/2a6e38b3ec6a4210c18d68f0b399a46a83274fa7))
+
 ## [1.5.43](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.42...v1.5.43) (2023-12-11)
 
 
