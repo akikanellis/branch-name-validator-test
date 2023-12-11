@@ -60,14 +60,7 @@ jobs:
         id: lint
         uses: oxsecurity/megalinter@7e042c726c68415475b05a65a686c612120a1232 # v7.7.0
         env:
-          APPLY_FIXES: ${{ inputs.apply-fixes == 'true' && 'all' || 'none' }}
-
-      # TODO remove
-      - name: Debug
-        run: |
-          echo 'APPLY_FIXES: ${{ inputs.apply-fixes == 'true' && 'all' || 'none' }}'
-          echo 'inputs.apply-fixes: ${{ inputs.apply-fixes }}'
-          echo 'steps.lint.outputs.has_updated_sources: ${{ steps.lint.outputs.has_updated_sources }}'
+          APPLY_FIXES: ${{ inputs.apply-fixes && 'all' || 'none' }}
 
       - name: Get token
         id: get-token
