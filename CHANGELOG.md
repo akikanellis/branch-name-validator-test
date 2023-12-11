@@ -1,3 +1,10 @@
+## [1.5.46](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.45...v1.5.46) (2023-12-11)
+
+
+### Build System
+
+* attempt to fix approvals ([a755e16](https://github.com/akikanellis/branch-name-validator-test/commit/a755e1615be44a54c97c9e3da6d12296bafb45c3))
+
 ## [1.5.45](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.44...v1.5.45) (2023-12-11)
 
 
