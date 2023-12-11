@@ -68,16 +68,23 @@ jobs:
   approve-pr:
     name: Approve PR
     runs-on: ubuntu-latest
-    if: github.actor == 'akikanellis' || github.actor == 'aki-bot[bot]'
+    if: >
+      github.event.pull_request.user.login == 'akikanellis' ||
+      github.event.pull_request.user.login == 'aki-bot[bot]'
 
     permissions:
       pull-requests: write
 
     steps:
+      # TODO remove
+      - name: Print github.event
+        continue-on-error: true
+        run: echo '${{ toJson(github.event) }}'
+
       - name: Get token
         id: get-token
         run: |
-          if [[ ${{ github.actor }} == "akikanellis" ]]; then
+          if [[ ${{ github.event.pull_request.user.login }} == "akikanellis" ]]; then
             token=${{ secrets.GITHUB_TOKEN }}
           else
             token=${{ secrets.AKI_APPROVE_PRS_TOKEN }}
