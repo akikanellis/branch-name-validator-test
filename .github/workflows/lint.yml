@@ -35,6 +35,10 @@ jobs:
       contents: read
 
     steps:
+      # TODO remove
+      - name: Print github.event
+        run: echo '${{ toJson(github.event) }}'
+
       - name: Get token
         id: get-token
         uses: peter-murray/workflow-application-token-action@8e1ba3bf1619726336414f1014e37f17fbadf1db # v2.1.0

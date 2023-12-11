@@ -20,7 +20,9 @@
   onboarding: false,
   requireConfig: "required",
   automerge: true,
-  schedule: ["after 3:00 and before 6:00 on Saturday"],
+  schedule: [
+    "after 3:00 and before 6:00 on Saturday"
+  ],
   customManagers: [
     {
       description: "Update Renovate in GitHub Action workflows",
