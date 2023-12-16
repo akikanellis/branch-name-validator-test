@@ -1,3 +1,10 @@
+## [1.5.50](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.49...v1.5.50) (2023-12-16)
+
+
+### Build System
+
+* use old validate branch name ([20df5f6](https://github.com/akikanellis/branch-name-validator-test/commit/20df5f61b5adaa6498434b754c51905edf3bd93d))
+
 ## [1.5.49](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.48...v1.5.49) (2023-12-16)
 
 
