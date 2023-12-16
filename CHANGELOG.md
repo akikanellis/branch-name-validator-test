@@ -1,3 +1,10 @@
+## [1.5.49](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.48...v1.5.49) (2023-12-16)
+
+
+### Bug Fixes
+
+* long line ([#5](https://github.com/akikanellis/branch-name-validator-test/issues/5)) ([e5031b6](https://github.com/akikanellis/branch-name-validator-test/commit/e5031b6ebeabf6ec7dca5a9d5068bc9fbff820a2))
+
 ## [1.5.48](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.47...v1.5.48) (2023-12-16)
 
 
