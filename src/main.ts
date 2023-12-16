@@ -9,7 +9,7 @@ function retrieveBranchName(): string {
     return ref.substring(branchRefPrefix.length);
   } else {
     throw new Error(
-      "Could not determine the branch name" + "oh what a long line this is",
+      "Could not determine the branch name",
     );
   }
 }
