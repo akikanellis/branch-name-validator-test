@@ -1,3 +1,10 @@
+## [1.5.47](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.46...v1.5.47) (2023-12-16)
+
+
+### Build System
+
+* use single token ([7f3dd98](https://github.com/akikanellis/branch-name-validator-test/commit/7f3dd980d42044738ad3cb62e206dfd5b354c150))
+
 ## [1.5.46](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.45...v1.5.46) (2023-12-11)
 
 
