@@ -1,3 +1,10 @@
+## [1.5.51](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.50...v1.5.51) (2023-12-16)
+
+
+### Reverts
+
+* "build: use single token" ([f18a03f](https://github.com/akikanellis/branch-name-validator-test/commit/f18a03f50e967895668b8080cdbd794dcbfba1ef))
+
 ## [1.5.50](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.49...v1.5.50) (2023-12-16)
 
 
