@@ -73,24 +73,16 @@ jobs:
       github.event.pull_request.user.login == 'aki-bot[bot]'
 
     permissions:
-      pull-requests: write
+      contents: read
 
     steps:
-      # TODO remove
-      - name: Print github.event
-        continue-on-error: true
-        run: echo '${{ toJson(github.event) }}'
-
       - name: Get token
         id: get-token
-        run: |
-          if [[ ${{ github.event.pull_request.user.login }} == "akikanellis" ]]; then
-            token=${{ secrets.GITHUB_TOKEN }}
-          else
-            token=${{ secrets.AKI_APPROVE_PRS_TOKEN }}
-          fi
-
-          echo "token=$token" >> "$GITHUB_OUTPUT"
+        uses: peter-murray/workflow-application-token-action@8e1ba3bf1619726336414f1014e37f17fbadf1db # v2.1.0
+        with:
+          application_id: ${{ secrets.AKI_APPROVE_BOT_APP_ID }}
+          application_private_key: ${{ secrets.AKI_APPROVE_BOT_APP_PRIVATE_KEY }}
+          permissions: pull_requests:write
 
       - name: Approve PR
         uses: hmarr/auto-approve-action@44888193675f29a83e04faf4002fa8c0b537b1e4 # v3.2.1
