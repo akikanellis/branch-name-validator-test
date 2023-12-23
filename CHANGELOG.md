@@ -1,3 +1,10 @@
+## [1.5.58](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.57...v1.5.58) (2023-12-23)
+
+
+### Build System
+
+* fix spelling ([54ba373](https://github.com/akikanellis/branch-name-validator-test/commit/54ba373cad72cae208f195188dde8c660216d10c))
+
 ## [1.5.57](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.56...v1.5.57) (2023-12-23)
 
 
