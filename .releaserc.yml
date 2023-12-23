@@ -50,4 +50,5 @@ plugins:
         - CHANGELOG.md
         - dist
         - package.json
+        - package-lock.json
   - "@semantic-release/github"
