@@ -1,3 +1,10 @@
+## [1.5.53](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.52...v1.5.53) (2023-12-23)
+
+
+### Build System
+
+* remove branches from settings.yml ([bfeca13](https://github.com/akikanellis/branch-name-validator-test/commit/bfeca130d47129c9aa906e3329db43cacc1d6c50))
+
 ## [1.5.52](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.51...v1.5.52) (2023-12-23)
 
 
