@@ -21,7 +21,9 @@ export async function run(): Promise<void> {
     const eventName = github.context.eventName;
 
     if (eventName != "push") {
-      throw Error(`Event '${eventName}' is not supported`);
+      throw Error(
+	      `Event '${eventName}' is not supported`
+      );
     }
 
     const payload = github.context.payload;
