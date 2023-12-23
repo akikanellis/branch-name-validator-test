@@ -12,14 +12,13 @@ name: Lint
       apply-fixes:
         type: boolean
         description: Apply linter fixes
-        required: false
-        default: true
+        required: true
     secrets:
       AKI_BOT_APP_ID:
         description: The aki-bot app ID
         required: false
       AKI_BOT_APP_PRIVATE_KEY:
-        description: The aki-bot private key
+        description: The aki-bot app private key
         required: false
 
 permissions: {}
@@ -30,16 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: ${{ inputs.continue-on-error }}
 
-    # TODO fix for megalinter
-    permissions:
-      contents: read
-
     steps:
-      # TODO remove
-      - name: Print github.event
-        continue-on-error: true
-        run: echo '${{ toJson(github.event) }}'
-
       - name: Get token
         id: get-token
         uses: peter-murray/workflow-application-token-action@8e1ba3bf1619726336414f1014e37f17fbadf1db # v2.1.0
@@ -47,8 +37,6 @@ jobs:
         with:
           application_id: ${{ secrets.AKI_BOT_APP_ID }}
           application_private_key: ${{ secrets.AKI_BOT_APP_PRIVATE_KEY }}
-          # TODO permissions might need to be more tight
-          # (do we need issues and pull_requests)
           permissions: >
             contents:write,
             issues:write,
@@ -57,9 +45,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
-          # TODO might be easier with ternary used at work
           token: ${{ inputs.apply-fixes && steps.get-token.outputs.token || github.token }}
-
           fetch-depth: 0
 
       - name: Setup just
@@ -82,6 +68,7 @@ jobs:
         id: lint
         uses: oxsecurity/megalinter@7e042c726c68415475b05a65a686c612120a1232 # v7.7.0
         env:
+          GITHUB_TOKEN: ${{ steps.get-token.outputs.token }}
           APPLY_FIXES: ${{ inputs.apply-fixes && 'all' || 'none' }}
 
       - name: Commit and push linter fixes
@@ -91,4 +78,4 @@ jobs:
           commit_user_name: aki-bot[bot]
           commit_user_email: 103840025+aki-bot[bot]@users.noreply.github.com
           commit_author: aki-bot <103840025+aki-bot[bot]@users.noreply.github.com>
-          commit_message: "build: apply linter fixes"
+          commit_message: "refactor: apply linter fixes"

@@ -19,6 +19,9 @@ jobs:
     permissions:
       contents: read
 
+    with:
+      apply-fixes: true
+
     secrets:
       AKI_BOT_APP_ID: ${{ secrets.AKI_BOT_APP_ID }}
       AKI_BOT_APP_PRIVATE_KEY: ${{ secrets.AKI_BOT_APP_PRIVATE_KEY }}
