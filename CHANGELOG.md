@@ -1,3 +1,10 @@
+## [1.5.57](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.56...v1.5.57) (2023-12-23)
+
+
+### Build System
+
+* touch up .mega-linter.yml ([a94c4b3](https://github.com/akikanellis/branch-name-validator-test/commit/a94c4b378fdb4766fdcfa70982ff6529df78c9af))
+
 ## [1.5.56](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.55...v1.5.56) (2023-12-23)
 
 
