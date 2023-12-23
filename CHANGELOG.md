@@ -1,3 +1,10 @@
+## [1.5.59](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.58...v1.5.59) (2023-12-23)
+
+
+### Build System
+
+* commit package-lock.json ([a9776da](https://github.com/akikanellis/branch-name-validator-test/commit/a9776dafe34de14d12699c2937cd294673ef5c5c))
+
 ## [1.5.58](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.57...v1.5.58) (2023-12-23)
 
 
