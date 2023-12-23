@@ -1,3 +1,11 @@
+## [1.5.55](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.54...v1.5.55) (2023-12-23)
+
+
+### Build System
+
+* add spelling ([ffd62f7](https://github.com/akikanellis/branch-name-validator-test/commit/ffd62f7b1999bffa45ac7c8a3c10013d645ba10f))
+* fix formatting ([828b469](https://github.com/akikanellis/branch-name-validator-test/commit/828b4694435e6977b8c42d5d1bc870066a9fae7d))
+
 ## [1.5.54](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.53...v1.5.54) (2023-12-23)
 
 
