@@ -1,3 +1,10 @@
+## [1.5.60](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.59...v1.5.60) (2023-12-23)
+
+
+### Build System
+
+* lock dependencies ([d37ae84](https://github.com/akikanellis/branch-name-validator-test/commit/d37ae84708bae1baf73a2d787906cdbd66c4a589))
+
 ## [1.5.59](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.58...v1.5.59) (2023-12-23)
 
 
