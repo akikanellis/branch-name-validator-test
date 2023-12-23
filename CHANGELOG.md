@@ -1,3 +1,11 @@
+## [1.5.54](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.53...v1.5.54) (2023-12-23)
+
+
+### Build System
+
+* add docker pre-requisite ([8b399d8](https://github.com/akikanellis/branch-name-validator-test/commit/8b399d8c859b51ff60b0bd5568814ae870e0174c))
+* add extra args ([9a82960](https://github.com/akikanellis/branch-name-validator-test/commit/9a82960ba1f486f795b7276d5c6538dc894d7b9c))
+
 ## [1.5.53](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.52...v1.5.53) (2023-12-23)
 
 
