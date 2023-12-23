@@ -72,6 +72,7 @@ jobs:
         id: lint
         uses: oxsecurity/megalinter@7e042c726c68415475b05a65a686c612120a1232 # v7.7.0
         env:
+          GITHUB_TOKEN: ${{ steps.get-token.outputs.token }}
           APPLY_FIXES: ${{ inputs.apply-fixes && 'all' || 'none' }}
 
       - name: Commit and push linter fixes
