@@ -12,14 +12,13 @@ name: Lint
       apply-fixes:
         type: boolean
         description: Apply linter fixes
-        required: false
-        default: true
+        required: true
     secrets:
       AKI_BOT_APP_ID:
         description: The aki-bot app ID
         required: false
       AKI_BOT_APP_PRIVATE_KEY:
-        description: The aki-bot private key
+        description: The aki-bot app private key
         required: false
 
 permissions: {}
@@ -39,12 +38,13 @@ jobs:
           application_id: ${{ secrets.AKI_BOT_APP_ID }}
           application_private_key: ${{ secrets.AKI_BOT_APP_PRIVATE_KEY }}
           permissions: >
-            contents:write
+            contents:write,
+            issues:write,
+            pull_requests:write
 
       - name: Checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
-          # TODO might be easier with ternary used at work
           token: ${{ inputs.apply-fixes && steps.get-token.outputs.token || github.token }}
           fetch-depth: 0
 
@@ -78,4 +78,4 @@ jobs:
           commit_user_name: aki-bot[bot]
           commit_user_email: 103840025+aki-bot[bot]@users.noreply.github.com
           commit_author: aki-bot <103840025+aki-bot[bot]@users.noreply.github.com>
-          commit_message: "build: apply linter fixes"
+          commit_message: "refactor: apply linter fixes"
