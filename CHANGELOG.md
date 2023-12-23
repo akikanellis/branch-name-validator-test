@@ -1,3 +1,10 @@
+## [1.5.62](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.61...v1.5.62) (2023-12-23)
+
+
+### Build System
+
+* downgrade megalinter ([010244a](https://github.com/akikanellis/branch-name-validator-test/commit/010244aaa951086bfca8a2621704a1cb5d53735f))
+
 ## [1.5.61](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.60...v1.5.61) (2023-12-23)
 
 
