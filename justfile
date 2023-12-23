@@ -1,6 +1,7 @@
 #!/usr/bin/env just --justfile
 
-super_linter_version := "slim-v5.7.2"
+# renovate: datasource=npm depName=mega-linter-runner
+mega_linter_runner_version := "7.6.0"
 
 @_default:
   just --list
@@ -18,17 +19,7 @@ install-dependencies:
 
 # Lint project
 lint *extra_args:
-  docker run \
-  --env RUN_LOCAL=true \
-  --env DEFAULT_BRANCH=main \
-  --env IGNORE_GENERATED_FILES=true \
-  --env IGNORE_GITIGNORED_FILES=true \
-  --env JAVASCRIPT_DEFAULT_STYLE=prettier \
-  --env TYPESCRIPT_DEFAULT_STYLE=prettier \
-  --env YAML_ERROR_ON_WARNING=true \
-  --volume {{justfile_directory()}}:/tmp/lint \
-  {{extra_args}} \
-  ghcr.io/super-linter/super-linter:{{super_linter_version}}
+  npx mega-linter-runner@{{mega_linter_runner_version}}
 
 # Run the tests
 test:

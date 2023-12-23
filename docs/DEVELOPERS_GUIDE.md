@@ -25,6 +25,7 @@ Install the following software
 
 - [just](https://github.com/casey/just)
 - [asdf](https://github.com/asdf-vm/asdf)
+- [Docker](https://www.docker.com/)
 
 ## Useful Commands
 
