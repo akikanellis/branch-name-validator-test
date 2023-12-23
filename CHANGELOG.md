@@ -1,3 +1,11 @@
+## [1.5.52](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.51...v1.5.52) (2023-12-23)
+
+
+### Build System
+
+* **deps:** update actions/stale action to v9 ([#6](https://github.com/akikanellis/branch-name-validator-test/issues/6)) ([523e825](https://github.com/akikanellis/branch-name-validator-test/commit/523e825faca9752402beb05278c2668283c2ae6a))
+* use bot token for release ([437db2c](https://github.com/akikanellis/branch-name-validator-test/commit/437db2ce30da1bfe55d9f8cc12014285bea0896c))
+
 ## [1.5.51](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.50...v1.5.51) (2023-12-16)
 
 
