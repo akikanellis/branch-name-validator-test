@@ -25,9 +25,7 @@ JAVASCRIPT_DEFAULT_STYLE: prettier
 # editorconfig-checker does not automatically detect .ecrc.json
 EDITORCONFIG_EDITORCONFIG_CHECKER_CONFIG_FILE: .ecrc.json
 
-# MegaLinter only passes in .json files by default
-JSON_PRETTIER_FILE_EXTENSIONS:
-  - .json
-  - .json5
+# MegaLinter only passes in `.json` files by default
+JSON_PRETTIER_FILE_EXTENSIONS: [.json, .json5]
 
 TYPESCRIPT_DEFAULT_STYLE: prettier
