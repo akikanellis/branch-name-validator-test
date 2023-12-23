@@ -8,9 +8,7 @@ function retrieveBranchName(): string {
   if (ref.startsWith(branchRefPrefix)) {
     return ref.substring(branchRefPrefix.length);
   } else {
-    throw new Error(
-      "Could not determine the branch name",
-    );
+    throw new Error("Could not determine the branch name");
   }
 }
 
