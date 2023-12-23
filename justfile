@@ -19,7 +19,7 @@ install-dependencies:
 
 # Lint project
 lint *extra_args:
-  npx mega-linter-runner@{{mega_linter_runner_version}}
+  npx mega-linter-runner@{{mega_linter_runner_version}} {{extra_args}}
 
 # Run the tests
 test:
