@@ -1,3 +1,10 @@
+## [1.5.56](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.55...v1.5.56) (2023-12-23)
+
+
+### Build System
+
+* touch up .editorconfig ([0a004eb](https://github.com/akikanellis/branch-name-validator-test/commit/0a004eba41c0b8083df977728a5312cc490a907e))
+
 ## [1.5.55](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.54...v1.5.55) (2023-12-23)
 
 
