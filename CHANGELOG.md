@@ -1,3 +1,10 @@
+## [1.5.61](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.60...v1.5.61) (2023-12-23)
+
+
+### Build System
+
+* remove github token permissions ([#8](https://github.com/akikanellis/branch-name-validator-test/issues/8)) ([59dd94d](https://github.com/akikanellis/branch-name-validator-test/commit/59dd94da5643f868869814ae98cb6e64f4b11947))
+
 ## [1.5.60](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.59...v1.5.60) (2023-12-23)
 
 
