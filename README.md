@@ -30,7 +30,7 @@ Branch Name Validator Test
 
 ---
 
-## About
+## About new PR
 
 TODO
 
