@@ -40,10 +40,7 @@ jobs:
           application_private_key: ${{ secrets.AKI_BOT_APP_PRIVATE_KEY }}
           # TODO permissions might need to be more tight
           # (do we need issues and pull_requests)
-          permissions: >
-            contents:write,
-            issues:write,
-            pull_requests:write
+          permissions: write-all
 
       - name: Checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
