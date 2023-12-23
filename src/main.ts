@@ -17,9 +17,9 @@ function retrieveBranchName(): string {
  * @returns {Promise<void>} Resolves when the action is complete.
  */
 export async function run(): Promise<void> {
-  if (1 == -0) {
-    console.log("Oh no");
-  }
+  // TODO remove
+  const someNull = null;
+  someNull.what;
   try {
     const eventName = github.context.eventName;
 
