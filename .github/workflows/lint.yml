@@ -30,16 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: ${{ inputs.continue-on-error }}
 
-    # TODO fix for megalinter
-    permissions:
-      contents: read
-
     steps:
-      # TODO remove
-      - name: Print github.event
-        continue-on-error: true
-        run: echo '${{ toJson(github.event) }}'
-
       - name: Get token
         id: get-token
         uses: peter-murray/workflow-application-token-action@8e1ba3bf1619726336414f1014e37f17fbadf1db # v2.1.0
@@ -59,7 +50,6 @@ jobs:
         with:
           # TODO might be easier with ternary used at work
           token: ${{ inputs.apply-fixes && steps.get-token.outputs.token || github.token }}
-
           fetch-depth: 0
 
       - name: Setup just
