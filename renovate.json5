@@ -17,6 +17,7 @@
   requireConfig: "required",
   configMigration: false,
   automerge: false,
+  prHourlyLimit: 50,
   customManagers: [
     {
       description: "Update Renovate in GitHub Action workflows",
