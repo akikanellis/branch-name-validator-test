@@ -1,9 +1,9 @@
 #!/usr/bin/env just --justfile
 
 # renovate: datasource=npm depName=mega-linter-runner
-mega_linter_runner_version := "7.6.0"
+mega_linter_runner_version := "7.7.0"
 # renovate: datasource=docker depName=oxsecurity/megalinter
-mega_linter_version := "7.6.0"
+mega_linter_version := "v7.7.0"
 
 @_default:
   just --list

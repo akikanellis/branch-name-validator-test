@@ -33,9 +33,9 @@ jobs:
             workflows:write
 
       - name: Update dependencies
-        uses: renovatebot/github-action@af0eb69ad0365d53c161661d5c8a5ba5f12545d0 # v39.2.0
+        uses: renovatebot/github-action@b8ce565a2e98de1fec9696a76fba7beb01ec29b2 # v39.2.3
         with:
-          renovate-version: 37.87
+          renovate-version: 37.109
           configurationFile: renovate.json5
           # kics-scan ignore-line
           token: x-access-token:${{ steps.get-token.outputs.token }}

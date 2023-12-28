@@ -18,7 +18,7 @@ env:
   SEMANTIC_RELEASE_GIT_VERSION: 10.0.1
 
   # renovate: datasource=npm depName=@semantic-release/npm
-  SEMANTIC_RELEASE_NPM_VERSION: 11.0.1
+  SEMANTIC_RELEASE_NPM_VERSION: 11.0.2
 
   # renovate: datasource=npm depName=conventional-changelog-conventionalcommits
   CONVENTIONAL_CHANGELOG_CONVENTIONALCOMMITS_VERSION: 6.1.0
@@ -66,12 +66,12 @@ jobs:
       - name: Setup just
         uses: extractions/setup-just@69d82fb0233557aec017ef13706851d0694e0f1d # v1.6.0
         with:
-          just-version: 1.16.0
+          just-version: 1.19.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node
-        uses: actions/setup-node@8f152de45cc393bb48ce5d89d36b731f54556e65 # v4.0.0
+        uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
         with:
           node-version-file: .tool-versions
           cache: npm
@@ -143,7 +143,7 @@ jobs:
     steps:
       - name: Validate branch name
         # kics-scan ignore-line
-        uses: akikanellis/branch-name-validator-test@v1.5.20
+        uses: akikanellis/branch-name-validator-test@e88ca1c18f79f22783599fbde7227fb56c74abe9 # v1.5.66
         with:
           regex: ^[a-z]+([a-z0-9\.-])+$
 ## TODO this doesn't work because GitHub doesn't support dynamic `uses:`
