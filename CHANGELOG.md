@@ -1,3 +1,10 @@
+## [1.5.71](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.70...v1.5.71) (2023-12-28)
+
+
+### Build System
+
+* remove schedule ([d33e696](https://github.com/akikanellis/branch-name-validator-test/commit/d33e6967b6f139ffb47a58ae528f4493b41247ff))
+
 ## [1.5.70](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.69...v1.5.70) (2023-12-28)
 
 
