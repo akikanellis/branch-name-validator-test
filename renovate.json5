@@ -1,16 +1,12 @@
 {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
   extends: [
-    "config:recommended",
+    "config:best-practices",
 
     ":semanticCommitType(build)",
     ":semanticCommitTypeAll(build)",
 
-    "docker:pinDigests",
-
     "group:allNonMajor",
-
-    "helpers:pinGitHubActionDigests",
   ],
   username: "aki-bot[bot]",
   gitAuthor: "aki-bot <103840025+aki-bot[bot]@users.noreply.github.com>",
