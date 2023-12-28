@@ -2,10 +2,8 @@
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
   extends: [
     "config:best-practices",
-
     ":semanticCommitType(build)",
     ":semanticCommitTypeAll(build)",
-
     "group:allNonMajor",
   ],
   username: "aki-bot[bot]",
@@ -60,21 +58,9 @@
         "^ansible/.*vars/[^/]+\\.ya?ml$",
       ],
       matchStrings: [
-        '\
-.*renovate:\
-\\sdatasource=(?<datasource>.*?)\
-\\sdepName=(?<depName>.*?)\
-(\\sversioning=(?<versioning>.*?))?\
-\n.*(version|Version|VERSION)\\s*(:=|=|:)\\s*"?(?<currentValue>.*?)\
-(@(?<currentDigest>sha256:[a-f0-9]+))?"?\
-(\\s+|\\s+.*)',
+        '.*renovate:\\sdatasource=(?<datasource>.*?)\\sdepName=(?<depName>.*?)(\\sversioning=(?<versioning>.*?))?\n.*(version|Version|VERSION)\\s*(:=|=|:)\\s*"?(?<currentValue>.*?)(@(?<currentDigest>sha256:[a-f0-9]+))?"?(\\s+|\\s+.*)',
       ],
-      versioningTemplate: "\
-{{#if versioning}}\
-{{{versioning}}}\
-{{else}}\
-semver-coerced\
-{{/if}}",
+      versioningTemplate: "{{#if versioning}}{{{versioning}}}{{else}}semver-coerced{{/if}}",
     },
   ],
   packageRules: [
@@ -84,9 +70,8 @@ semver-coerced\
       automerge: false,
     },
     {
-      description: "Disable Renovate digest pinning in GitHub Action\
-      workflows",
-      matchManagers: ["regex"],
+      description: "Disable Renovate digest pinning in GitHub Action      workflows",
+      matchManagers: ["custom.regex"],
       matchDatasources: ["docker"],
       matchPackageNames: ["ghcr.io/renovatebot/renovate"],
       matchFileNames: [".github/actions/**/*.y*ml", ".github/workflows/*.y*ml"],
@@ -101,17 +86,13 @@ semver-coerced\
       matchUpdateTypes: ["digest"],
     },
     {
-      description: "Limit semantic-release versions to 21.x.x.\
-      Version 22.x.x is currently not compatible with\
-      gradle-semantic-release-plugin",
+      description: "Limit semantic-release versions to 21.x.x.      Version 22.x.x is currently not compatible with      gradle-semantic-release-plugin",
       matchDatasources: ["npm"],
       matchPackageNames: ["semantic-release"],
       allowedVersions: "<= 21",
     },
     {
-      description: "Limit conventional-changelog-conventionalcommits versions\
-      to 6.x.x. Version 7.x.x is currently only compatible with\
-      semantic-release >= 22",
+      description: "Limit conventional-changelog-conventionalcommits versions      to 6.x.x. Version 7.x.x is currently only compatible with      semantic-release >= 22",
       matchDatasources: ["npm"],
       matchPackageNames: ["conventional-changelog-conventionalcommits"],
       allowedVersions: "<= 6",
