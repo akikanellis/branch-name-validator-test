@@ -102,8 +102,9 @@ semver-coerced\
     },
     {
       description: "Disable published action updates. This is handled via semantic-release",
-      matchDatasources: ["github-releases"],
-      matchPackageNames: ["akikanellis/branch-name-validator-test"],
+      matchSourceUrls: [
+        "https://github.com/akikanellis/branch-name-validator-test",
+      ],
       enabled: false,
     },
     {
