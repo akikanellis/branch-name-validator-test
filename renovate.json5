@@ -101,16 +101,21 @@ semver-coerced\
       enabled: false,
     },
     {
-      description: "Disable published action updates. This is handled via semantic-release",
+      description: "Disable published action updates. This is handled via semantic-release.",
       matchSourceUrls: [
         "https://github.com/akikanellis/branch-name-validator-test",
       ],
       enabled: false,
     },
     {
+      description: "Group MegaLinter updates",
+      groupName: "megalinter monorepo",
+      matchSourceUrls: ["https://github.com/oxsecurity/megalinter"],
+    },
+    {
       description: "\
 Limit semantic-release versions to 21.x.x. Version 22.x.x is currently not \
-compatible with gradle-semantic-release-plugin",
+compatible with gradle-semantic-release-plugin.",
       matchDatasources: ["npm"],
       matchPackageNames: ["semantic-release"],
       allowedVersions: "<= 21",
@@ -118,7 +123,7 @@ compatible with gradle-semantic-release-plugin",
     {
       description: "\
 Limit conventional-changelog-conventionalcommits versions to 6.x.x. \
-Version 7.x.x is currently only compatible with semantic-release >= 22",
+Version 7.x.x is currently only compatible with semantic-release >= 22.",
       matchDatasources: ["npm"],
       matchPackageNames: ["conventional-changelog-conventionalcommits"],
       allowedVersions: "<= 6",
