@@ -1,3 +1,10 @@
+## [1.5.73](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.72...v1.5.73) (2023-12-28)
+
+
+### Build System
+
+* update Node in GitHub Action metadata file ([5823fd8](https://github.com/akikanellis/branch-name-validator-test/commit/5823fd8ff0b5153b06c467ba4d955a1a36104e53))
+
 ## [1.5.72](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.71...v1.5.72) (2023-12-28)
 
 
