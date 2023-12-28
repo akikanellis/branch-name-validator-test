@@ -35,7 +35,7 @@ jobs:
       - name: Update dependencies
         uses: renovatebot/github-action@b8ce565a2e98de1fec9696a76fba7beb01ec29b2 # v39.2.3
         with:
-          renovate-version: 37.109
+          renovate-version: 37.110
           configurationFile: renovate.json5
           # kics-scan ignore-line
           token: x-access-token:${{ steps.get-token.outputs.token }}
