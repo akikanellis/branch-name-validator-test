@@ -1,3 +1,10 @@
+## [1.5.79](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.78...v1.5.79) (2023-12-28)
+
+
+### Build System
+
+* downgrade megalinter ([e2a32eb](https://github.com/akikanellis/branch-name-validator-test/commit/e2a32ebcb307bcfced14c8e5faaa8294176962f1))
+
 ## [1.5.78](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.77...v1.5.78) (2023-12-28)
 
 
