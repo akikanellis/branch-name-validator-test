@@ -1,3 +1,10 @@
+## [1.5.77](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.76...v1.5.77) (2023-12-28)
+
+
+### Build System
+
+* **deps:** update dependency node to v20 ([#14](https://github.com/akikanellis/branch-name-validator-test/issues/14)) ([ac6e632](https://github.com/akikanellis/branch-name-validator-test/commit/ac6e6321075a2f10c81bc33ac942c1bc1dbb05e3))
+
 ## [1.5.76](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.75...v1.5.76) (2023-12-28)
 
 
