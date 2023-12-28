@@ -1,3 +1,10 @@
+## [1.5.80](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.79...v1.5.80) (2023-12-28)
+
+
+### Build System
+
+* **deps:** update megalinter monorepo to v7.7.0 ([#15](https://github.com/akikanellis/branch-name-validator-test/issues/15)) ([a65489e](https://github.com/akikanellis/branch-name-validator-test/commit/a65489e11cd1d7b6152180fec33241609d4f5ecc))
+
 ## [1.5.79](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.78...v1.5.79) (2023-12-28)
 
 
