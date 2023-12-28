@@ -1,3 +1,10 @@
+## [1.5.70](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.69...v1.5.70) (2023-12-28)
+
+
+### Build System
+
+* group megalinter updates ([e4d0423](https://github.com/akikanellis/branch-name-validator-test/commit/e4d04239cda9f87f2bbc361a51b8dfd075da87cd))
+
 ## [1.5.69](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.68...v1.5.69) (2023-12-28)
 
 
