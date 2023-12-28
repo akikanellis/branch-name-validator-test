@@ -1,3 +1,10 @@
+## [1.5.64](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.63...v1.5.64) (2023-12-28)
+
+
+### Build System
+
+* use best practices config ([8a1d54f](https://github.com/akikanellis/branch-name-validator-test/commit/8a1d54f32b822e4c171708bb30d5851a27dd7276))
+
 ## [1.5.63](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.62...v1.5.63) (2023-12-28)
 
 
