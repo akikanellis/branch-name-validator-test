@@ -1,3 +1,10 @@
+## [1.5.78](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.77...v1.5.78) (2023-12-28)
+
+
+### Build System
+
+* **deps:** update ghcr.io/renovatebot/renovate docker tag to v37.110 ([#13](https://github.com/akikanellis/branch-name-validator-test/issues/13)) ([9a42978](https://github.com/akikanellis/branch-name-validator-test/commit/9a42978f84ac1340de2c9938827790f0abe41d90))
+
 ## [1.5.77](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.76...v1.5.77) (2023-12-28)
 
 
