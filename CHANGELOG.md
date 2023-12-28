@@ -1,3 +1,10 @@
+## [1.5.75](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.74...v1.5.75) (2023-12-28)
+
+
+### Build System
+
+* increase rate limit ([9c2ce4f](https://github.com/akikanellis/branch-name-validator-test/commit/9c2ce4f9883023465ce6a7f9c9cd442c6a4f4add))
+
 ## [1.5.74](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.73...v1.5.74) (2023-12-28)
 
 
