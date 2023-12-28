@@ -1,3 +1,10 @@
+## [1.5.66](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.65...v1.5.66) (2023-12-28)
+
+
+### Build System
+
+* disable published action updates ([1e79488](https://github.com/akikanellis/branch-name-validator-test/commit/1e79488e48cbd26c64c62610998c2529957b2d4a))
+
 ## [1.5.65](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.64...v1.5.65) (2023-12-28)
 
 
