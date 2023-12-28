@@ -50,6 +50,16 @@
       depNameTemplate: "semantic-release",
     },
     {
+      description: "Update Node in GitHub Action metadata file",
+      customType: "regex",
+      fileMatch: ["^action\\.ya?ml$"],
+      matchStrings: [
+        "using\\s*:\\s*(\"|')?node(?<currentValue>\\d+)(\"|')?(\\s+|\\s+.*)",
+      ],
+      datasourceTemplate: "node-version",
+      depNameTemplate: "node",
+    },
+    {
       description: "Any other file with dependencies",
       customType: "regex",
       fileMatch: [
