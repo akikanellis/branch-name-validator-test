@@ -80,13 +80,19 @@ semver-coerced\
   ],
   packageRules: [
     {
+      description: "Group Docker digest updates",
+      groupName: "all Docker digest dependencies",
+      groupSlug: "all-docker-digest",
+      matchDatasources: ["docker"],
+      matchUpdateTypes: ["digest"],
+    },
+    {
       description: "Block automerge for major updates",
       matchUpdateTypes: ["major"],
       automerge: false,
     },
     {
-      description: "Disable Renovate digest pinning in GitHub Action\
-      workflows",
+      description: "Disable Renovate digest pinning in GitHub Action workflows",
       matchManagers: ["regex"],
       matchDatasources: ["docker"],
       matchPackageNames: ["ghcr.io/renovatebot/renovate"],
@@ -95,24 +101,23 @@ semver-coerced\
       enabled: false,
     },
     {
-      description: "Group Docker digest updates",
-      groupName: "all Docker digest dependencies",
-      groupSlug: "all-docker-digest",
-      matchDatasources: ["docker"],
-      matchUpdateTypes: ["digest"],
+      description: "Disable published action updates. This is handled via semantic-release",
+      matchDatasources: ["github-releases"],
+      matchPackageNames: ["akikanellis/branch-name-validator-test"],
+      enabled: false,
     },
     {
-      description: "Limit semantic-release versions to 21.x.x.\
-      Version 22.x.x is currently not compatible with\
-      gradle-semantic-release-plugin",
+      description: "\
+Limit semantic-release versions to 21.x.x. Version 22.x.x is currently not \
+compatible with gradle-semantic-release-plugin",
       matchDatasources: ["npm"],
       matchPackageNames: ["semantic-release"],
       allowedVersions: "<= 21",
     },
     {
-      description: "Limit conventional-changelog-conventionalcommits versions\
-      to 6.x.x. Version 7.x.x is currently only compatible with\
-      semantic-release >= 22",
+      description: "\
+Limit conventional-changelog-conventionalcommits versions to 6.x.x. \
+Version 7.x.x is currently only compatible with semantic-release >= 22",
       matchDatasources: ["npm"],
       matchPackageNames: ["conventional-changelog-conventionalcommits"],
       allowedVersions: "<= 6",
