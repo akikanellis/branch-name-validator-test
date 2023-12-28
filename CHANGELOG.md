@@ -1,3 +1,10 @@
+## [1.5.76](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.75...v1.5.76) (2023-12-28)
+
+
+### Build System
+
+* use caret ([dc5f7da](https://github.com/akikanellis/branch-name-validator-test/commit/dc5f7da69b3400ec240e368cf705429449c4c420))
+
 ## [1.5.75](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.74...v1.5.75) (2023-12-28)
 
 
