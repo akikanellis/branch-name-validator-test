@@ -1,3 +1,10 @@
+## [1.5.65](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.64...v1.5.65) (2023-12-28)
+
+
+### Build System
+
+* remove config migration ([a3b32c1](https://github.com/akikanellis/branch-name-validator-test/commit/a3b32c1a3133ae834a933787d359544fccd247d9))
+
 ## [1.5.64](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.63...v1.5.64) (2023-12-28)
 
 
