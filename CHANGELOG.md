@@ -1,3 +1,11 @@
+## [1.5.72](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.71...v1.5.72) (2023-12-28)
+
+
+### Build System
+
+* **deps:** update dependency typescript to v5.3.3 ([#11](https://github.com/akikanellis/branch-name-validator-test/issues/11)) ([df85ffc](https://github.com/akikanellis/branch-name-validator-test/commit/df85ffc06cdaba69bd00b97b3940b678f5f5f09d))
+* **deps:** update megalinter monorepo to v7.7.0 ([#12](https://github.com/akikanellis/branch-name-validator-test/issues/12)) ([c2b0077](https://github.com/akikanellis/branch-name-validator-test/commit/c2b0077fd1f94d8ec652e9710db918508dd338d1))
+
 ## [1.5.71](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.70...v1.5.71) (2023-12-28)
 
 
