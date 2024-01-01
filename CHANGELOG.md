@@ -1,3 +1,10 @@
+## [1.5.82](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.81...v1.5.82) (2024-01-01)
+
+
+### Build System
+
+* **deps:** update all non-major dependencies ([#16](https://github.com/akikanellis/branch-name-validator-test/issues/16)) ([d99f75e](https://github.com/akikanellis/branch-name-validator-test/commit/d99f75e242b47f45d0c6f85d0fe337440ac89881))
+
 ## [1.5.81](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.80...v1.5.81) (2024-01-01)
 
 
