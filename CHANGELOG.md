@@ -1,3 +1,10 @@
+## [1.5.81](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.80...v1.5.81) (2024-01-01)
+
+
+### Build System
+
+* replace asdf with rtx ([9e6b8bc](https://github.com/akikanellis/branch-name-validator-test/commit/9e6b8bcd28abe86cca17f2734ec26e4109674e76))
+
 ## [1.5.80](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.79...v1.5.80) (2023-12-28)
 
 
