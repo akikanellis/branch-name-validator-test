@@ -1,3 +1,10 @@
+## [1.5.83](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.82...v1.5.83) (2024-01-02)
+
+
+### Build System
+
+* replace release version in README ([4b351d8](https://github.com/akikanellis/branch-name-validator-test/commit/4b351d8172f1c5383cf7f6479340ed1ee6a7ecb9))
+
 ## [1.5.82](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.81...v1.5.82) (2024-01-01)
 
 
