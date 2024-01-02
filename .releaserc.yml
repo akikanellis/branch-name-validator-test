@@ -46,7 +46,7 @@ plugins:
     - replacements:
         - files: [README.md]
           from: akikanellis/branch-name-validator-test@v\d+\.\d+\.\d+
-          to: akikanellis/branch-name-validator-test@${nextRelease.version}
+          to: akikanellis/branch-name-validator-test@v${nextRelease.version}
           results:
             - file: README.md
               hasChanged: true
