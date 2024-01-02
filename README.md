@@ -36,9 +36,13 @@ TODO
 
 ## Getting Started
 
-TODO
+Install
 
-## Contributing
+```yaml
+- uses: akikanellis/branch-name-validator-test@v1.5.82
+  with:
+    regex: 'something'
+```
 
 To contribute, check out the [Contributing Guidelines](docs/CONTRIBUTING.md) and
 the [Developers Guide](docs/DEVELOPERS_GUIDE.md). Thank you for being involved!
