@@ -24,7 +24,7 @@ env:
   CONVENTIONAL_CHANGELOG_CONVENTIONALCOMMITS_VERSION: 6.1.0
 
   # renovate: datasource=npm depName=semantic-release-replace-plugin
-  SEMANTIC_RELEASE_REPLACE_PLUGIN_VERSION: 1.2.6
+  SEMANTIC_RELEASE_REPLACE_PLUGIN_VERSION: 1.2.7
 
 jobs:
   lint:
