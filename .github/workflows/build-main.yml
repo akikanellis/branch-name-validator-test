@@ -112,8 +112,7 @@ jobs:
             conventional-changelog-conventionalcommits@${{ env.CONVENTIONAL_CHANGELOG_CONVENTIONALCOMMITS_VERSION }}
             semantic-release-replace-plugin@${{ env.SEMANTIC_RELEASE_REPLACE_PLUGIN_VERSION }}
 
-  ## TODO remove this
-  test-release-locally:
+  test-release:
     name: Test release
     needs: release
     if: needs.release.outputs.release-published == 'true'
@@ -134,31 +133,3 @@ jobs:
         uses: ./
         with:
           regex: ^[a-z]+([a-z0-9\.-])+$
-
-  test-release-static:
-    name: Test release static
-    needs: release
-    if: needs.release.outputs.release-published == 'true'
-    runs-on: ubuntu-latest
-
-    permissions:
-      contents: read
-
-    steps:
-      - name: Validate branch name
-        # kics-scan ignore-line
-        uses: akikanellis/branch-name-validator-test@e88ca1c18f79f22783599fbde7227fb56c74abe9 # v1.5.66
-        with:
-          regex: ^[a-z]+([a-z0-9\.-])+$
-## TODO this doesn't work because GitHub doesn't support dynamic `uses:`
-#  test-release-marketplace:
-#    name: Test release marketplace
-#    needs: release
-#    if: needs.release.outputs.release-published == 'true'
-#    runs-on: ubuntu-latest
-#
-#    steps:
-#      - name: Validate branch name
-#        uses: akikanellis/branch-name-validator-test@v${{ needs.release.outputs.release-version }}
-#        with:
-#          regex: ^[a-z]+([a-z0-9\.-])+$
