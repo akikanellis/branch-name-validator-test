@@ -1,3 +1,10 @@
+## [1.5.85](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.84...v1.5.85) (2024-01-02)
+
+
+### Build System
+
+* remove other tests ([9cb42d3](https://github.com/akikanellis/branch-name-validator-test/commit/9cb42d39d92e611d6dd9849be23d13271842bbe8))
+
 ## [1.5.84](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.83...v1.5.84) (2024-01-02)
 
 
