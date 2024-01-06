@@ -1,0 +1,32 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "defaultProject": "branch-name-validator-test",
+  "targetDefaults": {
+    "build": {
+      "cache": true,
+      "inputs": ["production"]
+    },
+    "@nx/js:tsc": {
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "rootDir": "src",
+        "outputPath": "lib",
+        "main": "src/index.ts",
+        "tsConfig": "tsconfig.build.json"
+      }
+    }
+  },
+  "namedInputs": {
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "sharedGlobals": [
+      {
+        "runtime": "node --version"
+      }
+    ],
+    "production": [
+      "default",
+      "!{projectRoot}/test/**/*",
+      "!{projectRoot}/jest.config.json"
+    ]
+  }
+}

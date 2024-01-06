@@ -1,0 +1,9 @@
+dist/
+docs/
+action.yml
+CHANGELOG.md
+justfile
+LICENSE.txt
+README.md
+renovate.json5
+tsconfig.json
