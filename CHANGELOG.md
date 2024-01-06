@@ -1,3 +1,11 @@
+## [1.5.87](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.86...v1.5.87) (2024-01-06)
+
+
+### Build System
+
+* add nx with build target ([7e1c878](https://github.com/akikanellis/branch-name-validator-test/commit/7e1c8786f2ee734ed87bf653c5b6553faefb01d7))
+* update lockfilfe ([6e2cbab](https://github.com/akikanellis/branch-name-validator-test/commit/6e2cbabac54c719d64a7ab9b2127a28d52ac92db))
+
 ## [1.5.86](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.85...v1.5.86) (2024-01-02)
 
 
