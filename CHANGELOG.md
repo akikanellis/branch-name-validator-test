@@ -1,3 +1,10 @@
+## [1.5.89](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.88...v1.5.89) (2024-01-06)
+
+
+### Build System
+
+* add test targets ([e2ed86c](https://github.com/akikanellis/branch-name-validator-test/commit/e2ed86cd55abf98b47d84325de4da105a9d0d9dd))
+
 ## [1.5.88](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.87...v1.5.88) (2024-01-06)
 
 
