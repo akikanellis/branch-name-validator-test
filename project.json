@@ -1,7 +1,7 @@
 {
   "$schema": "node_modules/nx/schemas/project-schema.json",
   "name": "branch-name-validator-test",
-  "projectType": "library",
+  "projectType": "application",
   "targets": {
     "build": {
       "executor": "@nx/js:tsc"
