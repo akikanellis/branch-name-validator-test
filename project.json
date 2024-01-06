@@ -5,6 +5,16 @@
   "targets": {
     "build": {
       "executor": "@nx/js:tsc"
+    },
+    "test": {
+      "executor": "@nx/jest:jest"
+    },
+    "test:coverage": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{projectRoot}/coverage"],
+      "options": {
+        "codeCoverage": true
+      }
     }
   }
 }
