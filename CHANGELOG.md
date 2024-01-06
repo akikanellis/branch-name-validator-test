@@ -1,3 +1,10 @@
+## [1.5.88](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.87...v1.5.88) (2024-01-06)
+
+
+### Build System
+
+* switch to app ([f793dc5](https://github.com/akikanellis/branch-name-validator-test/commit/f793dc53727a8bdebd7f493050181d9ccf43dfa2))
+
 ## [1.5.87](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.86...v1.5.87) (2024-01-06)
 
 
