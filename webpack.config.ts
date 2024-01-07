@@ -2,9 +2,8 @@ import { composePlugins, withNx } from "@nx/webpack";
 import { merge } from "webpack-merge";
 import { Configuration } from "webpack";
 import * as path from "node:path";
-// @ts-expect-error
-// Suppressing because this is only complaining on the editor, using webpack
-// works as expected.
+// @ts-expect-error: This is only complaining on the editor, using webpack works
+// as expected.
 import LicensePlugin from "webpack-license-plugin";
 
 export default composePlugins(withNx(), (config: Configuration) => {
