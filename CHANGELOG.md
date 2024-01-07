@@ -1,3 +1,10 @@
+## [1.5.91](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.90...v1.5.91) (2024-01-07)
+
+
+### Build System
+
+* suppress bogus issue ([2f7df3a](https://github.com/akikanellis/branch-name-validator-test/commit/2f7df3a0d82280e4e4c2151a5a8d8f6c5b442157))
+
 ## [1.5.90](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.89...v1.5.90) (2024-01-07)
 
 
