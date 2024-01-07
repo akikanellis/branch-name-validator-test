@@ -1,3 +1,10 @@
+## [1.5.90](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.89...v1.5.90) (2024-01-07)
+
+
+### Build System
+
+* add package target ([9f2e01d](https://github.com/akikanellis/branch-name-validator-test/commit/9f2e01dcf3187503bec3ebf97c4c829c9088f8cd))
+
 ## [1.5.89](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.88...v1.5.89) (2024-01-06)
 
 
