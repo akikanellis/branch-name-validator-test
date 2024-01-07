@@ -2,6 +2,9 @@ import { composePlugins, withNx } from "@nx/webpack";
 import { merge } from "webpack-merge";
 import { Configuration } from "webpack";
 import * as path from "node:path";
+// Suppressing because this is only complaining on the editor, using webpack
+// works as expected.
+// @ts-ignore
 import LicensePlugin from "webpack-license-plugin";
 
 export default composePlugins(withNx(), (config: Configuration) => {

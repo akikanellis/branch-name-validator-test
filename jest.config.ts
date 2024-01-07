@@ -10,5 +10,5 @@ export default {
   testEnvironment: "node",
   testMatch: ["**/test/**/*.test.ts"],
   transform: { "^.+\\.ts$": "ts-jest" },
-  verbose: true
+  verbose: true,
 } as Config;

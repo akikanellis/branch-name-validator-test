@@ -4,5 +4,11 @@
   "compilerOptions": {
     "rootDir": "."
   },
-  "include": ["src", "test", ".eslintrc.js", "jest.config.ts", "webpack.config.ts"]
+  "include": [
+    "src",
+    "test",
+    ".eslintrc.js",
+    "jest.config.ts",
+    "webpack.config.ts"
+  ]
 }
