@@ -1,3 +1,12 @@
+## [1.5.92](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.91...v1.5.92) (2024-01-07)
+
+
+### Build System
+
+* add deleted contributing link ([e4dbd5f](https://github.com/akikanellis/branch-name-validator-test/commit/e4dbd5f8a0a54f4cb9b5224d93a92cf3314b4bec))
+* add nxignore word ([6d36d82](https://github.com/akikanellis/branch-name-validator-test/commit/6d36d82815944070f5921c25187c2f3aeb1166cf))
+* use expect-error ([8b744db](https://github.com/akikanellis/branch-name-validator-test/commit/8b744db9f026b1e5b2e509bbd65035716ab647c1))
+
 ## [1.5.91](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.90...v1.5.91) (2024-01-07)
 
 
