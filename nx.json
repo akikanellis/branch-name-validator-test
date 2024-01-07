@@ -12,6 +12,10 @@
     "test:coverage": {
       "cache": true
     },
+    "package": {
+      "cache": true,
+      "inputs": ["production"]
+    },
     "@nx/js:tsc": {
       "outputs": ["{options.outputPath}"],
       "options": {

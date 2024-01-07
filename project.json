@@ -2,6 +2,7 @@
   "$schema": "node_modules/nx/schemas/project-schema.json",
   "name": "branch-name-validator-test",
   "projectType": "application",
+  "sourceRoot": "src",
   "targets": {
     "build": {
       "executor": "@nx/js:tsc"
@@ -14,6 +15,16 @@
       "outputs": ["{projectRoot}/coverage"],
       "options": {
         "codeCoverage": true
+      }
+    },
+    "package": {
+      "executor": "@nx/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "webpackConfig": "webpack.config.ts",
+        "tsConfig": "tsconfig.build.json",
+        "compiler": "tsc",
+        "outputPath": "dist"
       }
     }
   }
