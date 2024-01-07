@@ -1,3 +1,10 @@
+## [1.5.93](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.92...v1.5.93) (2024-01-07)
+
+
+### Build System
+
+* move comment ([f86157c](https://github.com/akikanellis/branch-name-validator-test/commit/f86157c9286284d84663456d1ff3bbcdf9ccd510))
+
 ## [1.5.92](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.91...v1.5.92) (2024-01-07)
 
 
