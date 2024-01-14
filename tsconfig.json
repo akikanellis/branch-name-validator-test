@@ -1,14 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "./tsconfig.build.json",
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "rootDir": "."
   },
-  "include": [
-    "src",
-    "test",
-    ".eslintrc.js",
-    "jest.config.ts",
-    "webpack.config.ts"
-  ]
+  "include": [".eslintrc.js", "jest.config.base.ts", "webpack.config.ts"]
 }

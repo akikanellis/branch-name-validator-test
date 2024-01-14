@@ -1,47 +1,33 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "defaultProject": "branch-name-validator-test",
   "targetDefaults": {
     "build": {
       "cache": true,
-      "inputs": ["production"]
-    },
-    "test": {
-      "cache": true
-    },
-    "test:coverage": {
-      "cache": true
-    },
-    "package": {
-      "cache": true,
-      "inputs": ["production"]
-    },
-    "@nx/js:tsc": {
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "rootDir": "src",
-        "outputPath": "lib",
-        "main": "src/index.ts",
-        "tsConfig": "tsconfig.build.json"
-      }
-    },
-    "@nx/jest:jest": {
-      "options": {
-        "jestConfig": "jest.config.ts"
-      }
+      "dependsOn": ["^build"],
+      "inputs": ["build", "^build"],
+      "outputs": [
+        "{projectRoot}/dist",
+        "{projectRoot}/tsconfig.build.tsbuildinfo"
+      ]
     }
   },
   "namedInputs": {
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "sharedGlobals": [
-      {
-        "runtime": "node --version"
-      }
+      "{workspaceRoot}/.tool-versions",
+      "{workspaceRoot}/jest.config.base.ts",
+      "{workspaceRoot}/tsconfig.base.json",
+      "{workspaceRoot}/tsconfig.json",
+      "{workspaceRoot}/webpack.config.base.ts"
     ],
-    "production": [
+    "build": [
       "default",
+      "!{workspaceRoot}/jest.config.base.ts",
+      "!{workspaceRoot}/tsconfig.json",
+      "!{workspaceRoot}/webpack.config.base.ts",
       "!{projectRoot}/test/**/*",
-      "!{projectRoot}/jest.config.ts"
+      "!{projectRoot}/jest.config.ts",
+      "!{projectRoot}/tsconfig.json"
     ]
   }
 }

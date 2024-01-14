@@ -5,11 +5,9 @@
     "module": "NodeNext",
     "target": "ESNext",
 
-    "baseUrl": ".",
-    "rootDir": "src",
-    "outDir": "lib",
-
+    "declaration": true,
+    "declarationMap": true,
+    "resolveJsonModule": true,
     "sourceMap": true
-  },
-  "include": ["src"]
+  }
 }

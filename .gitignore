@@ -329,6 +329,4 @@ $RECYCLE.BIN/
 .idea/
 .nx/
 .vscode/
-!dist/
-lib/
 megalinter-reports/

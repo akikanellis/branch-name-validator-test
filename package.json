@@ -14,20 +14,17 @@
   "license": "MIT",
   "author": "Aki Kanellis <hello@akikanellis.com> (https://akikanellis.com)",
   "repository": "github:akikanellis/branch-name-validator-test",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "build": "nx build",
-    "test": "nx test",
-    "test:coverage": "nx test:coverage",
-    "package": "nx package"
+    "build": "nx run-many --target=build --output-style=stream"
   },
   "dependencies": {
     "@actions/core": "1.10.1",
     "@actions/github": "6.0.0"
   },
   "devDependencies": {
-    "@nx/jest": "17.2.8",
-    "@nx/js": "17.2.8",
-    "@nx/webpack": "17.2.8",
     "@nx/workspace": "17.2.8",
     "@tsconfig/strictest": "2.0.2",
     "@types/jest": "29.5.11",
