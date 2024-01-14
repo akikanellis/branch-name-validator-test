@@ -1,6 +1,6 @@
 import type { Config } from "jest";
 
-export default {
+const config: Config = {
   collectCoverageFrom: ["src/**/*.ts"],
   coverageReporters: ["json", "html", "text"],
   resetMocks: true,
@@ -8,4 +8,6 @@ export default {
   testMatch: ["**/test/**/*.test.ts"],
   transform: { "^.+\\.ts$": "ts-jest" },
   verbose: true,
-} as Config;
+};
+
+export default config;

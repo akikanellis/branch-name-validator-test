@@ -3,7 +3,9 @@
   "name": "branch-name-validator-test",
   "version": "1.5.93",
   "scripts": {
-    "build": "tsc --build tsconfig.build.json"
+    "build": "tsc --build tsconfig.build.json",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
   },
   "private": true
 }

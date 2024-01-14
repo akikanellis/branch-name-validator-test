@@ -9,6 +9,14 @@
         "{projectRoot}/dist",
         "{projectRoot}/tsconfig.build.tsbuildinfo"
       ]
+    },
+    "test": {
+      "cache": true,
+      "inputs": ["test"]
+    },
+    "test:coverage": {
+      "cache": true,
+      "inputs": ["test"]
     }
   },
   "namedInputs": {
@@ -16,6 +24,7 @@
     "sharedGlobals": [
       "{workspaceRoot}/.tool-versions",
       "{workspaceRoot}/jest.config.base.ts",
+      "{workspaceRoot}/jest.config.ts",
       "{workspaceRoot}/tsconfig.base.json",
       "{workspaceRoot}/tsconfig.json",
       "{workspaceRoot}/webpack.config.base.ts"
@@ -23,11 +32,13 @@
     "build": [
       "default",
       "!{workspaceRoot}/jest.config.base.ts",
+      "!{workspaceRoot}/jest.config.ts",
       "!{workspaceRoot}/tsconfig.json",
       "!{workspaceRoot}/webpack.config.base.ts",
       "!{projectRoot}/test/**/*",
       "!{projectRoot}/jest.config.ts",
       "!{projectRoot}/tsconfig.json"
-    ]
+    ],
+    "test": ["default"]
   }
 }
