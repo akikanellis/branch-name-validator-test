@@ -1,8 +1,19 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "./tsconfig.base.json",
+  "extends": "@tsconfig/strictest/tsconfig.json",
   "compilerOptions": {
-    "rootDir": "."
+    "module": "NodeNext",
+    "target": "ESNext",
+
+    "declaration": true,
+    "declarationMap": true,
+    "resolveJsonModule": true,
+    "sourceMap": true
   },
-  "include": [".eslintrc.js", "jest.config.base.ts", "webpack.config.ts"]
+  "include": [
+    ".eslintrc.js",
+    "jest.config.base.ts",
+    "jest.config.ts",
+    "webpack.config.base.ts"
+  ]
 }
