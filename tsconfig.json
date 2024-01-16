@@ -1,15 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@tsconfig/strictest/tsconfig.json",
-  "compilerOptions": {
-    "module": "NodeNext",
-    "target": "ESNext",
-
-    "declaration": true,
-    "declarationMap": true,
-    "resolveJsonModule": true,
-    "sourceMap": true
-  },
+  "extends": "./tsconfig.base.json",
   "include": [
     ".eslintrc.js",
     "jest.config.base.ts",
