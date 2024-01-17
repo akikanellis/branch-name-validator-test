@@ -1,3 +1,15 @@
+## [1.5.95](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.94...v1.5.95) (2024-01-17)
+
+
+### Build System
+
+* add bundle ([4197485](https://github.com/akikanellis/branch-name-validator-test/commit/41974850e54baa5d1f113f9018e08548e6ec46ca))
+* add nx test ([5d0f469](https://github.com/akikanellis/branch-name-validator-test/commit/5d0f4694ebb617e912e4c72e0cee5c66abcbfffa))
+* add tsconfig.base.json ([eb4bda4](https://github.com/akikanellis/branch-name-validator-test/commit/eb4bda4894387b99b8e857bcf5461f7bd000136c))
+* **deps:** update all non-major dependencies ([#18](https://github.com/akikanellis/branch-name-validator-test/issues/18)) ([4b1e7e6](https://github.com/akikanellis/branch-name-validator-test/commit/4b1e7e69e43dc1bbad33d28c2ff230a8e8859aba))
+* fix coverage ([61d1576](https://github.com/akikanellis/branch-name-validator-test/commit/61d1576778300c8b869a8e0cf1fc02d0a86aabdb))
+* standardise tsconfigs ([18aa875](https://github.com/akikanellis/branch-name-validator-test/commit/18aa875854ee9a9b555189b1f005cb205d10359c))
+
 ## [1.5.94](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.93...v1.5.94) (2024-01-07)
 
 
