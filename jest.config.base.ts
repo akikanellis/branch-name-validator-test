@@ -6,7 +6,7 @@ const config: Config = {
   resetMocks: true,
   testEnvironment: "node",
   testMatch: ["**/test/**/*.test.ts"],
-  transform: { "^.+\\.tsx?$": "ts-jest" },
+  transform: { "^.+\\.ts$": "ts-jest" },
   verbose: true,
 };
 

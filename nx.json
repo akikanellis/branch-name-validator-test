@@ -17,6 +17,11 @@
     "test:coverage": {
       "cache": true,
       "inputs": ["test"]
+    },
+    "package": {
+      "cache": true,
+      "inputs": ["package", "^package"],
+      "outputs": ["{projectRoot}/bundle"]
     }
   },
   "namedInputs": {
@@ -39,6 +44,15 @@
       "!{projectRoot}/jest.config.ts",
       "!{projectRoot}/tsconfig.json"
     ],
-    "test": ["default"]
+    "test": ["default"],
+    "package": [
+      "default",
+      "!{workspaceRoot}/jest.config.base.ts",
+      "!{workspaceRoot}/jest.config.ts",
+      "!{workspaceRoot}/tsconfig.json",
+      "!{projectRoot}/test/**/*",
+      "!{projectRoot}/jest.config.ts",
+      "!{projectRoot}/tsconfig.json"
+    ]
   }
 }

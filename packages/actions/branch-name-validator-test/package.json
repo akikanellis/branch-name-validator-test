@@ -2,10 +2,12 @@
   "$schema": "https://json.schemastore.org/package.json",
   "name": "branch-name-validator-test",
   "version": "1.5.93",
+  "sideEffects": false,
   "scripts": {
     "build": "tsc --build tsconfig.build.json",
     "test": "jest",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "package": "webpack"
   },
   "private": true
 }
