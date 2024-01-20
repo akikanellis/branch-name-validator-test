@@ -59,7 +59,7 @@ plugins:
   - - "@semantic-release/git"
     - assets:
         - CHANGELOG.md
-        - dist
+        - packages/actions/branch-name-validator-test/bundle
         - package.json
         - package-lock.json
         - README.md
