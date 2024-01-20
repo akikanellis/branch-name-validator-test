@@ -39,7 +39,7 @@ TODO
 Install
 
 ```yaml
-- uses: akikanellis/branch-name-validator-test@v1.5.95
+- uses: akikanellis/branch-name-validator-test@v1.5.96
   with:
     regex: 'something'
 ```

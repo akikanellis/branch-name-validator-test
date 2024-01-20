@@ -1,3 +1,10 @@
+## [1.5.96](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.95...v1.5.96) (2024-01-20)
+
+
+### Build System
+
+* fix gitattributes ([211621a](https://github.com/akikanellis/branch-name-validator-test/commit/211621aa9407d550c9195e096993575db981047c))
+
 ## [1.5.95](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.94...v1.5.95) (2024-01-17)
 
 
