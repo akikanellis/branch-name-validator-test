@@ -90,4 +90,4 @@
 
 # End of generated .gitattributes
 
-dist/** -diff linguist-generated=true
+**/bundle/** -diff linguist-generated=true
