@@ -1,3 +1,10 @@
+## [1.5.98](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.97...v1.5.98) (2024-01-20)
+
+
+### Build System
+
+* set simpler bundle glob ([c0d8544](https://github.com/akikanellis/branch-name-validator-test/commit/c0d85443d99ef7d339b0f04f6f4f1c3d246c53f1))
+
 ## [1.5.97](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.96...v1.5.97) (2024-01-20)
 
 
