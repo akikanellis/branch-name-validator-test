@@ -18,6 +18,7 @@
     "packages/actions/*"
   ],
   "scripts": {
+    "install:all": "nx run-many --target=install:all --output-style=stream",
     "build": "nx run-many --target=build --output-style=stream",
     "test": "nx run-many --target=test --output-style=stream",
     "test:coverage": "nx run-many --target=test:coverage --output-style=stream",

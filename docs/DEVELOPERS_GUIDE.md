@@ -23,38 +23,38 @@ test this project.
 
 Install the following software
 
-- [just](https://github.com/casey/just)
-- [rtx](https://github.com/jdx/rtx)
 - [Docker](https://www.docker.com/)
+- [mise](https://github.com/jdx/mise)
+- [Node](https://nodejs.org/)
 
 ## Useful Commands
-
-List all commands
-
-```shell
-just
-```
 
 Install tools and dependencies
 
 ```shell
-just install
+npm install && npm run install:all
 ```
 
 Lint project
 
 ```shell
-just lint
+npm run lint
+```
+
+Compile project
+
+```shell
+npm run build
 ```
 
 Run tests
 
 ```shell
-just test
+npm run test
 ```
 
 Clean generated files
 
 ```shell
-just clean
+npm run clean
 ```
