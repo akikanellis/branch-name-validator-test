@@ -1,6 +1,22 @@
 {
   "$schema": "node_modules/nx/schemas/project-schema.json",
   "targets": {
+    "install": {
+      "executor": "nx:noop",
+      "dependsOn": ["install:tools", "install:dependencies"]
+    },
+    "install:tools": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "mise install"
+      }
+    },
+    "install:dependencies": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm install"
+      }
+    },
     "clean": {
       "executor": "nx:run-commands",
       "options": {
