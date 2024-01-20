@@ -1,3 +1,10 @@
+## [1.5.97](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.96...v1.5.97) (2024-01-20)
+
+
+### Build System
+
+* add missing path ([6763e7a](https://github.com/akikanellis/branch-name-validator-test/commit/6763e7aa960a3bd8cda0f0dc3c7d6c2d17acf84c))
+
 ## [1.5.96](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.95...v1.5.96) (2024-01-20)
 
 
