@@ -13,6 +13,9 @@
     },
     "package": {
       "executor": "nx:run-script"
+    },
+    "clean": {
+      "executor": "nx:run-script"
     }
   }
 }

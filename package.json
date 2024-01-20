@@ -21,7 +21,8 @@
     "build": "nx run-many --target=build --output-style=stream",
     "test": "nx run-many --target=test --output-style=stream",
     "test:coverage": "nx run-many --target=test:coverage --output-style=stream",
-    "package": "nx run-many --target=package --output-style=stream"
+    "package": "nx run-many --target=package --output-style=stream",
+    "clean": "nx run-many --target=clean --output-style=stream"
   },
   "dependencies": {
     "@actions/core": "1.10.1",

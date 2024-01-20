@@ -6,7 +6,8 @@
     "build": "tsc --build tsconfig.build.json",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "package": "webpack"
+    "package": "webpack",
+    "clean": "rimraf coverage dist tsconfig.build.tsbuildinfo"
   },
   "private": true
 }
