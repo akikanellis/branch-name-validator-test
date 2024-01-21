@@ -1,3 +1,18 @@
+## [1.5.99](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.98...v1.5.99) (2024-01-21)
+
+
+### Build System
+
+* add clean ([360715a](https://github.com/akikanellis/branch-name-validator-test/commit/360715a5d2c3603f066f9e3d28b8adcf54b257a3))
+* add install ([705df12](https://github.com/akikanellis/branch-name-validator-test/commit/705df12b51a10e0c2b25b9596e9988784c1bbd7d))
+* add install ([e5f70c6](https://github.com/akikanellis/branch-name-validator-test/commit/e5f70c6f342547d64d953a5d8514a406f68dabe1))
+* add lint ([f54b5e2](https://github.com/akikanellis/branch-name-validator-test/commit/f54b5e227076238c99b9c9caa04d1406f5af745b))
+* add missing run ([af06193](https://github.com/akikanellis/branch-name-validator-test/commit/af06193e61fec996e6c83f40ff43ca9ad863740f))
+* fix dependency installation ([5abcdd7](https://github.com/akikanellis/branch-name-validator-test/commit/5abcdd7c7ab9eee5e33b98a1cbf450294686088d))
+* fix dependency installation ([21c93a7](https://github.com/akikanellis/branch-name-validator-test/commit/21c93a7cedbfd79d69de4495d1ec325d72108d25))
+* remove version ([8380560](https://github.com/akikanellis/branch-name-validator-test/commit/838056083e618e1220b035e1c336c31b25107242))
+* update lockfile ([7bb627a](https://github.com/akikanellis/branch-name-validator-test/commit/7bb627a18eb70eceb3ae2c114705b1582678bbba))
+
 ## [1.5.98](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.97...v1.5.98) (2024-01-20)
 
 
