@@ -1,3 +1,10 @@
+## [1.5.101](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.100...v1.5.101) (2024-01-21)
+
+
+### Build System
+
+* simplify inputs ([ec6d553](https://github.com/akikanellis/branch-name-validator-test/commit/ec6d553481760edf7629c7ceafc0de9b7d94b35e))
+
 ## [1.5.100](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.99...v1.5.100) (2024-01-21)
 
 
