@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
   "name": "branch-name-validator-test",
-  "version": "1.5.99",
+  "version": "1.5.100",
   "description": "Branch Name Validator Test",
   "keywords": [
     "github",
