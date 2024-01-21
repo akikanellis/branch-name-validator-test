@@ -73,7 +73,7 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm run install:dependencies
+        run: npm ci && npm install:dependencies
 
       - name: Get token
         id: get-token
