@@ -1,21 +1,5 @@
 {
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "projectType": "application",
-  "targets": {
-    "build": {
-      "executor": "nx:run-script"
-    },
-    "test": {
-      "executor": "nx:run-script"
-    },
-    "test:coverage": {
-      "executor": "nx:run-script"
-    },
-    "package": {
-      "executor": "nx:run-script"
-    },
-    "clean": {
-      "executor": "nx:run-script"
-    }
-  }
+  "name": "branch-name-validator-test-action",
+  "projectType": "application"
 }

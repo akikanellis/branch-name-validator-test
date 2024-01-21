@@ -29,6 +29,7 @@
     "releaserc",
     "renovatebot",
     "stefanzweifel",
+    "tsbuildinfo",
     "wontfix"
   ]
 }

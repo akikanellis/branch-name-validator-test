@@ -11,6 +11,11 @@
     "install:dependencies": {
       "cache": false
     },
+    "lint": {
+      "cache": true,
+      "inputs": ["{workspaceRoot}/**/*", "{workspaceRoot}/**/.*"],
+      "outputs": ["{workspaceRoot}/megalinter-reports"]
+    },
     "build": {
       "cache": true,
       "dependsOn": ["^build"],
