@@ -30,17 +30,6 @@
       depNameTemplate: "ghcr.io/renovatebot/renovate",
     },
     {
-      description: "Update Just in GitHub Action workflows",
-      customType: "regex",
-      fileMatch: ["^\\.github\\/(actions|workflows)\\/.+\\.ya?ml$"],
-      matchStrings: [
-        "just-version\\s*:\\s*(\"|')?(?<currentValue>.+)(\"|')?(\\s+|\\s+.*)",
-      ],
-      datasourceTemplate: "crate",
-      depNameTemplate: "just",
-      versioningTemplate: "semver-coerced",
-    },
-    {
       description: "Update semantic-release in GitHub Action workflows",
       customType: "regex",
       fileMatch: ["^\\.github\\/(actions|workflows)\\/.+\\.ya?ml$"],
@@ -64,7 +53,6 @@
       description: "Any other file with dependencies",
       customType: "regex",
       fileMatch: [
-        "(^|/)justfile$",
         "(^|/).+\\.gradle(\\.kts)?$",
         "(^workflow-templates|\\.github/workflows)/[^/]+\\.ya?ml$",
         "(^|/)action\\.ya?ml$",

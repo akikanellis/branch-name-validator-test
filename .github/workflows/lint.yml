@@ -48,13 +48,6 @@ jobs:
           token: ${{ inputs.apply-fixes && steps.get-token.outputs.token || github.token }}
           fetch-depth: 0
 
-      - name: Setup just
-        uses: extractions/setup-just@69d82fb0233557aec017ef13706851d0694e0f1d # v1.6.0
-        with:
-          just-version: 1.23.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Setup Node
         uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
         with:
@@ -62,7 +55,7 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: just install-dependencies
+        run: npm run install:dependencies
 
       - name: Lint
         id: lint

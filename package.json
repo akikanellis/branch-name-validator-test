@@ -19,6 +19,8 @@
   ],
   "scripts": {
     "install:all": "nx run-many --target=install:all --output-style=stream",
+    "install:tools": "nx run-many --target=install:tools --output-style=stream",
+    "install:dependencies": "nx run-many --target=install:dependencies --output-style=stream",
     "lint": "nx run-many --target=lint --output-style=stream",
     "build": "nx run-many --target=build --output-style=stream",
     "test": "nx run-many --target=test --output-style=stream",
