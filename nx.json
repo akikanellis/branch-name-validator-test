@@ -13,7 +13,7 @@
     },
     "lint": {
       "cache": true,
-      "inputs": ["{workspaceRoot}/**/*", "{workspaceRoot}/**/.*"],
+      "inputs": ["lint"],
       "outputs": ["{workspaceRoot}/megalinter-reports"]
     },
     "build": {
@@ -27,11 +27,11 @@
     },
     "test": {
       "cache": true,
-      "inputs": ["test"]
+      "inputs": ["test", "^build"]
     },
     "test:coverage": {
       "cache": true,
-      "inputs": ["test"]
+      "inputs": ["test", "^build"]
     },
     "package": {
       "cache": true,
@@ -52,6 +52,7 @@
       "{workspaceRoot}/tsconfig.json",
       "{workspaceRoot}/webpack.config.base.ts"
     ],
+    "lint": ["{workspaceRoot}/**/*", "{workspaceRoot}/**/.*"],
     "build": [
       "default",
       "!{workspaceRoot}/jest.config.base.ts",
@@ -60,17 +61,14 @@
       "!{workspaceRoot}/webpack.config.base.ts",
       "!{projectRoot}/test/**/*",
       "!{projectRoot}/jest.config.ts",
-      "!{projectRoot}/tsconfig.json"
+      "!{projectRoot}/tsconfig.json",
+      "!{projectRoot}/webpack.config.ts"
     ],
     "test": ["default"],
     "package": [
-      "default",
-      "!{workspaceRoot}/jest.config.base.ts",
-      "!{workspaceRoot}/jest.config.ts",
-      "!{workspaceRoot}/tsconfig.json",
-      "!{projectRoot}/test/**/*",
-      "!{projectRoot}/jest.config.ts",
-      "!{projectRoot}/tsconfig.json"
+      "build",
+      "{workspaceRoot}/webpack.config.base.ts",
+      "{projectRoot}/webpack.config.ts"
     ]
   }
 }
