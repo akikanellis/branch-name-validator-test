@@ -24,6 +24,7 @@
     "kanellos",
     "kics",
     "markdownlint",
+    "npmpackagejsonlintrc",
     "nxignore",
     "releaserc",
     "renovatebot",

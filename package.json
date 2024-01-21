@@ -15,8 +15,7 @@
   "author": "Aki Kanellis <hello@akikanellis.com> (https://akikanellis.com)",
   "repository": "github:akikanellis/branch-name-validator-test",
   "workspaces": [
-    "packages/actions/*",
-    "packages/tools/*"
+    "packages/*/*"
   ],
   "scripts": {
     "install:all": "nx run-many --target=install:all --output-style=stream",
