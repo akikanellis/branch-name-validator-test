@@ -1,0 +1,5 @@
+{
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "name": "@akikanellis/branch-name-validator-test-core",
+  "projectType": "library"
+}

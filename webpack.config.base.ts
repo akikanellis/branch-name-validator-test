@@ -16,6 +16,8 @@ const config: Configuration = {
         test: /\.ts$/,
         loader: "ts-loader",
         options: {
+          // TODO This is needed due to `rootDir` not including all files
+          transpileOnly: true,
           configFile: path.resolve(process.cwd(), "tsconfig.build.json"),
         },
         exclude: /node_modules/,
