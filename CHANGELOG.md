@@ -1,3 +1,16 @@
+## [1.5.102](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.101...v1.5.102) (2024-01-22)
+
+
+### Bug Fixes
+
+* remove comma ([5978863](https://github.com/akikanellis/branch-name-validator-test/commit/5978863a0730bf6fba763b24835de137e50664cd))
+
+
+### Build System
+
+* add missing dependency on ^build ([eb4df5e](https://github.com/akikanellis/branch-name-validator-test/commit/eb4df5e19515f3d0332c934d1029f6ee94bd917d))
+* extract project ([3df7efa](https://github.com/akikanellis/branch-name-validator-test/commit/3df7efaf025dcfd68cd8f7e83da547e25b9a3fe8))
+
 ## [1.5.101](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.100...v1.5.101) (2024-01-21)
 
 
