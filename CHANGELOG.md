@@ -1,3 +1,10 @@
+## [1.5.103](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.102...v1.5.103) (2024-01-22)
+
+
+### Build System
+
+* add missing dependency on ^build ([fabef6a](https://github.com/akikanellis/branch-name-validator-test/commit/fabef6aa56b2933da225daa37f7c6937854c0d47))
+
 ## [1.5.102](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.101...v1.5.102) (2024-01-22)
 
 
