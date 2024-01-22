@@ -35,6 +35,7 @@
     },
     "package": {
       "cache": true,
+      "dependsOn": ["^build"],
       "inputs": ["package", "^package"],
       "outputs": ["{projectRoot}/bundle"]
     },
