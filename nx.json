@@ -27,10 +27,12 @@
     },
     "test": {
       "cache": true,
+      "dependsOn": ["^build"],
       "inputs": ["test", "^build"]
     },
     "test:coverage": {
       "cache": true,
+      "dependsOn": ["^build"],
       "inputs": ["test", "^build"]
     },
     "package": {
