@@ -3,7 +3,7 @@ module.exports = {
 
   env: {
     node: true,
-    jest: true
+    jest: true,
   },
 
   settings: {
@@ -13,15 +13,15 @@ module.exports = {
       // because this is the recommended way to do it according to
       // eslint-plugin-jest.
       // eslint-disable-next-line
-      version: require("jest/package.json").version
-    }
+      version: require("jest/package.json").version,
+    },
   },
 
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended-type-checked",
     "plugin:@typescript-eslint/stylistic-type-checked",
-    "prettier"
+    "prettier",
   ],
 
   parser: "@typescript-eslint/parser",
@@ -29,7 +29,7 @@ module.exports = {
   parserOptions: {
     project: ["tsconfig.lint.json", "packages/*/*/tsconfig.lint.json"],
     ecmaVersion: "latest",
-    sourceType: "module"
+    sourceType: "module",
   },
 
   plugins: ["@typescript-eslint"],
@@ -40,29 +40,29 @@ module.exports = {
       extends: ["plugin:jsonc/recommended-with-json"],
       parser: "jsonc-eslint-parser",
       parserOptions: {
-        jsonSyntax: "JSON"
-      }
+        jsonSyntax: "JSON",
+      },
     },
     {
       files: [".jsonc"],
       extends: ["plugin:jsonc/recommended-with-jsonc"],
       parser: "jsonc-eslint-parser",
       parserOptions: {
-        jsonSyntax: "JSONC"
-      }
+        jsonSyntax: "JSONC",
+      },
     },
     {
       files: ["*.json5"],
       extends: ["plugin:jsonc/recommended-with-json5"],
       parser: "jsonc-eslint-parser",
       parserOptions: {
-        jsonSyntax: "JSON5"
-      }
+        jsonSyntax: "JSON5",
+      },
     },
     {
       files: ["test/**"],
       extends: ["plugin:jest/recommended", "plugin:jest/style"],
-      plugins: ["jest"]
-    }
-  ]
+      plugins: ["jest"],
+    },
+  ],
 };

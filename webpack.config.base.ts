@@ -21,19 +21,19 @@ const config: Configuration = {
         options: {
           // TODO This is needed due to `rootDir` not including all files
           transpileOnly: true,
-          configFile: tsconfigFile
+          configFile: tsconfigFile,
         },
-        exclude: /node_modules/
-      }
-    ]
+        exclude: /node_modules/,
+      },
+    ],
   },
   resolve: {
     extensions: [".ts", ".js", ".json"],
-    plugins: [new TsconfigPathsPlugin({ configFile: tsconfigFile })]
+    plugins: [new TsconfigPathsPlugin({ configFile: tsconfigFile })],
   },
   output: {
     path: path.resolve(process.cwd(), "bundle"),
-    filename: "index.js"
+    filename: "index.js",
   },
   optimization: {
     minimize: true,
@@ -42,11 +42,11 @@ const config: Configuration = {
       // We use the LicensePlugin to bundle the licenses
       new TerserPlugin({
         terserOptions: { format: { comments: false } },
-        extractComments: false
-      })
-    ]
+        extractComments: false,
+      }),
+    ],
   },
-  plugins: [new LicensePlugin({ outputFilename: "licenses.json" })]
+  plugins: [new LicensePlugin({ outputFilename: "licenses.json" })],
 };
 
 export default config;
