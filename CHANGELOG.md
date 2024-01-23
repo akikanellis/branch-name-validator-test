@@ -1,3 +1,10 @@
+## [1.5.106](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.105...v1.5.106) (2024-01-23)
+
+
+### Build System
+
+* remove TODO ([c2e4afc](https://github.com/akikanellis/branch-name-validator-test/commit/c2e4afc745921343e9d2334a997eb30163b1d24e))
+
 ## [1.5.105](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.104...v1.5.105) (2024-01-23)
 
 
