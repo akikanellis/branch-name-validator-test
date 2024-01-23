@@ -8,6 +8,21 @@
     "declaration": true,
     "declarationMap": true,
     "resolveJsonModule": true,
-    "sourceMap": true
+    "sourceMap": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@branch-name-validator-test/action/internal/*": [
+        "packages/actions/action/src/*"
+      ],
+      "@branch-name-validator-test/core/internal/*": [
+        "packages/libs/core/src/*"
+      ],
+      "@branch-name-validator-test/scripts/internal/*": [
+        "packages/tools/scripts/src/*"
+      ],
+
+      "@branch-name-validator-test/*": ["packages/libs/*/src/index"]
+    }
   }
 }
