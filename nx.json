@@ -1,5 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "nxCloudAccessToken": "YTUxMjllZGEtZTgzNC00YzVjLWJhNjgtNjc3ZjZkYzMyYTJifHJlYWQ=",
   "targetDefaults": {
     "install:all": {
       "cache": false,
