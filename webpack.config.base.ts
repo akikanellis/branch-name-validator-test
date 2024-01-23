@@ -19,7 +19,6 @@ const config: Configuration = {
         test: /\.ts$/,
         loader: "ts-loader",
         options: {
-          // TODO This is needed due to `rootDir` not including all files
           transpileOnly: true,
           configFile: tsconfigFile,
         },
@@ -39,7 +38,6 @@ const config: Configuration = {
     minimize: true,
     usedExports: true,
     minimizer: [
-      // We use the LicensePlugin to bundle the licenses
       new TerserPlugin({
         terserOptions: { format: { comments: false } },
         extractComments: false,
