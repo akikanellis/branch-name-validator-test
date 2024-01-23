@@ -27,17 +27,14 @@
     },
     "test": {
       "cache": true,
-      "dependsOn": ["^build"],
       "inputs": ["test", "^build"]
     },
     "test:coverage": {
       "cache": true,
-      "dependsOn": ["^build"],
       "inputs": ["test", "^build"]
     },
     "package": {
       "cache": true,
-      "dependsOn": ["^build"],
       "inputs": ["package", "^package"],
       "outputs": ["{projectRoot}/bundle"]
     },
