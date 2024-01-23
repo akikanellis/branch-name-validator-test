@@ -1,3 +1,12 @@
+## [1.5.104](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.103...v1.5.104) (2024-01-23)
+
+
+### Build System
+
+* add commas back ([f27f594](https://github.com/akikanellis/branch-name-validator-test/commit/f27f59446c8dd133bb49487f41a1f517cde6885b))
+* finish setup ([0ab25d9](https://github.com/akikanellis/branch-name-validator-test/commit/0ab25d92e81fd41017bfd8797c198d3720aa89b7))
+* remove unnecessary dependencies ([425f03d](https://github.com/akikanellis/branch-name-validator-test/commit/425f03d7ca57b5e428a3bc80f873232666ff536c))
+
 ## [1.5.103](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.102...v1.5.103) (2024-01-22)
 
 
