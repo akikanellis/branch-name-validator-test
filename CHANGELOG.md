@@ -1,3 +1,10 @@
+## [1.5.107](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.106...v1.5.107) (2024-01-23)
+
+
+### Build System
+
+* add read-only Nx token ([be85aeb](https://github.com/akikanellis/branch-name-validator-test/commit/be85aebb81f5d7a09300c323d8ce9740bb12cb19))
+
 ## [1.5.106](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.105...v1.5.106) (2024-01-23)
 
 
