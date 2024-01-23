@@ -1,3 +1,10 @@
+## [1.5.105](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.104...v1.5.105) (2024-01-23)
+
+
+### Build System
+
+* add correct directory ([882b3b5](https://github.com/akikanellis/branch-name-validator-test/commit/882b3b533261e729be148785df8f1a8501531a24))
+
 ## [1.5.104](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.103...v1.5.104) (2024-01-23)
 
 
