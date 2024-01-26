@@ -1,3 +1,10 @@
+## [1.5.115](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.114...v1.5.115) (2024-01-26)
+
+
+### Build System
+
+* downgrade semantic-release ([4226fb1](https://github.com/akikanellis/branch-name-validator-test/commit/4226fb1fed21cad7c33b707ded2c53f655ec0540))
+
 ## [1.5.114](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.113...v1.5.114) (2024-01-26)
 
 
