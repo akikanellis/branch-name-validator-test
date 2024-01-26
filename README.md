@@ -32,7 +32,7 @@ Branch Name Validator Test
 
 ## About
 
-TODO
+TODO commit!
 
 ## Getting Started
 
@@ -41,7 +41,7 @@ Install
 ```yaml
 - uses: akikanellis/branch-name-validator-test@v1.5.111
   with:
-    regex: 'something'
+      regex: 'something'
 ```
 
 ## Contributing
