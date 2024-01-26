@@ -1,3 +1,11 @@
+## [1.5.117](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.116...v1.5.117) (2024-01-26)
+
+
+### Build System
+
+* remove comment ([93f12cd](https://github.com/akikanellis/branch-name-validator-test/commit/93f12cd81b1f8da870d3910917dc110f076d1ba0))
+* use semantic-release 21 ([cfddd0e](https://github.com/akikanellis/branch-name-validator-test/commit/cfddd0e05d870ffc5f9b287351c9314bb27759b2))
+
 ## [1.5.116](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.115...v1.5.116) (2024-01-26)
 
 
