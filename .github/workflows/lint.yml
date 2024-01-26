@@ -4,6 +4,10 @@ name: Lint
 "on":
   workflow_call:
     inputs:
+      git-ref:
+        type: string
+        description: The git ref to checkout
+        required: false
       continue-on-error:
         type: boolean
         description: Allow a workflow run to pass when this workflow fails
@@ -46,6 +50,7 @@ jobs:
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           token: ${{ inputs.apply-fixes && steps.get-token.outputs.token || github.token }}
+          ref: ${{ inputs.git-ref || github.ref }}
           fetch-depth: 0
 
       - name: Setup Node

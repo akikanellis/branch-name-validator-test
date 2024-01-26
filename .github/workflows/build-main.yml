@@ -27,31 +27,6 @@ env:
   SEMANTIC_RELEASE_REPLACE_PLUGIN_VERSION: 1.2.7
 
 jobs:
-  lint:
-    name: Lint
-    uses: ./.github/workflows/lint.yml
-
-    permissions:
-      contents: read
-
-    with:
-      continue-on-error: true
-      apply-fixes: false
-
-  test:
-    name: Test
-    uses: ./.github/workflows/test.yml
-
-    permissions:
-      contents: read
-
-    with:
-      continue-on-error: true
-      update-build-system-cache: true
-
-    secrets:
-      NX_CLOUD_ACCESS_READ_WRITE_TOKEN: ${{ secrets.NX_CLOUD_ACCESS_READ_WRITE_TOKEN }}
-
   release:
     name: Release
     runs-on: ubuntu-latest
@@ -63,6 +38,7 @@ jobs:
     outputs:
       release-published: ${{ steps.release.outputs.new_release_published }}
       release-version: ${{ steps.release.outputs.new_release_version }}
+      release-git-tag: ${{ steps.release.outputs.new_release_git_tag }}
 
     steps:
       - name: Checkout
@@ -109,10 +85,38 @@ jobs:
             conventional-changelog-conventionalcommits@${{ env.CONVENTIONAL_CHANGELOG_CONVENTIONALCOMMITS_VERSION }}
             semantic-release-replace-plugin@${{ env.SEMANTIC_RELEASE_REPLACE_PLUGIN_VERSION }}
 
+  lint:
+    name: Lint
+    needs: release
+    uses: ./.github/workflows/lint.yml
+
+    permissions:
+      contents: read
+
+    with:
+      git-ref: ${{ needs.release.outputs.release-git-tag }}
+      continue-on-error: true
+      apply-fixes: false
+
+  test:
+    name: Test
+    needs: release
+    uses: ./.github/workflows/test.yml
+
+    permissions:
+      contents: read
+
+    with:
+      git-ref: ${{ needs.release.outputs.release-git-tag }}
+      continue-on-error: true
+      update-build-system-cache: true
+
+    secrets:
+      NX_CLOUD_ACCESS_READ_WRITE_TOKEN: ${{ secrets.NX_CLOUD_ACCESS_READ_WRITE_TOKEN }}
+
   test-release:
     name: Test release
     needs: release
-    if: needs.release.outputs.release-published == 'true'
     runs-on: ubuntu-latest
 
     permissions:
@@ -122,7 +126,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
-          ref: v${{ needs.release.outputs.release-version }}
+          ref: ${{ needs.release.outputs.release-git-tag || github.ref }}
 
       - name: Validate branch name
         id: validate-branch-name
