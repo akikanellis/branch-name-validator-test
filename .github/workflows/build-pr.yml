@@ -15,13 +15,10 @@ jobs:
   lint:
     name: Lint
     uses: ./.github/workflows/lint.yml
-
     permissions:
       contents: read
-
     with:
       apply-fixes: true
-
     secrets:
       AKI_BOT_APP_ID: ${{ secrets.AKI_BOT_APP_ID }}
       AKI_BOT_APP_PRIVATE_KEY: ${{ secrets.AKI_BOT_APP_PRIVATE_KEY }}
@@ -29,17 +26,14 @@ jobs:
   test:
     name: Test
     uses: ./.github/workflows/test.yml
-
     permissions:
       contents: read
 
   validate-branch-name:
     name: Validate branch name
     runs-on: ubuntu-latest
-
     permissions:
       contents: read
-
     steps:
       - name: Validate branch name
         # yamllint disable-line rule:line-length

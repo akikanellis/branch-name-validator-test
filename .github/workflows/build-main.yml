@@ -31,10 +31,8 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     concurrency: ${{ github.workflow }}-release
-
     permissions:
       contents: read
-
     outputs:
       release-published: ${{ steps.release.outputs.new_release_published }}
       release-version: ${{ steps.release.outputs.new_release_version }}
@@ -90,10 +88,8 @@ jobs:
     needs: release
     if: needs.release.outputs.release-published
     uses: ./.github/workflows/lint.yml
-
     permissions:
       contents: read
-
     with:
       git-ref: ${{ needs.release.outputs.release-git-tag }}
       continue-on-error: true
@@ -104,15 +100,12 @@ jobs:
     needs: release
     if: needs.release.outputs.release-published
     uses: ./.github/workflows/test.yml
-
     permissions:
       contents: read
-
     with:
       git-ref: ${{ needs.release.outputs.release-git-tag }}
       continue-on-error: true
       update-build-system-cache: true
-
     secrets:
       NX_CLOUD_ACCESS_READ_WRITE_TOKEN: ${{ secrets.NX_CLOUD_ACCESS_READ_WRITE_TOKEN }}
 
@@ -121,10 +114,8 @@ jobs:
     needs: release
     if: needs.release.outputs.release-published
     runs-on: ubuntu-latest
-
     permissions:
       contents: read
-
     steps:
       - name: Checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1

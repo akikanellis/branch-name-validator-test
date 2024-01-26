@@ -11,12 +11,10 @@ jobs:
   close-stale-issues-and-prs:
     name: Close stale issues and PRs
     runs-on: ubuntu-latest
-
     permissions:
       contents: read
       issues: write
       pull-requests: write
-
     steps:
       - name: Close stale issues and PRs
         uses: actions/stale@28ca1036281a5e5922ead5184a1bbf96e5fc984e # v9.0.0

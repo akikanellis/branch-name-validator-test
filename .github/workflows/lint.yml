@@ -32,7 +32,6 @@ jobs:
     name: Lint
     runs-on: ubuntu-latest
     continue-on-error: ${{ inputs.continue-on-error }}
-
     steps:
       - name: Get token
         id: get-token

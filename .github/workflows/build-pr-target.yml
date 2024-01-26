@@ -20,10 +20,8 @@ jobs:
   validate-pr-title:
     name: Validate PR title
     runs-on: ubuntu-latest
-
     permissions:
       pull-requests: read
-
     steps:
       - name: Validate PR title
         uses: amannn/action-semantic-pull-request@e9fabac35e210fea40ca5b14c0da95a099eff26f # v5.4.0
@@ -41,10 +39,8 @@ jobs:
   label-pr:
     name: Label PR
     runs-on: ubuntu-latest
-
     permissions:
       pull-requests: write
-
     steps:
       - name: Label PR
         uses: bcoe/conventional-release-labels@886f696738527c7be444262c327c89436dfb95a8 # v1.3.1
@@ -71,10 +67,8 @@ jobs:
     if: >
       github.event.pull_request.user.login == 'akikanellis' ||
       github.event.pull_request.user.login == 'aki-bot[bot]'
-
     permissions:
       pull-requests: write
-
     steps:
       - name: Get token
         id: get-token
