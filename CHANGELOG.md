@@ -1,3 +1,10 @@
+## [1.5.116](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.115...v1.5.116) (2024-01-26)
+
+
+### Build System
+
+* use semantic-release 23 ([fe706de](https://github.com/akikanellis/branch-name-validator-test/commit/fe706de52d74c59e344361ac7e221205633e61cc))
+
 ## [1.5.115](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.114...v1.5.115) (2024-01-26)
 
 
