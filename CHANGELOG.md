@@ -1,3 +1,11 @@
+## [1.5.110](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.109...v1.5.110) (2024-01-26)
+
+
+### Build System
+
+* a commit ([49ebb88](https://github.com/akikanellis/branch-name-validator-test/commit/49ebb88597d1c0322c926f64434dc028e5ed96c2))
+* another commit ([c3a5538](https://github.com/akikanellis/branch-name-validator-test/commit/c3a5538d137fe839add0aac7aab45bb7153c61de))
+
 ## [1.5.109](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.108...v1.5.109) (2024-01-26)
 
 
