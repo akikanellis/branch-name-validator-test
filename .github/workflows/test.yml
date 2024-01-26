@@ -32,7 +32,6 @@ jobs:
     continue-on-error: ${{ inputs.continue-on-error }}
     permissions:
       contents: read
-
     steps:
       - name: Set Nx Cloud access token
         if: ${{ inputs.update-build-system-cache }}
