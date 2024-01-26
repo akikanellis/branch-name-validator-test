@@ -1,3 +1,10 @@
+## [1.5.109](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.108...v1.5.109) (2024-01-26)
+
+
+### Build System
+
+* run tests and lint after files are updated ([a1fb10f](https://github.com/akikanellis/branch-name-validator-test/commit/a1fb10feffa0a79ee059a0dda922a10f5d84328f))
+
 ## [1.5.108](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.107...v1.5.108) (2024-01-26)
 
 
