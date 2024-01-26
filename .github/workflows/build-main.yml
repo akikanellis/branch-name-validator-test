@@ -88,6 +88,7 @@ jobs:
   lint:
     name: Lint
     needs: release
+    if: needs.release.outputs.release-published
     uses: ./.github/workflows/lint.yml
 
     permissions:
@@ -101,6 +102,7 @@ jobs:
   test:
     name: Test
     needs: release
+    if: needs.release.outputs.release-published
     uses: ./.github/workflows/test.yml
 
     permissions:
@@ -117,6 +119,7 @@ jobs:
   test-release:
     name: Test release
     needs: release
+    if: needs.release.outputs.release-published
     runs-on: ubuntu-latest
 
     permissions:
