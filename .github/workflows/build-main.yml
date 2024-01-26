@@ -54,6 +54,9 @@ jobs:
           GIT_AUTHOR_EMAIL: 103840025+aki-bot[bot]@users.noreply.github.com
           GIT_COMMITTER_NAME: aki-bot[bot]
           GIT_COMMITTER_EMAIL: 103840025+aki-bot[bot]@users.noreply.github.com
+        with:
+          # renovate: datasource=npm depName=semantic-release
+          semantic_version: 21.1.2
 
   lint:
     name: Lint
