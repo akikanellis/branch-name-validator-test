@@ -30,7 +30,6 @@ jobs:
     name: Test
     runs-on: ubuntu-latest
     continue-on-error: ${{ inputs.continue-on-error }}
-
     permissions:
       contents: read
 
