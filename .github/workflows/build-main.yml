@@ -7,25 +7,6 @@ name: Build Main
 
 permissions: {}
 
-env:
-  # renovate: datasource=npm depName=@semantic-release/changelog
-  SEMANTIC_RELEASE_CHANGELOG_VERSION: 6.0.3
-
-  # renovate: datasource=npm depName=@semantic-release/exec
-  SEMANTIC_RELEASE_EXEC_VERSION: 6.0.3
-
-  # renovate: datasource=npm depName=@semantic-release/git
-  SEMANTIC_RELEASE_GIT_VERSION: 10.0.1
-
-  # renovate: datasource=npm depName=@semantic-release/npm
-  SEMANTIC_RELEASE_NPM_VERSION: 11.0.2
-
-  # renovate: datasource=npm depName=conventional-changelog-conventionalcommits
-  CONVENTIONAL_CHANGELOG_CONVENTIONALCOMMITS_VERSION: 6.1.0
-
-  # renovate: datasource=npm depName=semantic-release-replace-plugin
-  SEMANTIC_RELEASE_REPLACE_PLUGIN_VERSION: 1.2.7
-
 jobs:
   release:
     name: Release
@@ -73,15 +54,6 @@ jobs:
           GIT_AUTHOR_EMAIL: 103840025+aki-bot[bot]@users.noreply.github.com
           GIT_COMMITTER_NAME: aki-bot[bot]
           GIT_COMMITTER_EMAIL: 103840025+aki-bot[bot]@users.noreply.github.com
-        with:
-          semantic_version: 21.1.2
-          extra_plugins: >
-            @semantic-release/changelog@${{ env.SEMANTIC_RELEASE_CHANGELOG_VERSION }}
-            @semantic-release/exec@${{ env.SEMANTIC_RELEASE_EXEC_VERSION }}
-            @semantic-release/git@${{ env.SEMANTIC_RELEASE_GIT_VERSION }}
-            @semantic-release/npm@${{ env.SEMANTIC_RELEASE_NPM_VERSION }}
-            conventional-changelog-conventionalcommits@${{ env.CONVENTIONAL_CHANGELOG_CONVENTIONALCOMMITS_VERSION }}
-            semantic-release-replace-plugin@${{ env.SEMANTIC_RELEASE_REPLACE_PLUGIN_VERSION }}
 
   lint:
     name: Lint
