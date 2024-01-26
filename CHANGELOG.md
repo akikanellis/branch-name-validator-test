@@ -1,3 +1,10 @@
+## [1.5.111](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.110...v1.5.111) (2024-01-26)
+
+
+### Build System
+
+* check if release is published ([6284981](https://github.com/akikanellis/branch-name-validator-test/commit/6284981e8a4b6aa9337cee245c47515b903c6079))
+
 ## [1.5.110](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.109...v1.5.110) (2024-01-26)
 
 
