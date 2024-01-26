@@ -86,7 +86,7 @@ jobs:
   lint:
     name: Lint
     needs: release
-    if: needs.release.outputs.release-published
+    if: needs.release.outputs.release-published == 'true'
     uses: ./.github/workflows/lint.yml
     permissions:
       contents: read
@@ -98,7 +98,7 @@ jobs:
   test:
     name: Test
     needs: release
-    if: needs.release.outputs.release-published
+    if: needs.release.outputs.release-published == 'true'
     uses: ./.github/workflows/test.yml
     permissions:
       contents: read
@@ -112,7 +112,7 @@ jobs:
   test-release:
     name: Test release
     needs: release
-    if: needs.release.outputs.release-published
+    if: needs.release.outputs.release-published == 'true'
     runs-on: ubuntu-latest
     permissions:
       contents: read
