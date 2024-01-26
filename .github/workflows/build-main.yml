@@ -47,6 +47,10 @@ jobs:
 
     with:
       continue-on-error: true
+      update-build-system-cache: true
+
+    secrets:
+      NX_CLOUD_ACCESS_READ_WRITE_TOKEN: ${{ secrets.NX_CLOUD_ACCESS_READ_WRITE_TOKEN }}
 
   release:
     name: Release
