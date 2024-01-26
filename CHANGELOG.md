@@ -1,3 +1,10 @@
+## [1.5.114](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.113...v1.5.114) (2024-01-26)
+
+
+### Build System
+
+* install semantic release via package.json ([caa1023](https://github.com/akikanellis/branch-name-validator-test/commit/caa10231f805b96e0c09ba208f96c70171e716cd))
+
 ## [1.5.113](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.112...v1.5.113) (2024-01-26)
 
 
