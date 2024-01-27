@@ -28,6 +28,8 @@ jobs:
     uses: ./.github/workflows/test.yml
     permissions:
       contents: read
+    secrets:
+      CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
   validate-branch-name:
     name: Validate branch name

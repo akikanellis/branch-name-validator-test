@@ -22,6 +22,9 @@ name: Test
       NX_CLOUD_ACCESS_READ_WRITE_TOKEN:
         description: A read-write Nx Cloud access token
         required: false
+      CODECOV_TOKEN:
+        description: A Codecov token
+        required: true
 
 permissions: {}
 
@@ -35,7 +38,7 @@ jobs:
     steps:
       - name: Set Nx Cloud access token
         if: ${{ inputs.update-build-system-cache }}
-        run: echo "NX_CLOUD_ACCESS_TOKEN=${{ secrets.NX_CLOUD_ACCESS_READ_WRITE_TOKEN }}" >> $GITHUB_ENV
+        run: echo "NX_CLOUD_ACCESS_TOKEN=${{ secrets.NX_CLOUD_ACCESS_READ_WRITE_TOKEN }}" >> "$GITHUB_ENV"
 
       - name: Checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
