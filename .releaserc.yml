@@ -58,8 +58,8 @@ plugins:
     - prepareCmd: npm run package
   - - "@semantic-release/git"
     - assets:
-        - CHANGELOG.md
         - packages/actions/action/bundle
+        - CHANGELOG.md
         - package.json
         - package-lock.json
         - README.md

@@ -9,6 +9,7 @@ VALIDATE_ALL_CODEBASE: false
 IGNORE_GENERATED_FILES: true
 FILTER_REGEX_EXCLUDE: "^(\
   CHANGELOG\\.md|\
+  package-lock\\.json|\
   .+/bundle/.+\
   )$"
 
