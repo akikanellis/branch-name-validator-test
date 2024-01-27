@@ -3,7 +3,7 @@
   "extends": "./tsconfig.base.json",
   "references": [
     {
-      "path": "./tsconfig.lint.json"
-    }
-  ]
+      "path": "./tsconfig.lint.json",
+    },
+  ],
 }

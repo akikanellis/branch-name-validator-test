@@ -15,6 +15,7 @@ FILTER_REGEX_EXCLUDE: "^(\
 DISABLE_LINTERS:
   # We are using Prettier instead
   - JAVASCRIPT_STANDARD
+  - JSON_JSONLINT
   # See: https://github.com/oxsecurity/megalinter/issues/2849
   - REPOSITORY_DEVSKIM
   # We are using Prettier instead
@@ -24,6 +25,8 @@ JAVASCRIPT_DEFAULT_STYLE: prettier
 
 # editorconfig-checker does not automatically detect .ecrc.json
 EDITORCONFIG_EDITORCONFIG_CHECKER_CONFIG_FILE: .ecrc.json
+
+JSON_ESLINT_PLUGIN_JSONC_FILE_NAME: .eslintrc.js
 
 # MegaLinter only passes in `.json` files by default
 JSON_PRETTIER_FILE_EXTENSIONS: [.json, .json5]
