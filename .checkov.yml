@@ -1,0 +1,4 @@
+quiet: true
+skip-path:
+  # Checkov is having a `CKV_SECRET_6` false-positive on `nxCloudAccessToken`
+  - nx.json
