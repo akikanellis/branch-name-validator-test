@@ -17,52 +17,45 @@ module.exports = {
     },
   },
 
-  extends: [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended-type-checked",
-    "plugin:@typescript-eslint/stylistic-type-checked",
-    "prettier",
-  ],
-
-  parser: "@typescript-eslint/parser",
+  extends: ["eslint:recommended", "prettier"],
 
   parserOptions: {
-    project: ["tsconfig.lint.json", "packages/*/*/tsconfig.lint.json"],
     ecmaVersion: "latest",
     sourceType: "module",
   },
 
-  plugins: ["@typescript-eslint"],
-
   overrides: [
     {
-      files: [".json"],
-      extends: ["plugin:jsonc/recommended-with-json"],
-      parser: "jsonc-eslint-parser",
+      files: ["*.ts", "*.tsx"],
+      extends: [
+        "plugin:@typescript-eslint/recommended-type-checked",
+        "plugin:@typescript-eslint/stylistic-type-checked",
+      ],
+      plugins: ["@typescript-eslint"],
+      parser: "@typescript-eslint/parser",
       parserOptions: {
-        jsonSyntax: "JSON",
-      },
-    },
-    {
-      files: [".jsonc"],
-      extends: ["plugin:jsonc/recommended-with-jsonc"],
-      parser: "jsonc-eslint-parser",
-      parserOptions: {
-        jsonSyntax: "JSONC",
-      },
-    },
-    {
-      files: ["*.json5"],
-      extends: ["plugin:jsonc/recommended-with-json5"],
-      parser: "jsonc-eslint-parser",
-      parserOptions: {
-        jsonSyntax: "JSON5",
+        project: ["tsconfig.lint.json", "packages/*/*/tsconfig.lint.json"],
       },
     },
     {
       files: ["test/**"],
       extends: ["plugin:jest/recommended", "plugin:jest/style"],
       plugins: ["jest"],
+    },
+    {
+      files: ["*.json"],
+      extends: ["plugin:jsonc/recommended-with-json", "plugin:jsonc/prettier"],
+      parser: "jsonc-eslint-parser",
+    },
+    {
+      files: ["*.json5"],
+      extends: ["plugin:jsonc/recommended-with-json5", "plugin:jsonc/prettier"],
+      parser: "jsonc-eslint-parser",
+    },
+    {
+      files: ["*.jsonc"],
+      extends: ["plugin:jsonc/recommended-with-jsonc", "plugin:jsonc/prettier"],
+      parser: "jsonc-eslint-parser",
     },
   ],
 };
