@@ -1,3 +1,16 @@
+## [1.5.118](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.117...v1.5.118) (2024-01-27)
+
+
+### Build System
+
+* fix actionlint issues ([00a9dee](https://github.com/akikanellis/branch-name-validator-test/commit/00a9dee79dae3314a5dfc67a31ab01f3aee21213))
+* fix checkov linting issues ([eab34ee](https://github.com/akikanellis/branch-name-validator-test/commit/eab34ee67a3d77d688074abae8bc5ca73d07db24))
+* fix gitleaks issues ([24cf9db](https://github.com/akikanellis/branch-name-validator-test/commit/24cf9db9f747563a79023b394accdf4dea885071))
+* fix json issues ([867d6f5](https://github.com/akikanellis/branch-name-validator-test/commit/867d6f5519f0b4a24f6586727aa96ad38a316895))
+* fix lychee issues ([244312f](https://github.com/akikanellis/branch-name-validator-test/commit/244312f52bd83e8674955a0428f45fbe1b4643f7))
+* fix lychee issues ([18f5344](https://github.com/akikanellis/branch-name-validator-test/commit/18f5344a5ab95b6cc27d1cab1ddeb64b7dc010d4))
+* fix lychee issues ([2e974bc](https://github.com/akikanellis/branch-name-validator-test/commit/2e974bce7111932d6ed6a8200873a45fcf90c34b))
+
 ## [1.5.117](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.116...v1.5.117) (2024-01-26)
 
 
