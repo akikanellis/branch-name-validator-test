@@ -1,1 +1,1 @@
-exclude_path = ["package-lock.json"]
+exclude_path = ["./package-lock.json"]
