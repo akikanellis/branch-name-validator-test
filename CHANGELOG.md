@@ -1,3 +1,10 @@
+## [1.5.119](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.118...v1.5.119) (2024-01-27)
+
+
+### Build System
+
+* fix eslint issues ([2895142](https://github.com/akikanellis/branch-name-validator-test/commit/2895142324c151b8fc5907f67fc194fcc1ff13be))
+
 ## [1.5.118](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.117...v1.5.118) (2024-01-27)
 
 
