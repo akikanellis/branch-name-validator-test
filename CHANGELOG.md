@@ -1,3 +1,10 @@
+## [1.5.120](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.119...v1.5.120) (2024-01-28)
+
+
+### Build System
+
+* fix dustilock issues ([b2f5a07](https://github.com/akikanellis/branch-name-validator-test/commit/b2f5a07b9aa9f7eaf99e7f2698109cef6f03a507))
+
 ## [1.5.119](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.118...v1.5.119) (2024-01-27)
 
 
