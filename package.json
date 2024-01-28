@@ -3,20 +3,13 @@
   "name": "@branch-name-validator-test/root",
   "version": "1.5.120",
   "description": "Branch Name Validator Test",
-  "keywords": [
-    "github",
-    "actions",
-    "branch",
-    "validation"
-  ],
+  "keywords": ["github", "actions", "branch", "validation"],
   "homepage": "https://github.com/akikanellis/branch-name-validator-test",
   "bugs": "https://github.com/akikanellis/branch-name-validator-test/issues",
   "license": "MIT",
   "author": "Aki Kanellis <hello@akikanellis.com> (https://akikanellis.com)",
   "repository": "github:akikanellis/branch-name-validator-test",
-  "workspaces": [
-    "packages/*/*"
-  ],
+  "workspaces": ["packages/*/*"],
   "scripts": {
     "install:all": "nx run-many --target=install:all --output-style=stream",
     "install:tools": "nx run-many --target=install:tools --output-style=stream",
