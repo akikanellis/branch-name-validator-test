@@ -330,3 +330,4 @@ $RECYCLE.BIN/
 .nx/
 .vscode/
 megalinter-reports/
+*megalinter_file_names_cspell.txt

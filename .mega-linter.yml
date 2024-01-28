@@ -19,6 +19,9 @@ DISABLE_LINTERS:
   - JSON_JSONLINT
   # See: https://github.com/oxsecurity/megalinter/issues/2849
   - REPOSITORY_DEVSKIM
+  # Dustilock does not have a way to ignore files, such as the temporarily
+  # created `*megalinter_file_names_cspell.txt`.
+  - REPOSITORY_DUSTILOCK
   # We are using Prettier instead
   - TYPESCRIPT_STANDARD
 
