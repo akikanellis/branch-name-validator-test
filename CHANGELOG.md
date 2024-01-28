@@ -1,3 +1,12 @@
+## [1.5.121](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.120...v1.5.121) (2024-01-28)
+
+
+### Build System
+
+* add more json extensions ([74acd05](https://github.com/akikanellis/branch-name-validator-test/commit/74acd05f290fbee400215fadd8061639dfe000c7))
+* fix md issues ([7a827b1](https://github.com/akikanellis/branch-name-validator-test/commit/7a827b12712e66c09b97922a2f68d02bf594db88))
+* fix prettier issues ([cff51ea](https://github.com/akikanellis/branch-name-validator-test/commit/cff51ea51e406a813a3610bc2f22b33506e99a6d))
+
 ## [1.5.120](https://github.com/akikanellis/branch-name-validator-test/compare/v1.5.119...v1.5.120) (2024-01-28)
 
 
