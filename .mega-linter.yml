@@ -16,7 +16,6 @@ FILTER_REGEX_EXCLUDE: "^(\
 DISABLE_LINTERS:
   # We are using Prettier instead
   - JAVASCRIPT_STANDARD
-  - JSON_JSONLINT
   # See: https://github.com/oxsecurity/megalinter/issues/2849
   - REPOSITORY_DEVSKIM
   # Dustilock does not have a way to ignore files, such as the temporarily
@@ -33,7 +32,8 @@ EDITORCONFIG_EDITORCONFIG_CHECKER_CONFIG_FILE: .ecrc.json
 JSON_ESLINT_PLUGIN_JSONC_FILE_NAME: .eslintrc.js
 
 # MegaLinter only passes in `.json` files by default
-JSON_PRETTIER_FILE_EXTENSIONS: [.json, .json5]
-JSON_V8R_FILE_EXTENSIONS: [.json, .json5]
+# See: https://megalinter.io/latest/descriptors/json
+JSON_PRETTIER_FILE_EXTENSIONS: [.json, .json5, .jsonc]
+JSON_V8R_FILE_EXTENSIONS: [.json, .json5, .jsonc]
 
 TYPESCRIPT_DEFAULT_STYLE: prettier

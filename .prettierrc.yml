@@ -4,7 +4,7 @@ overrides:
   #   - https://github.com/prettier/prettier/issues/15942
   #   - https://github.com/prettier/prettier/issues/15945
   #   - https://github.com/prettier/prettier/issues/15956
-  - files: ["*.json"]
+  - files: ["*.json", "*.jsonc"]
     options:
       parser: json
       trailingComma: none
