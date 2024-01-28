@@ -41,7 +41,7 @@ Install
 ```yaml
 - uses: akikanellis/branch-name-validator-test@v1.5.120
   with:
-      regex: 'something'
+    regex: "something"
 ```
 
 ## Contributing
