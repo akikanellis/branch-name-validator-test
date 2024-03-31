@@ -63,7 +63,7 @@ jobs:
 
       - name: Lint
         id: lint
-        uses: oxsecurity/megalinter@7e042c726c68415475b05a65a686c612120a1232 # v7.7.0
+        uses: oxsecurity/megalinter@a7a0163b6c8ff7474a283d99a706e27483ddd80f # v7.10.0
         env:
           GITHUB_TOKEN: ${{ steps.get-token.outputs.token }}
           APPLY_FIXES: ${{ inputs.apply-fixes && 'all' || 'none' }}
