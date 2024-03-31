@@ -23,7 +23,7 @@ name: Test
         description: A read-write Nx Cloud access token
         required: false
       CODECOV_TOKEN:
-        description: A Codecov token
+        description: The token used by Codecov
         required: true
 
 permissions: {}
